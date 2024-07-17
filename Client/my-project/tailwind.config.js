@@ -1,0 +1,29 @@
+/** @type {import('tailwindcss').Config} */
+
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    colors: {
+      blue: "#1fb6ff",
+      black: "#000000",
+      white: "#ffffff",
+      purple: "#7e5bef",
+      pink: "#ff49db",
+      orange: "#ff7849",
+      green: "#13ce66",
+      yellow: "#ffc82c",
+      "gray-dark": "#273444",
+      gray: "#8492a6",
+      bgColor: "#f0f2ff",
+      "gray-light": "#d3dce6",
+    },
+    fontFamily: {
+      "sans-serif": ["sans-serif"],
+      "open-sans": ["open-sans"],
+      poppins: ["poppins"],
+    },
+    extend: {},
+  },
+
+  plugins: [],
+};
