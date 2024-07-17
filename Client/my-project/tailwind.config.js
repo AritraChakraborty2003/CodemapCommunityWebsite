@@ -16,6 +16,9 @@ export default {
       gray: "#8492a6",
       bgColor: "#f0f2ff",
       "gray-light": "#d3dce6",
+      btnColor: "#3f53d8",
+      greyColor: "#808080",
+      lightGrey: "#D3D3D3",
     },
     fontFamily: {
       "sans-serif": ["sans-serif"],
