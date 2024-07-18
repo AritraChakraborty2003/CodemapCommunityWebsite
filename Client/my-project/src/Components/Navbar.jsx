@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <div className="holderNav bg-bgColor pb-2">
-        <div className="navBarBox  h-[20vmin] md:h-[15vmin] w-[100vw] bg-bgColor flex ">
+        <div className="navBarBox   md:h-[15vmin] w-[100vw] bg-bgColor flex ">
           <div className="logoHolder h-[23vmin] lg:h-[15vmin]  flex pt-2 lg:pt-0">
             <div className="iconHolder h-[17vmin] w-[17vmin] md:h-[10vmin] md:w-[10vmin] lg:h-[14vmin] lg:w-[14vmin]  mt-1 lg:mt-1 md:mt-4 ml-2 2xl:ml-4 2xl:mt-3 flex justify-center items-center pt-1">
               <img
@@ -27,19 +27,35 @@ const Navbar = () => {
             </div>
           </div>
           <div className="holderNavIcon hidden lg:block">
-            <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
-              <p>
-                <a href="#about">About-us</a>
-              </p>
-              <p>Support</p>
-              <p>Our-Reach</p>
-              <p>Vision</p>
-              <p>Testinomials</p>
-              <p>Careers</p>
-              <p>Student-Clubs</p>
-              <p>Team</p>
-              <p>Contact</p>
-            </div>
+            {(screen.width <= 1280 && screen.height >= 800 && (
+              <div className="navIconHolder w-[58.5vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
+                <p>
+                  <a href="#about">About-us</a>
+                </p>
+                <p>Support</p>
+                <p>Our-Reach</p>
+                <p>Vision</p>
+                <p>Testinomials</p>
+                <p>Careers</p>
+                <p>Student-Clubs</p>
+                <p>Team</p>
+                <p>Contact</p>
+              </div>
+            )) || (
+              <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
+                <p>
+                  <a href="#about">About-us</a>
+                </p>
+                <p>Support</p>
+                <p>Our-Reach</p>
+                <p>Vision</p>
+                <p>Testinomials</p>
+                <p>Careers</p>
+                <p>Student-Clubs</p>
+                <p>Team</p>
+                <p>Contact</p>
+              </div>
+            )}
           </div>
           <div className="hidden lg:block">
             <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-center">
@@ -79,6 +95,8 @@ const Navbar = () => {
               </button>
             </li>
           </ul>
+
+          <div className="line w-[94vw]  h-[10px] border-lightGrey border-t-2 mt-2 lg:mt-0"></div>
         </div>
       )}
 

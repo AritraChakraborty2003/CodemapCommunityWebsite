@@ -19,11 +19,13 @@ export default {
       btnColor: "#3f53d8",
       greyColor: "#808080",
       lightGrey: "#D3D3D3",
+      bannerGrey: "#646468",
     },
     fontFamily: {
       "sans-serif": ["sans-serif"],
       "open-sans": ["open-sans"],
       poppins: ["poppins"],
+      "mono-space": ["Space-Mono"],
     },
     extend: {},
   },
