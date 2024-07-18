@@ -2,6 +2,7 @@ import { useState } from "react";
 import Banner from "./Banner";
 import About from "./About";
 import "./overflow.css";
+import SupportProvided from "./SupportProvided";
 const Navbar = () => {
   const [displayNavHam, setdisplayNavHam] = useState(false);
   const showNavHam = () => {
@@ -40,6 +41,7 @@ const Navbar = () => {
                 <p>Student-Clubs</p>
                 <p>Team</p>
                 <p>Contact</p>
+                <p>Events</p>
               </div>
             )) || (
               <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
@@ -54,6 +56,7 @@ const Navbar = () => {
                 <p>Student-Clubs</p>
                 <p>Team</p>
                 <p>Contact</p>
+                <p>Events</p>
               </div>
             )}
           </div>
@@ -106,6 +109,10 @@ const Navbar = () => {
 
       <div id="about">
         <About />
+      </div>
+
+      <div id="support">
+        <SupportProvided />
       </div>
     </>
   );
