@@ -4,7 +4,6 @@ const Banner = () => {
       {(screen.width <= 320 && (
         <div className="h-[100vh] w-[100vw] pb-5 overflow-x-hidden bg-bgColor flex justify-center items-center flex-col gap-y-4">
           <div className="mt-[-5vmin] lg:mt-0 flex gap-x-2 items-center h-[20vmin]  md:h-[25vmin] lg:h-[10vmin]  lg:ml-0">
-            <div className="h-[4px] w-[19px] border-grey border-b-[1px] hidden lg:block"></div>
             <p className="text-center mt-[-2vmin] text-[4.3vmin] md:text-[3.3vmin] lg:text-[4vmin] lg:font-medium font-poppins md:pl-2 md:pr-2">
               Your own Technical Community to develop and nurture your skills
             </p>
@@ -50,7 +49,6 @@ const Banner = () => {
       )) || (
         <div className="h-[85vh] w-[100vw] pb-5 overflow-x-hidden bg-bgColor flex justify-center items-center flex-col gap-y-4">
           <div className="mt-[-5vmin] lg:mt-0 flex gap-x-2 items-center h-[20vmin]  md:h-[25vmin] lg:h-[10vmin]  lg:ml-0">
-            <div className="h-[4px] w-[19px] border-grey border-b-[1px] hidden lg:block"></div>
             <p className="text-center mt-[-2vmin] text-[4.3vmin] md:text-[3.3vmin] lg:text-[4vmin] lg:font-medium font-poppins md:pl-2 md:pr-2">
               Your own Technical Community to develop and nurture your skills
             </p>

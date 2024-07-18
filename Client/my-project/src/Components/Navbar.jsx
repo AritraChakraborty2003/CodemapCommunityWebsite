@@ -3,6 +3,8 @@ import Banner from "./Banner";
 import About from "./About";
 import "./overflow.css";
 import SupportProvided from "./SupportProvided";
+import Footer from "./Footer";
+import Collab from "./Collab";
 const Navbar = () => {
   const [displayNavHam, setdisplayNavHam] = useState(false);
   const showNavHam = () => {
@@ -14,14 +16,14 @@ const Navbar = () => {
       <div className="holderNav bg-bgColor pb-2">
         <div className="navBarBox w-[100vw] bg-bgColor flex ">
           <div className="logoHolder lg:h-[15vmin]  flex pt-2 lg:pt-0">
-            <div className="iconHolder h-[17vmin] w-[17vmin] md:h-[10vmin] md:w-[10vmin] lg:h-[14vmin] lg:w-[14vmin]  mt-1 lg:mt-1 md:mt-4 ml-2 2xl:ml-4 2xl:mt-3 flex justify-center items-center pt-1">
+            <div className="iconHolder h-[15vmin] w-[17vmin] md:h-[10vmin] md:w-[10vmin] lg:h-[14vmin] lg:w-[14vmin]  mt-1 lg:mt-1 md:mt-4 ml-2 2xl:ml-4 2xl:mt-3 flex justify-center items-center pt-1">
               <img
                 src="./CMLogo.png"
                 className="max-w-full max-h-full object-contain"
               ></img>
             </div>
             <div className="flex font-semibold items-center textHolder h-[12vmin] w-[51vw] md:w-[67vw] lg:h-[10vmin] lg:w-full mt-4 lg:mt-4 ml-2 2xl:mt-5">
-              <p className=" text-[5vmin] md:text-[4vmin] 2xl:text-[3.75vmin] ml-1 font-poppins mt-[2vmin]">
+              <p className=" text-[5vmin] md:text-[4vmin] 2xl:text-[3.75vmin] ml-1 font-poppins mt-[1vmin]">
                 Code
                 <span className="md:text-[4vmin] 2xl:text-[3.75vmin]">Map</span>
               </p>
@@ -35,13 +37,12 @@ const Navbar = () => {
                 </p>
                 <p>Support</p>
                 <p>Our-Reach</p>
-                <p>Vision</p>
+                <p>Events</p>
                 <p>Testinomials</p>
                 <p>Careers</p>
                 <p>Student-Clubs</p>
                 <p>Team</p>
                 <p>Contact</p>
-                <p>Events</p>
               </div>
             )) || (
               <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
@@ -50,13 +51,12 @@ const Navbar = () => {
                 </p>
                 <p>Support</p>
                 <p>Our-Reach</p>
-                <p>Vision</p>
+                <p>Events</p>
                 <p>Testinomials</p>
                 <p>Careers</p>
                 <p>Student-Clubs</p>
                 <p>Team</p>
                 <p>Contact</p>
-                <p>Events</p>
               </div>
             )}
           </div>
@@ -113,6 +113,12 @@ const Navbar = () => {
 
       <div id="support">
         <SupportProvided />
+      </div>
+      <div id="collab">
+        <Collab />
+      </div>
+      <div id="footer">
+        <Footer />
       </div>
     </>
   );
