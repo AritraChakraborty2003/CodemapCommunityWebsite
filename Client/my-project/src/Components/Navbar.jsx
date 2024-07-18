@@ -80,15 +80,15 @@ const Navbar = () => {
       {displayNavHam === true && (
         <div className="navHamMobile block lg:hidden w-[100vw] bg-bgColor  pl-3 pb-6 ">
           <ul className="space-y-[3vmin] text-lg md:text-[3vmin]">
-            <li>About-us</li>
-            <li>Support</li>
-            <li>Our Reach</li>
-            <li>Vision</li>
-            <li>Testinomials</li>
-            <li>Careers</li>
-            <li>Student-Clubs</li>
-            <li>Team</li>
-            <li>Contact</li>
+            <li onClick={showNavHam}>About-us</li>
+            <li onClick={showNavHam}>Support</li>
+            <li onClick={showNavHam}>Our Reach</li>
+            <li onClick={showNavHam}>Vision</li>
+            <li onClick={showNavHam}>Testinomials</li>
+            <li onClick={showNavHam}>Careers</li>
+            <li onClick={showNavHam}>Student-Clubs</li>
+            <li onClick={showNavHam}>Team</li>
+            <li onClick={showNavHam}>Contact</li>
             <li>
               <button className=" 2xl:w-[20vmin] bg-btnColor p-3 rounded-lg text-white ml-[-0.5vmin]">
                 Become Campus Lead
