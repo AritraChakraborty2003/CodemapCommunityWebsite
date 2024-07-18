@@ -40,7 +40,6 @@ const Navbar = () => {
                 <p>Events</p>
                 <p>Testinomials</p>
                 <p>Careers</p>
-                <p>Student-Clubs</p>
                 <p>Team</p>
                 <p>Contact</p>
               </div>
@@ -54,7 +53,7 @@ const Navbar = () => {
                 <p>Events</p>
                 <p>Testinomials</p>
                 <p>Careers</p>
-                <p>Student-Clubs</p>
+
                 <p>Team</p>
                 <p>Contact</p>
               </div>
@@ -89,7 +88,7 @@ const Navbar = () => {
             <li onClick={showNavHam}>Vision</li>
             <li onClick={showNavHam}>Testinomials</li>
             <li onClick={showNavHam}>Careers</li>
-            <li onClick={showNavHam}>Student-Clubs</li>
+
             <li onClick={showNavHam}>Team</li>
             <li onClick={showNavHam}>Contact</li>
             <li>
