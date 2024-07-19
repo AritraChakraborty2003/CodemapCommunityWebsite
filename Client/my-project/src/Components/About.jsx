@@ -2,10 +2,10 @@ const About = () => {
   return (
     <>
       <div className="aboutHolder  w-[100vw]">
-        <h1 className="mt-8 2xl:mt-10 ml-2 lg:ml-8 font-poppins font-bold text-[12vmin] 2xl:text-[10vmin]">
+        <h1 className="mt-8 2xl:mt-10 ml-2 pt-6 lg:ml-7 font-poppins font-bold text-[12vmin] 2xl:text-[10vmin]">
           About-<span className="text-btnColor">us</span>
         </h1>
-        <div className="pb-[10vmin] about-area flex justify-center items-center flex-wrap-reverse ml-[-2vmin]">
+        <div className=" about-area flex justify-center items-center flex-wrap-reverse ml-[-2vmin]">
           {(screen.width <= 900 && (
             <>
               <div className="text-area w-[95vw]  pb-6 pt-3">
@@ -206,7 +206,7 @@ const About = () => {
                     </p>
                   </div>
 
-                  <div className="ml-8 holder w-[85vmin] text-[2.45vmin] text-bannerGrey">
+                  <div className="ml-8 holder w-[85vmin] text-[2.65vmin] text-bannerGrey">
                     The Codemap community is an ultimate coding community for
                     all tech enthusiasts who want to pursue a promising career
                     in the contemporary technical industry we have strong vision
@@ -233,7 +233,7 @@ const About = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="photo-area w-[90vmin] h-[80vh]">
+                <div className="photo-area w-[90vmin] h-[70vh]">
                   <div className="area w-[88vmin] h-[50vh] mt-5 ml-1 flex flex-start items-center">
                     <img
                       src="./t1.png"
@@ -266,7 +266,7 @@ const About = () => {
                     </p>
                   </div>
 
-                  <div className="ml-8 holder w-[79vmin] text-[2.65vmin]  text-bannerGrey">
+                  <div className="ml-8 holder w-[79vmin] text-[2.7vmin]  text-bannerGrey">
                     The Codemap community is an ultimate coding community for
                     all tech enthusiasts who want to pursue a promising career
                     in the contemporary technical industry we have strong vision
