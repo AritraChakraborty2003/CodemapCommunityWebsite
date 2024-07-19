@@ -5,6 +5,10 @@ import "./overflow.css";
 import SupportProvided from "./SupportProvided";
 import Footer from "./Footer";
 import Collab from "./Collab";
+import Contact from "./Contact";
+import UpcommingEvents from "./UpcommingEvents";
+import Testinomials from "./Testinomials";
+import OurReach from "./OurReach";
 const Navbar = () => {
   const [displayNavHam, setdisplayNavHam] = useState(false);
   const showNavHam = () => {
@@ -113,8 +117,23 @@ const Navbar = () => {
       <div id="support">
         <SupportProvided />
       </div>
+
+      <div id="Our-Reach">
+        <OurReach />
+      </div>
+      <div id="Testinomials">
+        <Testinomials />
+      </div>
+
+      <div id="uEvents">
+        <UpcommingEvents />
+      </div>
       <div id="collab">
         <Collab />
+      </div>
+
+      <div id="contact">
+        <Contact />
       </div>
       <div id="footer">
         <Footer />
