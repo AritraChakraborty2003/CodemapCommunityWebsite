@@ -10,7 +10,7 @@ const Collab = () => {
         </p>
 
         <div className="iconHolder flex gap-x-4 gap-y-4 justify-center items-center flex-wrap ">
-          <div className="flex flex-wrap  lg:gap-x-10 2xl:gap-x-9 gap-y-10 justify-center items-center">
+          <div className="flex flex-wrap  lg:gap-x-10 2xl:gap-x-9 gap-y-10 md:gap-y-5 justify-center items-center">
             <CollabIcon image="./VD1.png" />
             <CollabIcon image="./IIMT_IIC.png" />
             <CollabIcon image="./sb1.png" />

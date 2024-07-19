@@ -9,7 +9,7 @@ const Card = (props) => {
           ></img>
         </div>
         <div>
-          <p className="font-bold lg:font-medium text-[4.5vmin] md:text-[3.4vmin] lg:text-[3.15vmin] 2xl:text-[2.65vmin] font-poppins ">
+          <p className="font-medium lg:font-medium text-[4.5vmin] md:text-[3.4vmin] lg:text-[3.15vmin] 2xl:text-[2.65vmin] font-poppins ">
             {props.details}
           </p>
         </div>

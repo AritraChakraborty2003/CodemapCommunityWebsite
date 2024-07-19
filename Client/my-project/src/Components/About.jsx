@@ -21,13 +21,13 @@ const About = () => {
                   </p>
                 </div>
 
-                <div className=" text-[4.5vmin] md:text-[4vmin] ml-2 holder w-[90vw]  text-bannerGrey">
+                <div className=" text-[4.5vmin] md:text-[3.56vmin] ml-2 holder w-[90vw]  text-bannerGrey">
                   The Codemap community is an ultimate coding community for all
                   tech enthusiasts who want to pursue a promising career in the
                   contemporary technical industry we have strong vision to help
                   students grow and learn new skills with more networking
                   oppurtunies by the community.We focus mainly on:
-                  <ul className="text-[4.5vmin] md:text-[4vmin]">
+                  <ul className="text-[4.5vmin] md:text-[3.56vmin]">
                     <li>1. Technical Bootcamps and Blogs</li>
                     <li>
                       2. Community Support in solving technical problems
