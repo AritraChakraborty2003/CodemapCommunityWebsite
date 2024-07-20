@@ -22,6 +22,7 @@ export default {
       bannerGrey: "#646468",
       lightBlue: "#46beff",
       babyBlue: "#ADDFFF",
+      lightYellow: "#FFDF00",
     },
     fontFamily: {
       "sans-serif": ["sans-serif"],

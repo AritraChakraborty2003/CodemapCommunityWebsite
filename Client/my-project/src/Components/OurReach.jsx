@@ -22,8 +22,8 @@ const OurReach = () => {
               )) ||
             (screen.width >= 1280 && screen.width < 1400 && (
               <>
-                <div className="text-area w-[110vmin] border-2 h-[75vh]"></div>
-                <div className="photo-area w-[100vmin] border-2 h-[75vh]"></div>
+                <div className="text-area w-[100vmin] border-2 h-[75vh]"></div>
+                <div className="photo-area w-[110vmin] border-2 h-[75vh]"></div>
               </>
             )) ||
             (screen.width >= 1400 && screen.width <= 2047 && (
@@ -39,7 +39,7 @@ const OurReach = () => {
               </>
             ))}
         </div>
-        <div className="w-[98vw] ml-2  h-[8vmin] flex justify-center items-center gap-x-4">
+        <div className="w-[90vw] ml-2  h-[8vmin] flex justify-center items-center gap-x-4">
           <div className="ml-9 flex justify-center items-center gap-x-4 w-[10vmin]">
             <div className="dot1 h-[2vmin] w-[2vmin] rounded-[1vmin] border-[1px]"></div>
             <div className="dot2 h-[2vmin] w-[2vmin] rounded-[1vmin] border-[1px]"></div>

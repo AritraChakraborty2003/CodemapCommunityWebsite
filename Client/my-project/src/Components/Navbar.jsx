@@ -45,6 +45,7 @@ const Navbar = () => {
                 <p>Testinomials</p>
                 <p>Careers</p>
                 <p>Team</p>
+                <p>Business</p>
                 <p>Contact</p>
               </div>
             )) || (
@@ -57,7 +58,7 @@ const Navbar = () => {
                 <p>Events</p>
                 <p>Testinomials</p>
                 <p>Careers</p>
-
+                <p>Business</p>
                 <p>Team</p>
                 <p>Contact</p>
               </div>

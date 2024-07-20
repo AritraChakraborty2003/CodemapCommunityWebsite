@@ -1,7 +1,7 @@
 const Card = (props) => {
   return (
     <>
-      <div className="bg-bgColor flex flex-col justify-center items-center  gap-y-8 container pb-10 ml-2 w-[80vw] md:w-[60vmin] 2xl:w-[50vmin] mt-2 border-[1px] rounded-2xl p-2">
+      <div className="bg-bgColor flex flex-col justify-center items-center  gap-y-8 container pb-10 ml-2 w-[80vw] md:w-[60vmin] 2xl:w-[50vmin] mt-2 border-[1px] rounded-2xl p-2 shadow-lg">
         <div className="bg-white p-2 border-bannerGrey border-[1px] container h-[35vmin] w-[75vw] md:w-[55vmin] 2xl:w-[48vmin]  rounded-2xl  flex justify-center items-center ">
           <img
             src={props.image}

@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <div className="aboutHolder  w-[100vw] lg:h-[110vh] 2xl:h-full 2xl:pb-[10vmin] mt-5 pb-[11vmin]">
+      <div className="aboutHolder  w-[100vw]  2xl:h-full 2xl:pb-[10vmin] mt-5 pb-[11vmin]">
         <h1 className="mt-6 2xl:mt-10 ml-4 font-poppins font-bold text-[12vmin]">
           <span className="text-btnColor">Contact-</span>Us
         </h1>
