@@ -171,7 +171,7 @@ const SecondComponent = () => {
                     <li className="font-medium text-[3vmin] ">
                       1. MAIT Student Club
                     </li>
-                    s
+
                     <li className="font-medium text-[3vmin] ">
                       2. IGDTUW Student Club
                     </li>

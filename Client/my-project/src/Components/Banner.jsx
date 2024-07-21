@@ -50,7 +50,7 @@ const Banner = () => {
         <div className="h-[85vh] w-[100vw] pb-5 overflow-x-hidden bg-bgColor flex justify-center items-center flex-col gap-y-4">
           <div className="mt-[-5vmin] lg:mt-0 flex gap-x-2 items-center h-[20vmin]  md:h-[25vmin] lg:h-[10vmin]  lg:ml-0">
             <p className="text-center mt-[-2vmin] text-[4.3vmin] md:text-[3.3vmin] lg:text-[4vmin] lg:font-medium font-poppins md:pl-2 md:pr-2">
-              Your own Technical Community to develop and nurture your skills
+              Your own Technical Community where ideas turn into innovation
             </p>
           </div>
           <p className="text-center text-[15vmin] md:text-[12.4vmin] mt-[-4vmin] lg:mt-[-1vmin] font-bold font-poppins pb-2">

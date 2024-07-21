@@ -39,28 +39,50 @@ const Navbar = () => {
                 <p>
                   <a href="#about">About-us</a>
                 </p>
-                <p>Support</p>
-                <p>Our-Reach</p>
-                <p>Events</p>
-                <p>Testinomials</p>
+                <p>
+                  <a href="#support">Support</a>
+                </p>
+                <p>
+                  <a href="#Our-Reach">Our-Reach</a>
+                </p>
+                <p>
+                  {" "}
+                  <a href="#uEvents">Events</a>
+                </p>
+                <p>
+                  <a href="#Testinomials">Testinomials</a>
+                </p>
                 <p>Careers</p>
                 <p>Team</p>
-                <p>Business</p>
-                <p>Contact</p>
+
+                <p>
+                  <a href="contact">Contact</a>
+                </p>
               </div>
             )) || (
               <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 <p>
                   <a href="#about">About-us</a>
                 </p>
-                <p>Support</p>
-                <p>Our-Reach</p>
-                <p>Events</p>
-                <p>Testinomials</p>
+                <p>
+                  <a href="#support">Support</a>
+                </p>
+                <p>
+                  <a href="#Our-Reach">Our-Reach</a>
+                </p>
+                <p>
+                  {" "}
+                  <a href="#uEvents">Events</a>
+                </p>
+                <p>
+                  <a href="#Testinomials">Testinomials</a>
+                </p>
                 <p>Careers</p>
-                <p>Business</p>
                 <p>Team</p>
-                <p>Contact</p>
+
+                <p>
+                  <a href="#contact">Contact</a>
+                </p>
               </div>
             )}
           </div>
@@ -87,15 +109,25 @@ const Navbar = () => {
       {displayNavHam === true && (
         <div className="navHamMobile block lg:hidden w-[100vw] bg-bgColor  pl-3 pb-6 ">
           <ul className="space-y-[3vmin] text-lg md:text-[3vmin]">
-            <li onClick={showNavHam}>About-us</li>
-            <li onClick={showNavHam}>Support</li>
-            <li onClick={showNavHam}>Our Reach</li>
-            <li onClick={showNavHam}>Vision</li>
-            <li onClick={showNavHam}>Testinomials</li>
+            <li onClick={showNavHam}>
+              <a href="#about">About-us</a>
+            </li>
+            <li onClick={showNavHam}>
+              <a href="#support">Support</a>
+            </li>
+            <li onClick={showNavHam}>
+              <a href="#Our-Reach">Our Reach</a>
+            </li>
+
+            <li onClick={showNavHam}>
+              <a href="#Testinomials">Testinomials</a>
+            </li>
             <li onClick={showNavHam}>Careers</li>
 
             <li onClick={showNavHam}>Team</li>
-            <li onClick={showNavHam}>Contact</li>
+            <li onClick={showNavHam}>
+              <a href="#contact">Contact</a>
+            </li>
             <li>
               <button className=" 2xl:w-[20vmin] bg-btnColor p-3 rounded-lg text-white ml-[-0.5vmin]">
                 Become Campus Lead

@@ -7,6 +7,7 @@ import About from "./Components/About";
 import Card from "./Components/Card";
 import CollabIcon from "./Components/CollabIcon";
 import TestinomialBox from "./Components/TestinomialBox";
+import CardEvent from "./Components/CardEvent";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/TestinomialBox" element={<TestinomialBox />}></Route>
           <Route path="/FirstReach" element={<FirstReachComponent />}></Route>
           <Route path="/SecondReach" element={<SecondComponent />}></Route>
+          <Route path="/cardEvent" element={<CardEvent />}></Route>
         </Routes>
       </BrowserRouter>
     </>
