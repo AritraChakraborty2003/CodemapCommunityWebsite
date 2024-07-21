@@ -39,10 +39,9 @@ const Contact = () => {
                     <textarea
                       name=""
                       id=""
-                      rows="5"
-                      cols="45"
+                      rows="4"
                       placeholder="Enter Your message..."
-                      className=" bg-bgColor p-3  border-[1px] rounded-lg md:w-[87%] lg:w-full"
+                      className=" bg-bgColor p-3 w-[98%] border-[1px] rounded-lg md:w-[98%] lg:w-full"
                     ></textarea>
                     <br></br>
                     <br></br>
