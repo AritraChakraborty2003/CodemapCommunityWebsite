@@ -38,7 +38,7 @@ const Testinomials = () => {
             <div
               className="leftArrowHolder p-1 w-[6vmin] h-[6vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin] bg-btnColor flex justify-center items-center"
               onClick={() => {
-                if (index < 0) {
+                if (index <= 0) {
                   setindex(0);
                 } else {
                   setindex(index - 1);
