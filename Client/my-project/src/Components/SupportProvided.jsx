@@ -5,7 +5,7 @@ const SupportProvided = () => {
     <>
       <div className="supportAreaHolder w-[100vw] bg-bgColor pt-5 pb-10">
         <div className="supportHeading">
-          <p className="font-bold text-[10vmin] ml-6">
+          <p className="font-bold text-[11vmin] ml-3">
             What we <span className="text-btnColor">support?</span>
           </p>
         </div>

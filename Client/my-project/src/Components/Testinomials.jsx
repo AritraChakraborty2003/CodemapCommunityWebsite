@@ -30,7 +30,10 @@ const Testinomials = () => {
     <>
       <div className="testinomialHolder w-[100vw]  space-y-6 lg:space-y-0  pb-10 lg:pb-5 lg:h-[100vh] bg-bgColor">
         <div>
-          <p className="text-[13vmin] font-bold ml-3">Testinomials</p>
+          <p className="text-[13vmin] font-bold ml-3">
+            Testino
+            <span className="text-btnColor">mials</span>
+          </p>
           <p className="text-btnColor font-bold ml-5 text-[3.75vmin]">
             //Our Testinomials
           </p>
