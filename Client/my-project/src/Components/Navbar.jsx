@@ -9,12 +9,14 @@ import Contact from "./Contact";
 import UpcommingEvents from "./UpcommingEvents";
 import Testinomials from "./Testinomials";
 import OurReach from "./OurReach";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const [displayNavHam, setdisplayNavHam] = useState(false);
   const showNavHam = () => {
     if (displayNavHam === false) setdisplayNavHam(true);
     else setdisplayNavHam(false);
   };
+  const navigate = useNavigate();
   return (
     <>
       <div className="holderNav bg-bgColor pb-2">
@@ -52,8 +54,34 @@ const Navbar = () => {
                 <p>
                   <a href="#Testinomials">Testinomials</a>
                 </p>
-                <p>Careers</p>
-                <p>Team</p>
+                <p
+                  onClick={() => {
+                    navigate("/buildProgress", {
+                      state: {
+                        data: {
+                          image: "./progress.webp",
+                          text: "Available positions will be displayed soon...",
+                        },
+                      },
+                    });
+                  }}
+                >
+                  Careers
+                </p>
+                <p
+                  onClick={() => {
+                    navigate("/buildProgress", {
+                      state: {
+                        data: {
+                          image: "./c1.png",
+                          text: "Team members be announced soon...",
+                        },
+                      },
+                    });
+                  }}
+                >
+                  Team
+                </p>
 
                 <p>
                   <a href="contact">Contact</a>
@@ -77,8 +105,34 @@ const Navbar = () => {
                 <p>
                   <a href="#Testinomials">Testinomials</a>
                 </p>
-                <p>Careers</p>
-                <p>Team</p>
+                <p
+                  onClick={() => {
+                    navigate("/buildProgress", {
+                      state: {
+                        data: {
+                          image: "./progress.webp",
+                          text: "Available positions will be displayed soon...",
+                        },
+                      },
+                    });
+                  }}
+                >
+                  Careers
+                </p>
+                <p
+                  onClick={() => {
+                    navigate("/buildProgress", {
+                      state: {
+                        data: {
+                          image: "./c1.png",
+                          text: "Team members be announced soon...",
+                        },
+                      },
+                    });
+                  }}
+                >
+                  Team
+                </p>
 
                 <p>
                   <a href="#contact">Contact</a>
@@ -88,7 +142,19 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:block">
             <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-center">
-              <button className="w-[30vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4">
+              <button
+                onClick={() => {
+                  navigate("/buildProgress", {
+                    state: {
+                      data: {
+                        image: "./progress.webp",
+                        text: "LMS will be open soon...",
+                      },
+                    },
+                  });
+                }}
+                className="w-[30vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4"
+              >
                 LMS Platform
               </button>
             </div>
@@ -129,7 +195,19 @@ const Navbar = () => {
               <a href="#contact">Contact</a>
             </li>
             <li>
-              <button className=" 2xl:w-[20vmin] bg-btnColor p-3 rounded-lg text-white ml-[-0.5vmin]">
+              <button
+                onClick={() => {
+                  navigate("/buildProgress", {
+                    state: {
+                      data: {
+                        image: "./c1.png",
+                        text: "Campus Lead applications for next round comming soon",
+                      },
+                    },
+                  });
+                }}
+                className=" 2xl:w-[20vmin] bg-btnColor p-3 rounded-lg text-white ml-[-0.5vmin]"
+              >
                 Become Campus Lead
               </button>
             </li>

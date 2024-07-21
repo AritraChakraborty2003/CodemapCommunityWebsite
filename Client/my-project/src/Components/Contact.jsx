@@ -2,13 +2,13 @@ const Contact = () => {
   return (
     <>
       <div className="aboutHolder  w-[100vw]  2xl:h-full 2xl:pb-[10vmin] mt-5 pb-[11vmin]">
-        <h1 className="mt-6 2xl:mt-10 ml-4 font-poppins font-bold text-[12vmin]">
+        <h1 className="mt-6 2xl:mt-10 ml-[-2.5vmin] font-poppins font-bold text-[12vmin]">
           <span className="text-btnColor">Contact-</span>Us
         </h1>
         <div className="about-area flex justify-center items-center flex-wrap-reverse ml-[-2vmin]">
           {(screen.width <= 900 && (
             <>
-              <div className="text-area w-[95vw] md:w-[80vw]   border-[2px] p-3 flex flex-col justify-center items-center">
+              <div className="text-area w-[95vw] md:w-[80vw]  mt-[6vmin]  border-[2px] p-3 flex flex-col justify-center items-center">
                 <p className="text-[4vmin] font-bold font-poppins">
                   Please fill the details...
                 </p>
@@ -45,7 +45,13 @@ const Contact = () => {
                     ></textarea>
                     <br></br>
                     <br></br>
-                    <button className="bg-btnColor p-2 text-white text-[4vmin] w-[20vw]">
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        alert("Data added Sucessfully");
+                      }}
+                      className="bg-btnColor p-2 text-white text-[4vmin] w-[20vw]"
+                    >
                       Submit
                     </button>
                   </form>
@@ -104,7 +110,13 @@ const Contact = () => {
                         ></textarea>
                         <br></br>
                         <br></br>
-                        <button className="bg-btnColor p-2 text-white text-[2.45vmin] w-[10vw]">
+                        <button
+                          onClick={(e) => {
+                            e.preventDefault();
+                            alert("Data added Sucessfully");
+                          }}
+                          className="bg-btnColor p-2 text-white text-[2.45vmin] w-[10vw]"
+                        >
                           Submit
                         </button>
                       </form>
@@ -162,7 +174,13 @@ const Contact = () => {
                       ></textarea>
                       <br></br>
                       <br></br>
-                      <button className="bg-btnColor p-2 text-white text-[2.45vmin] w-[10vw]">
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          alert("Data added Sucessfully");
+                        }}
+                        className="bg-btnColor p-2 text-white text-[2.45vmin] w-[10vw]"
+                      >
                         Submit
                       </button>
                     </form>
@@ -219,7 +237,13 @@ const Contact = () => {
                       ></textarea>
                       <br></br>
                       <br></br>
-                      <button className="bg-btnColor p-2 text-white text-[2.15vmin] w-[10vw]">
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          alert("Data added Sucessfully");
+                        }}
+                        className="bg-btnColor p-2 text-white text-[2.15vmin] w-[10vw]"
+                      >
                         Submit
                       </button>
                     </form>
@@ -276,7 +300,13 @@ const Contact = () => {
                       ></textarea>
                       <br></br>
                       <br></br>
-                      <button className="bg-btnColor p-2 text-white text-[2.15vmin] w-[10vw]">
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          alert("Data added Sucessfully");
+                        }}
+                        className="bg-btnColor p-2 text-white text-[2.15vmin] w-[10vw]"
+                      >
                         Submit
                       </button>
                     </form>

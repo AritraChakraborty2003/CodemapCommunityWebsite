@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <>
       {(screen.width <= 320 && (
@@ -31,7 +34,19 @@ const Banner = () => {
 
           <div className="block lg:hidden buttonHolder">
             <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-center">
-              <button className="text-[5.5vmin] md:text-[3.75vmin] lg:text-[3vmin] font-poppins 2xl:w-[20vmin] bg-btnColor p-2 pl-3 pr-3 lg:p-3 lg:pr-4 lg:pl-4 rounded-lg text-white mt-[-3vmin] md:mt-0">
+              <button
+                onClick={() => {
+                  navigate("/buildProgress", {
+                    state: {
+                      data: {
+                        image: "./progress.webp",
+                        text: "LMS will be open soon...",
+                      },
+                    },
+                  });
+                }}
+                className="text-[5.5vmin] md:text-[3.75vmin] lg:text-[3vmin] font-poppins 2xl:w-[20vmin] bg-btnColor p-2 pl-3 pr-3 lg:p-3 lg:pr-4 lg:pl-4 rounded-lg text-white mt-[-3vmin] md:mt-0"
+              >
                 LMS Solution
               </button>
             </div>
@@ -68,7 +83,19 @@ const Banner = () => {
 
           <div className="hidden lg:block buttonHolder">
             <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-center">
-              <button className="text-[4.65vmin] lg:text-[3vmin] font-poppins 2xl:w-full bg-btnColor p-2 pl-3 pr-3 lg:p-3 lg:pr-4 lg:pl-4 rounded-lg text-white mt-[-3vmin] md:mt-0">
+              <button
+                onClick={() => {
+                  navigate("/buildProgress", {
+                    state: {
+                      data: {
+                        image: "./c1.png",
+                        text: "Campus Lead applications for next round comming soon",
+                      },
+                    },
+                  });
+                }}
+                className="text-[4.65vmin] lg:text-[3vmin] font-poppins 2xl:w-full bg-btnColor p-2 pl-3 pr-3 lg:p-3 lg:pr-4 lg:pl-4 rounded-lg text-white mt-[-3vmin] md:mt-0"
+              >
                 Become Campus Lead
               </button>
             </div>
@@ -76,7 +103,19 @@ const Banner = () => {
 
           <div className="block lg:hidden buttonHolder">
             <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-center">
-              <button className="text-[5.5vmin] md:text-[3.75vmin] lg:text-[3vmin] font-poppins 2xl:w-[20vmin] bg-btnColor p-2 pl-3 pr-3 lg:p-3 lg:pr-4 lg:pl-4 rounded-lg text-white mt-[-3vmin] md:mt-0">
+              <button
+                onClick={() => {
+                  navigate("/buildProgress", {
+                    state: {
+                      data: {
+                        image: "./progress.webp",
+                        text: "LMS will be open soon...",
+                      },
+                    },
+                  });
+                }}
+                className="text-[5.5vmin] md:text-[3.75vmin] lg:text-[3vmin] font-poppins 2xl:w-[20vmin] bg-btnColor p-2 pl-3 pr-3 lg:p-3 lg:pr-4 lg:pl-4 rounded-lg text-white mt-[-3vmin] md:mt-0"
+              >
                 LMS Solution
               </button>
             </div>

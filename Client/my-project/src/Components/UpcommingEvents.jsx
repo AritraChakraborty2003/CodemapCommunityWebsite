@@ -3,7 +3,7 @@ import CardEvent from "./CardEvent";
 const UpcommingEvents = () => {
   return (
     <>
-      <div className="lg:h-[100vh] 2xl:h-full 2xl:pb-10 flex  flex-wrap flex-col pb-7">
+      <div className="lg:h-[100vh] 2xl:h-full 2xl:pb-10 flex  flex-wrap flex-col pb-4">
         <div>
           <p className="text-btnColor text-[11vmin] font-bold mt-3 ml-3">
             Upcomming <span className="text-black"> Events </span>
