@@ -74,7 +74,7 @@ const Navbar = () => {
                       state: {
                         data: {
                           image: "./c1.png",
-                          text: "Team members be announced soon...",
+                          text: "Team will be announced soon...",
                         },
                       },
                     });
@@ -188,9 +188,35 @@ const Navbar = () => {
             <li onClick={showNavHam}>
               <a href="#Testinomials">Testinomials</a>
             </li>
-            <li onClick={showNavHam}>Careers</li>
+            <li
+              onClick={() => {
+                navigate("/buildProgress", {
+                  state: {
+                    data: {
+                      image: "./progress.webp",
+                      text: "Available positions will be displayed soon...",
+                    },
+                  },
+                });
+              }}
+            >
+              Careers
+            </li>
 
-            <li onClick={showNavHam}>Team</li>
+            <li
+              onClick={() => {
+                navigate("/buildProgress", {
+                  state: {
+                    data: {
+                      image: "./c1.png",
+                      text: "Team members be announced soon...",
+                    },
+                  },
+                });
+              }}
+            >
+              Team
+            </li>
             <li onClick={showNavHam}>
               <a href="#contact">Contact</a>
             </li>
