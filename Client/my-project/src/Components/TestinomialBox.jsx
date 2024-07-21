@@ -6,7 +6,7 @@ const TestinomialBox = (props) => {
       <div className="boxArea bg-white flex flex-col w-[85vmin] border-[1px] pl-3 pt-[1px] rounded-lg shadow-2xl">
         <div className="row1 flex w-[85vmin] pb-1 ">
           <div className="col1">
-            <div className="imgBox w-[19vmin] h-[14vmin]  mt-4 ml-2">
+            <div className="imgBox w-[19vmin] h-[14vmin]  mt-4 md:ml-2">
               <img
                 src="./uicon.png"
                 className="max-w-full max-h-full object-contain"
