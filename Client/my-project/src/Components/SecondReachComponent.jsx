@@ -1,51 +1,39 @@
 const SecondComponent = () => {
   return (
     <>
-      <div className="about-area flex justify-center items-center flex-wrap ml-[-2vmin]">
+      <div className="about-area flex justify-center mt-[-3vmin]  lg:items-center flex-wrap-reverse ml-[-2vmin]">
         {(screen.width <= 900 && (
           <>
-            <div className="photo-area w-[95vw] pb-2 md:text-[2.55vmin] pl-2">
-              <p className="font-poppins">
-                Our <b>Codemap Community</b> aims to provide the technical
-                platform and community <b>pan India</b> which will enable the
-                youth of India to nurture and grow their skills.Our platform
-                focus on engaging the students of Indian colleges to explore
-                various career oppurtunities around technology through impactful
-                <b> events, sessions,Bootcamps</b> and many more... . We are on
-                the path to upskill India and develop the overall econmical
-                condition by making use of the <b>demographic diviend</b> in a
-                positive way through our <b>student clubs</b>
+            <div className="photo-area w-[95vw] pb-2 md:text-[2.55vmin] pl-2 mt-[-3vmin] md:mt-[0vmin]">
+              <p className="font-poppins  text-[4vmin]">
+                Our <b>Codemap community</b> is associated with multiple student
+                clubs which promote our vision and mindset to students across
+                pan India.Codemap thrive to become the leading company with
+                largest technical clubs spread accross India.Our company equips
+                our student community in multiple domain accross wide bandwidth
+                of soft and hardskills.The Top Performing student clubs of India
+                are:
+                <ol className="space-y-3 mt-3">
+                  <li className="font-medium text-[4vmin] md:text-[3.6vmin] ">
+                    1. MAIT Student Club
+                  </li>
+                  <li className="font-medium text-[4vmin] md:text-[3.6vmin] ">
+                    2. IGDTUW Student Club
+                  </li>
+                  <li className="font-medium text-[4vmin] md:text-[3.6vmin] ">
+                    3. KCC Student Club
+                  </li>
+                  <li className="font-medium text-[4vmin] md:text-[3.6vmin] ">
+                    4. IIMT Student Club
+                  </li>
+                </ol>
               </p>
-              <div className="box-area mt-3 flex w-[95vw]  flex  justify-center gap-x-7">
-                <div className="box1">
-                  <div className="w-[30vmin] pb-5 bg-bgColor flex flex-col  items-center ">
-                    <p className="font-bold mt-2 text-lg md:text-xl tracking-[0.15vmin]">
-                      Cities
-                    </p>
-
-                    <p className="font-bold mt-2 text-[5vmin] tracking-[0.15vmin]">
-                      10+
-                    </p>
-                  </div>
-                </div>
-                <div className="box2">
-                  <div className="w-[30vmin] pb-5 bg-bgColor flex flex-col  items-center">
-                    <p className="font-bold mt-2 text-lg md:text-xl tracking-[0.15vmin]">
-                      Students
-                    </p>
-
-                    <p className="font-bold mt-2 text-[5vmin] tracking-[0.15vmin]">
-                      200+
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
 
-            <div className="text-area w-[95vw] h-[50vh]  pl-3 flex justify-center mt-5 md:items-center">
+            <div className="text-area w-[95vw]   pl-3 flex justify-center mt-5 md:items-center">
               <div className="imageHolder w-[93vw] h-[45vh] flex justify-center md:items-center">
                 <img
-                  src="./indiaMap.jpg"
+                  src="./office.jpg"
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
@@ -57,25 +45,35 @@ const SecondComponent = () => {
             screen.height >= 780 && (
               <>
                 <div className="photo-area pl-4 w-[75vmin]  h-[80vh] flex flex-col gap-y-4 justify-center items-center">
-                  <p className="font-poppins text-[2.5vmin]">
-                    Our <b>Codemap Community</b> aims to provide the technical
-                    platform and community <b>pan India</b> which will enable
-                    the youth of India to nurture and grow their skills.Our
-                    platform focus on engaging the students of Indian colleges
-                    to explore various career oppurtunities around technology
-                    through impactful
-                    <b> events, sessions,Bootcamps</b> and many more... . We are
-                    on the path to upskill India and develop the overall
-                    econmical condition by making use of the{" "}
-                    <b>demographic diviend</b> in a positive way through our{" "}
-                    <b>student clubs</b>
+                  <p className="font-poppins  text-[3.25vmin]">
+                    Our <b>Codemap community</b> is associated with multiple
+                    student clubs which promote our vision and mindset to
+                    students across pan India.Codemap thrive to become the
+                    leading company with largest technical clubs spread accross
+                    India.Our company equips our student community in multiple
+                    domain accross wide bandwidth of soft and hardskills.The Top
+                    Performing student clubs of India are:
+                    <ol className="space-y-3">
+                      <li className="font-medium text-[3vmin] ">
+                        1. MAIT Student Club
+                      </li>
+                      <li className="font-medium text-[3vmin] ">
+                        2. IGDTUW Student Club
+                      </li>
+                      <li className="font-medium text-[3vmin] ">
+                        3. KCC Student Club
+                      </li>
+                      <li className="font-medium text-[3vmin] ">
+                        4. IIMT Student Club
+                      </li>
+                    </ol>
                   </p>
                 </div>
 
-                <div className="text-area w-[81vmin] h-[80vh]  flex justify-end items-center">
+                <div className="text-area w-[81vmin] h-[80vh]  flex justify-end items-center mt-3">
                   <div className="imageHolder w-[76vmin] h-[70vh]">
                     <img
-                      src="./coders.avif"
+                      src="./office.jpg"
                       className="max-w-full max-h-full object-contain"
                     ></img>
                   </div>
@@ -85,24 +83,35 @@ const SecondComponent = () => {
           (screen.width >= 1280 && screen.width < 1400 && (
             <>
               <div className="photo-area w-[110vmin] pl-4  h-[75vh] flex flex-col gap-y-2 justify-center items-center">
-                <p className="font-poppins">
-                  Our <b>Codemap Community</b> aims to provide the technical
-                  platform and community <b>pan India</b> which will enable the
-                  youth of India to nurture and grow their skills.Our platform
-                  focus on engaging the students of Indian colleges to explore
-                  various career oppurtunities around technology through
-                  impactful
-                  <b> events, sessions,Bootcamps</b> and many more... . We are
-                  on the path to upskill India and develop the overall econmical
-                  condition by making use of the <b>demographic diviend</b> in a
-                  positive way through our <b>student clubs</b>
+                <p className="font-poppins  text-[3.25vmin]">
+                  Our <b>Codemap community</b> is associated with multiple
+                  student clubs which promote our vision and mindset to students
+                  across pan India.Codemap thrive to become the leading company
+                  with largest technical clubs spread accross India.Our company
+                  equips our student community in multiple domain accross wide
+                  bandwidth of soft and hardskills.The Top Performing student
+                  clubs of India are:
+                  <ol className="space-y-3">
+                    <li className="font-medium text-[3vmin] ">
+                      1. MAIT Student Club
+                    </li>
+                    <li className="font-medium text-[3vmin] ">
+                      2. IGDTUW Student Club
+                    </li>
+                    <li className="font-medium text-[3vmin] ">
+                      3. KCC Student Club
+                    </li>
+                    <li className="font-medium text-[3vmin] ">
+                      4. IIMT Student Club
+                    </li>
+                  </ol>
                 </p>
               </div>
 
               <div className="text-area w-[100vmin] pr-5 h-[75vh] flex justify-end items-center">
-                <div className="imageHolder w-[83vmin] h-[67vh]">
+                <div className="imageHolder w-[88vmin] h-[70vh] mt-5 ">
                   <img
-                    src="./coders.avif"
+                    src="./office.jpg"
                     className="max-w-full max-h-full object-contain"
                   ></img>
                 </div>
@@ -111,49 +120,36 @@ const SecondComponent = () => {
           )) ||
           (screen.width >= 1400 && screen.width <= 2047 && (
             <>
-              <div className="photo-area w-[90vmin]  h-[80vh] flex flex-col gap-y-2 justify-center items-center">
-                <p className="font-poppins text-[2.95vmin] 2xl:text-[2.75vmin] pl-3">
-                  Our <b>Codemap Community</b> aims to provide the technical
-                  platform and community <b>pan India</b> which will enable the
-                  youth of India to nurture and grow their skills.Our platform
-                  focus on engaging the students of Indian colleges to explore
-                  various career oppurtunities around technology through
-                  impactful
-                  <b> events, sessions,Bootcamps</b> and many more... . We are
-                  on the path to upskill India and develop the overall econmical
-                  condition by making use of the <b>demographic diviend</b> in a
-                  positive way through our <b>student clubs</b>
+              <div className="photo-area  w-[94vmin]  pb-2 pl-5 flex flex-col gap-y-2 justify-center items-center">
+                <p className="font-poppins text-[3.27vmin]">
+                  Our <b>Codemap community</b> is associated with multiple
+                  student clubs which promote our vision and mindset to students
+                  across pan India.Codemap thrive to become the leading company
+                  with largest technical clubs spread accross India.Our company
+                  equips our student community in multiple domain accross wide
+                  bandwidth of soft and hardskills.The Top Performing student
+                  clubs of India are:
+                  <ol className="space-y-3">
+                    <li className="font-medium text-[3vmin] ">
+                      1. MAIT Student Club
+                    </li>
+                    <li className="font-medium text-[3vmin] ">
+                      2. IGDTUW Student Club
+                    </li>
+                    <li className="font-medium text-[3vmin] ">
+                      3. KCC Student Club
+                    </li>
+                    <li className="font-medium text-[3vmin] ">
+                      4. IIMT Student Club
+                    </li>
+                  </ol>
                 </p>
-                <div className="box-area mt-3 flex gap-x-7">
-                  <div className="box1">
-                    <div className="w-[30vmin] h-[20vmin] 2xl:h-[18vmin] bg-bgColor flex flex-col  items-center ">
-                      <p className="font-bold mt-2 text-lg 2xl:text-2xl  tracking-[0.15vmin]">
-                        Cities
-                      </p>
-
-                      <p className="font-bold mt-2 text-[5vmin] tracking-[0.15vmin]">
-                        10+
-                      </p>
-                    </div>
-                  </div>
-                  <div className="box2">
-                    <div className="w-[30vmin] h-[20vmin] 2xl:h-[18vmin] bg-bgColor flex flex-col  items-center">
-                      <p className="font-bold mt-2 text-lg 2xl:text-2xl tracking-[0.15vmin]">
-                        Students
-                      </p>
-
-                      <p className="font-bold mt-2 text-[5vmin] tracking-[0.15vmin]">
-                        200+
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
 
-              <div className="text-area w-[90vmin] h-[80vh]  flex justify-end items-center">
-                <div className="imageHolder w-[80vmin] h-[70vh]">
+              <div className="text-area w-[80vmin]  flex justify-start items-center">
+                <div className="imageHolder w-[80vmin] h-[75vh] flex justify-start items-center ml-4">
                   <img
-                    src="./coders.avif"
+                    src="./office.jpg"
                     className="max-w-full max-h-full object-contain"
                   ></img>
                 </div>
@@ -163,48 +159,36 @@ const SecondComponent = () => {
           (screen.width >= 2048 && (
             <>
               <div className="photo-area w-[87vmin] h-[80vh] flex flex-col gap-y-2 justify-center items-center">
-                <p className="font-poppins text-[2.95vmin] 2xl:text-[2.9vmin] pl-3">
-                  Our <b>Codemap Community</b> aims to provide the technical
-                  platform and community <b>pan India</b> which will enable the
-                  youth of India to nurture and grow their skills.Our platform
-                  focus on engaging the students of Indian colleges to explore
-                  various career oppurtunities around technology through
-                  impactful
-                  <b> events, sessions,Bootcamps</b> and many more... . We are
-                  on the path to upskill India and develop the overall econmical
-                  condition by making use of the <b>demographic diviend</b> in a
-                  positive way through our <b>student clubs</b>
+                <p className="font-poppins  text-[3.25vmin]">
+                  Our <b>Codemap community</b> is associated with multiple
+                  student clubs which promote our vision and mindset to students
+                  across pan India.Codemap thrive to become the leading company
+                  with largest technical clubs spread accross India.Our company
+                  equips our student community in multiple domain accross wide
+                  bandwidth of soft and hardskills.The Top Performing student
+                  clubs of India are:
+                  <ol clasName="space-y-3">
+                    <li className="font-medium text-[3vmin] ">
+                      1. MAIT Student Club
+                    </li>
+                    s
+                    <li className="font-medium text-[3vmin] ">
+                      2. IGDTUW Student Club
+                    </li>
+                    <li className="font-medium text-[3vmin] ">
+                      3. KCC Student Club
+                    </li>
+                    <li className="font-medium text-[3vmin] ">
+                      4. IIMT Student Club
+                    </li>
+                  </ol>
                 </p>
-                <div className="box-area mt-3 flex gap-x-7">
-                  <div className="box1">
-                    <div className="w-[30vmin] h-[20vmin] 2xl:h-[18vmin] bg-bgColor flex flex-col  items-center ">
-                      <p className="font-bold mt-2 text-lg 2xl:text-[3vmin]  tracking-[0.15vmin]">
-                        Cities
-                      </p>
-
-                      <p className="font-bold mt-3 text-[5vmin] tracking-[0.15vmin]">
-                        10+
-                      </p>
-                    </div>
-                  </div>
-                  <div className="box2">
-                    <div className="w-[30vmin] h-[20vmin] 2xl:h-[18vmin] bg-bgColor flex flex-col  items-center">
-                      <p className="font-bold mt-2 text-lg 2xl:text-[3vmin] tracking-[0.15vmin]">
-                        Students
-                      </p>
-
-                      <p className="font-bold mt-3 text-[5vmin] tracking-[0.15vmin]">
-                        200+
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <div className="text-area w-[87vmin]  pl-10 h-[80vh]">
                 <div className="imageHolder w-[83vmin] h-[75vh] mt-3">
                   <img
-                    src="./coders.avif"
+                    src="./office.jpg"
                     className="max-w-full max-h-full object-contain"
                   ></img>
                 </div>

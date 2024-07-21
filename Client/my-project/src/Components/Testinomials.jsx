@@ -29,14 +29,16 @@ const Testinomials = () => {
   return (
     <>
       <div className="testinomialHolder w-[100vw]  space-y-6 lg:space-y-0  pb-10 lg:pb-5 lg:h-[100vh] bg-bgColor">
-        <p className="text-[13vmin] font-bold ml-3">Testinomials</p>
-        <p className="text-btnColor font-bold ml-5 text-[3.75vmin]">
-          //Our Testinomials
-        </p>
+        <div>
+          <p className="text-[13vmin] font-bold ml-3">Testinomials</p>
+          <p className="text-btnColor font-bold ml-5 text-[3.75vmin]">
+            //Our Testinomials
+          </p>
+        </div>
         <div className="testBoxArea pb-2 pt-2 lg:h-[70vh] ml-2 flex justify-center items-center">
           <div className="testBoxHolder flex items-center gap-x-4">
             <div
-              className="leftArrowHolder p-1 w-[6vmin] h-[6vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin] bg-btnColor flex justify-center items-center"
+              className="leftArrowHolder p-1 w-[9vmin] h-[9vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin]  flex justify-center items-center"
               onClick={() => {
                 if (index <= 0) {
                   setindex(0);
@@ -46,7 +48,7 @@ const Testinomials = () => {
               }}
             >
               <img
-                src="./left.png"
+                src="./licon.png"
                 alt=""
                 className="max-w-full max-h-full object-contain"
               />
@@ -54,7 +56,7 @@ const Testinomials = () => {
             <TestinomialBox data={testinomialObj[index]} />
 
             <div
-              className="rightArrowHolder mr-2 p-1  w-[6vmin] h-[6vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin] bg-btnColor flex justify-center items-center"
+              className="rightArrowHolder mr-2 p-1  w-[9vmin] h-[9vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin]  flex justify-center items-center"
               onClick={() => {
                 if (index >= 2) {
                   setindex(2);
@@ -64,7 +66,7 @@ const Testinomials = () => {
               }}
             >
               <img
-                src="./r1.png"
+                src="./ricon.png"
                 alt=""
                 className="max-w-full max-h-full object-contain"
               />
