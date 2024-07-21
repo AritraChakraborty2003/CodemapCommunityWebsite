@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
     <>
-      <div className="aboutHolder  w-[100vw]  2xl:h-full 2xl:pb-[10vmin] mt-5 pb-[11vmin]">
-        <h1 className="mt-6 2xl:mt-10 ml-[-2.5vmin] font-poppins font-bold text-[12vmin]">
+      <div className="aboutHolder  w-[100vw] ml-[2vmin] 2xl:h-full 2xl:pb-[10vmin] mt-5 pb-[11vmin]">
+        <h1 className="mt-6 2xl:mt-10  font-poppins font-bold text-[12vmin]">
           <span className="text-btnColor">Contact-</span>Us
         </h1>
         <div className="about-area flex justify-center items-center flex-wrap-reverse ml-[-2vmin]">
