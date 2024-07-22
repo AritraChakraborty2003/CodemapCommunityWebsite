@@ -51,7 +51,7 @@ const TestinomialBox = (props) => {
 
             <div className="commentArea w-[100%] flex justify-center items-center ml-1">
               <p className="text-[4.8vmin] md:text-[4vmin] ml-1 mt-[-0.5vmin] font-poppins">
-                " {props.data.comment} "
+                "{props.data.comment}"
               </p>
             </div>
           </>
