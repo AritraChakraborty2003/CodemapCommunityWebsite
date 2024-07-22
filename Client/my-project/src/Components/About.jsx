@@ -233,8 +233,8 @@ const About = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="photo-area w-[90vmin] h-[70vh]">
-                  <div className="area w-[88vmin] h-[50vh] mt-5 ml-1 flex flex-start items-center">
+                <div className="photo-area w-[90vmin] h-[70vh] ml-3">
+                  <div className="area w-[88vmin] h-[50vh] mt-5 ml-3 flex flex-start items-center">
                     <img
                       src="./t1.png"
                       className="max-h-full max-w-full object-contain"

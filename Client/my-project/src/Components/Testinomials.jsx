@@ -5,25 +5,25 @@ const Testinomials = () => {
   const [index, setindex] = useState(0);
   const testinomialObj = [
     {
-      name: "Abhinav Anand",
-      designation: "HOD(CSE)",
-      institute: "IIMT College, Meerut",
+      name: "Prashant Diwivedi",
+      org: "Allenhouse Business School",
       rating: 5,
-      comment: "Wonderful Platform and Excellent event management in the event",
+      comment:
+        "Its a very enganing and amazing community platform.Fantastic application experience",
     },
     {
-      name: "Akash Kumar",
-      designation: "Director",
-      institute: "NIET MCA",
+      name: "Deo Narayan Singh",
+      org: "Uday Pratap college",
+      rating: 5,
+      comment:
+        "Really wonderful and nice experince.Very nice and smooth application experience",
+    },
+    {
+      name: "Chandrapal Singh",
+      org: "IIMT Engineering College,Meerut",
       rating: 4,
-      comment: "Wonderful Platform and Excellent event management in the event",
-    },
-    {
-      name: "Abhinav Khanna",
-      designation: "Asst. Professor",
-      institute: "Allenhouse Business School",
-      rating: 3,
-      comment: "Wonderful Platform and Excellent event management in the event",
+      comment:
+        "Good application and nice event experience for the IIC Mentor-Mentee Event",
     },
   ];
   return (
@@ -34,14 +34,14 @@ const Testinomials = () => {
             Testino
             <span className="text-btnColor">mials</span>
           </p>
-          <p className="text-btnColor font-bold ml-5 text-[3.75vmin]">
+          <p className="text-btnColor font-bold ml-5 text-[4.25vmin] lg:text-[3.75vmin]">
             //Our Testinomials
           </p>
         </div>
         <div className="testBoxArea pb-2 pt-2 lg:h-[70vh] ml-2 flex justify-center items-center">
           <div className="testBoxHolder flex items-center gap-x-4">
             <div
-              className="leftArrowHolder p-1 w-[9vmin] h-[9vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin]  flex justify-center items-center"
+              className="leftArrowHolder p-1 w-[11vmin] h-[12vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin]  flex justify-center items-center"
               onClick={() => {
                 if (index <= 0) {
                   setindex(0);
@@ -59,7 +59,7 @@ const Testinomials = () => {
             <TestinomialBox data={testinomialObj[index]} />
 
             <div
-              className="rightArrowHolder mr-2 p-1  w-[9vmin] h-[9vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin]  flex justify-center items-center"
+              className="rightArrowHolder mr-2 p-1  w-[11vmin] h-[12vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin]  flex justify-center items-center"
               onClick={() => {
                 if (index >= 2) {
                   setindex(2);

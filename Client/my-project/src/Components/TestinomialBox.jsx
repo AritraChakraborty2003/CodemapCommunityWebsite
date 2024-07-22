@@ -1,64 +1,112 @@
-import React, { useState } from "react";
 import { Rating } from "react-simple-star-rating";
+
 const TestinomialBox = (props) => {
   return (
     <>
-      <div className="boxArea bg-white flex flex-col w-[85vmin] border-[1px] pl-3 pt-[1px] rounded-lg shadow-2xl">
-        <div className="row1 flex w-[85vmin] pb-1 ">
-          <div className="col1">
-            <div className="imgBox w-[19vmin] h-[14vmin]  mt-4 md:ml-2">
+      <div className="Holderarea bg-white flex rounded-lg  pr-1 flex-col gap-y-7 items-center w-[96vw] md:w-[85vw] pl-2 lg:pl-0  h-[125vmin] md:h-[91vmin] mt-4 lg:w-[95vmin] lg:h-[55vmin] border-lightGrey border-[1px]  pb-5">
+        {(screen.width <= 1000 && (
+          <>
+            <div className="mt-3 ImageHolderBox h-[25vmin] w-[25vmin]">
               <img
                 src="./uicon.png"
                 className="max-w-full max-h-full object-contain"
               ></img>
             </div>
-          </div>
-          <div className="col2 mt-2">
-            <div className="font-poppins space-y-1 detailsBox w-[85vmin]  mt-1 text-[2.45vmin]">
-              <p className="text-btnColor text-[3.5vmin] md:text-[2.65vmin]">
-                <b>Name:</b>
-                <span className="text-black font-medium text-[3.5vmin] md:text-[2.7vmin]">
-                  {" "}
-                  {props.data.name}
-                </span>
+            <div className="detailsArea font-poppins">
+              <p className="text-[4.45vmin] md:text-[3.95vmin] font-medium ml-2">
+                <span className="text-btnColor">Name:</span> {props.data.name}
               </p>
-
-              <p className="text-btnColor text-[3.5vmin] md:text-[2.65vmin]">
-                <b>Designation:</b>{" "}
-                <span className="text-black font-medium text-[3.5vmin] md:text-[2.7vmin]">
-                  {" "}
-                  {props.data.designation}{" "}
-                </span>
+              <p className="text-[4.45vmin] md:text-[3.95vmin] font-medium mt-1 ml-2">
+                {" "}
+                <span className="text-btnColor">Org:</span> {props.data.org}
               </p>
-              {(screen.width > 1000 && (
+              {screen.width < 800 && (
                 <Rating
                   readonly
                   SVGstyle={{
                     display: "inline",
-                    height: "35px",
+                    height: "37px",
                     width: "30px",
-                  }}
-                  initialValue={props.data.rating}
-                />
-              )) || (
-                <Rating
-                  readonly
-                  SVGstyle={{
-                    display: "inline",
-                    height: "20px",
-                    width: "20px",
+                    marginTop: "1.25vmin",
+                    marginLeft: "1vmin",
                   }}
                   initialValue={props.data.rating}
                 />
               )}
+              {screen.width >= 800 && (
+                <Rating
+                  readonly
+                  SVGstyle={{
+                    display: "inline",
+                    height: "50px",
+                    width: "50px",
+                    marginTop: "2vmin",
+                    marginLeft: "1vmin",
+                  }}
+                  initialValue={props.data.rating}
+                />
+              )}
+              <div className="line w-[98%] md:w-[70vw] h-[1px] border-t-2 md:mt-2 "></div>
+            </div>
+
+            <div className="commentArea w-[100%] flex justify-center items-center ml-1">
+              <p className="text-[4.8vmin] md:text-[4vmin] ml-1 mt-[-0.5vmin] font-poppins">
+                " {props.data.comment} "
+              </p>
+            </div>
+          </>
+        )) || (
+          <div className="boxHolder flex flex-col">
+            <div className="row1  h-[25vmin] w-[94vmin] ml-1 flex gap-y-2 gap-x-3 justify-center items-center">
+              <div className="imageHolder h-[18vmin] w-[18vmin] ml-1">
+                <img
+                  src="./uicon.png"
+                  className="max-w-full max-h-full object-contain"
+                ></img>
+              </div>
+              <div className="textHolder h-[20vmin] w-[73vmin]  flex flex-col justify-center pl-2">
+                <p className="text-[3.25vmin]">
+                  <b>Name:</b> {props.data.name}
+                </p>
+                <p className="text-[3.25vmin]">
+                  <b>Org:</b> {props.data.org}
+                </p>
+                <p className="text-[3.25vmin]">
+                  {(screen.width < 1600 && (
+                    <Rating
+                      readonly
+                      SVGstyle={{
+                        display: "inline",
+                        height: "36px",
+                        width: "36px",
+                        marginTop: "1.25vmin",
+                        marginLeft: "0.5vmin",
+                      }}
+                      initialValue={props.data.rating}
+                    />
+                  )) || (
+                    <Rating
+                      readonly
+                      SVGstyle={{
+                        display: "inline",
+                        height: "52px",
+                        width: "52px",
+                        marginTop: "1.25vmin",
+                        marginLeft: "0.5vmin",
+                      }}
+                      initialValue={props.data.rating}
+                    />
+                  )}
+                </p>
+              </div>
+            </div>
+            <div className="row2 border-t-2 h-[30vmin] w-[91vmin] ml-1 flex justify-center lg:items-center ml-3">
+              <p className="text-[3.8vmin] 2xl:text-[4vmin] ml-4 mt-[-3vmin]">
+                " {props.data.comment} "
+              </p>
             </div>
           </div>
-        </div>
-        <div className=" flex font-poppins w-[65vmin] row2 lg:w-[80vmin] h-[25vmin] lg:letter-spacing-[1px] lg:ml-1 border-black border-t-[1px] pt-4 lg:p-2 font-medium">
-          <p className="mt-2 text-[3.7vmin] md:text-[3.15vmin] md:pl-2 lg:text-[2.8vmin] lg:tracking-[0.17vmin]">
-            " {props.data.comment} "
-          </p>
-        </div>
+        )}
       </div>
     </>
   );
