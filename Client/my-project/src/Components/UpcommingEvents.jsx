@@ -6,7 +6,7 @@ const UpcommingEvents = () => {
       <div className="pb-5 2xl:h-full 2xl:pb-10 flex  flex-wrap flex-col pb-4">
         <div>
           <p className="text-btnColor text-[11vmin] font-bold mt-3 ml-3">
-            Upcomming <span className="text-black"> Events </span>
+            Upcoming <span className="text-black"> Events </span>
           </p>
         </div>
         <div className="cardArea  flex flex-wrap gap-y-6 lg:gap-y-7 justify-center items-center mt-3 gap-x-[10vmin]">
