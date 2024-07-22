@@ -9,14 +9,14 @@ const Testinomials = () => {
       org: "Allenhouse Business School",
       rating: 5,
       comment:
-        "Its a very enganing and amazing community platform.Fantastic application experience",
+        "Its a very engaging and amazing community platform.Fantastic application experience",
     },
     {
       name: "Deo Narayan Singh",
       org: "Uday Pratap college",
       rating: 5,
       comment:
-        "Really wonderful and nice experince.Very nice and smooth application experience",
+        "Really wonderful and nice experience.Very nice and smooth application experience",
     },
     {
       name: "Chandrapal Singh",

@@ -2,7 +2,7 @@ const About = () => {
   return (
     <>
       <div className="aboutHolder  w-[100vw] pb-6 md:pb-9 lg:pb-2">
-        <h1 className="mt-8 2xl:mt-12 ml-2 pt-6 lg:ml-7 font-poppins font-bold text-[12vmin] 2xl:text-[10vmin]">
+        <h1 className="mt-4 2xl:mt-12 ml-2 pt-6 lg:ml-7 font-poppins font-bold text-[12vmin] 2xl:text-[10vmin]">
           About-<span className="text-btnColor">us</span>
         </h1>
         <div className=" about-area flex justify-center items-center flex-wrap-reverse ml-[-2vmin]">
