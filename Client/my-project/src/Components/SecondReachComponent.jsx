@@ -1,10 +1,10 @@
 const SecondComponent = () => {
   return (
     <>
-      <div className="about-area flex justify-center mt-[-3vmin]  lg:items-center flex-wrap-reverse ml-[-2vmin]">
+      <div className="about-area flex justify-center mt-[-5vmin]  lg:items-center flex-wrap-reverse ml-[-2vmin]">
         {(screen.width <= 900 && (
           <>
-            <div className="photo-area w-[95vw] pb-2 md:text-[2.55vmin] pl-2 mt-[-3vmin] md:mt-[0vmin]">
+            <div className="photo-area w-[95vw] pb-2 md:text-[2.55vmin] pl-2 mt-[-5vmin] md:mt-[0vmin]">
               <p className="font-poppins  text-[5.6vmin] font-bold ">
                 Our Student Clubs and Its Goals
               </p>
@@ -33,10 +33,10 @@ const SecondComponent = () => {
               </p>
             </div>
 
-            <div className="text-area w-[95vw]   pl-3 flex justify-center mt-5 md:items-center">
-              <div className="imageHolder w-[93vw] h-[45vh] flex justify-center md:items-center">
+            <div className="text-area w-[95vw]   pl-3 flex justify-center mt-7 md:items-center">
+              <div className="imageHolder w-[93vw] h-[40vh] flex justify-center md:items-center">
                 <img
-                  src="./office.jpg"
+                  src="./desk.jpg"
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
@@ -79,7 +79,7 @@ const SecondComponent = () => {
                 <div className="text-area w-[81vmin] h-[80vh]  flex justify-end items-center mt-5">
                   <div className="imageHolder w-[76vmin] h-[70vh]">
                     <img
-                      src="./office.jpg"
+                      src="./desk.jpg"
                       className="max-w-full max-h-full object-contain"
                     ></img>
                   </div>
@@ -92,7 +92,7 @@ const SecondComponent = () => {
                 <p className="font-poppins  text-[5vmin] font-bold ml-[-2vmin]">
                   Our Student Clubs and Its Goals & Mission
                 </p>
-                <p className="font-poppins  text-[3.25vmin] text-bannerGrey">
+                <p className="font-poppins  text-[3.15vmin] text-bannerGrey">
                   Our <b>Codemap community</b> is associated with multiple
                   student clubs which promote our vision and mindset to students
                   across pan India.Codemap thrive to become the leading company
@@ -118,9 +118,9 @@ const SecondComponent = () => {
               </div>
 
               <div className="text-area w-[100vmin] pr-5 h-[75vh] flex justify-end items-center">
-                <div className="imageHolder w-[88vmin] h-[70vh] mt-5 ">
+                <div className="imageHolder w-[88vmin] h-[70vh] mt-6 ">
                   <img
-                    src="./office.jpg"
+                    src="./desk.jpg"
                     className="max-w-full max-h-full object-contain"
                   ></img>
                 </div>
@@ -161,7 +161,7 @@ const SecondComponent = () => {
               <div className="text-area w-[80vmin]  flex justify-start items-center">
                 <div className="imageHolder w-[80vmin] h-[75vh] flex justify-start items-center ml-4">
                   <img
-                    src="./office.jpg"
+                    src="./desk.jpg"
                     className="max-w-full max-h-full object-contain"
                   ></img>
                 </div>
@@ -203,7 +203,7 @@ const SecondComponent = () => {
               <div className="text-area w-[87vmin]  pl-10 h-[80vh]">
                 <div className="imageHolder w-[83vmin] h-[75vh] mt-[5vmin]">
                   <img
-                    src="./office.jpg"
+                    src="./desk.jpg"
                     className="max-w-full max-h-full object-contain"
                   ></img>
                 </div>
