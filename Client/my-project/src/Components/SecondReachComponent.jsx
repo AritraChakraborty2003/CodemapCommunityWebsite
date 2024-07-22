@@ -100,7 +100,7 @@ const SecondComponent = () => {
                   equips our student community in multiple domain accross wide
                   bandwidth of soft and hardskills.The Top Performing student
                   clubs of India are:
-                  <ol className="space-y-3">
+                  <ol className="space-y-3 mt-2">
                     <li className="font-medium text-[3vmin] ">
                       1. MAIT Student Club
                     </li>

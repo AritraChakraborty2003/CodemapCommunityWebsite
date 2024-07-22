@@ -1,0 +1,25 @@
+The documentation of APIs
+GET Request
+/api/messages - GET - get All messages by website visitor
+/api/messages/data?email="" - GET  - Get messages of a specific email
+/api/Openings - GET -  Get all open positions in Codemap
+/api/Openings/data?category="" - Get open positions of category="Intern" or category="Core-Team"
+/api/Openings/data?type="" - Get open positions  specific type of positions
+/api/Apply/  - Get all applied candidates
+/api/Apply/data?type=""&category="" - Get candidates of specific domain or type and category
+/api/accepted/ -
+/api/accepted/data?email=""
+/api/rejected/
+/api/accepted/data?email=""
+/api/team/
+/api/team/data?category=""
+
+POST Request
+/api/Messages - POST
+/api/Openings/ - POST
+
+
+PUT Request 
+
+
+DELETE Request

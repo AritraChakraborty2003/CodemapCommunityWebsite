@@ -1,4 +1,35 @@
+import axios from "axios";
 const Contact = () => {
+  const UploadData = (e) => {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    console.log(`${import.meta.env.VITE_APP_API_URL}`);
+
+    if (name === "" || email === "" || message === "") {
+      alert("All fields are mandatory");
+    } else {
+      axios
+        .post(`${import.meta.env.VITE_APP_API_URL}` + "messages", {
+          name: name,
+          email: email,
+          message: message,
+        })
+        .then((res) => {
+          if (res.data.status === 200) {
+            alert("Data Added Successfully");
+          } else {
+            alert("Something went wrong");
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+    //console.log([name, email, message]);
+  };
   return (
     <>
       <div className="aboutHolder  w-[100vw] ml-[2vmin] 2xl:h-full 2xl:pb-[10vmin] mt-5 pb-[11vmin]">
@@ -148,6 +179,7 @@ const Contact = () => {
                         <input
                           type="text"
                           placeholder="Enter your name..."
+                          id="name"
                           className="  w-[70vmin] p-1  bg-bgColor"
                         ></input>
                       </div>
@@ -159,6 +191,7 @@ const Contact = () => {
                         <input
                           type="email"
                           placeholder="Enter your  email..."
+                          id="email"
                           className="  w-[70vmin] p-1 bg-bgColor"
                         ></input>
                       </div>
@@ -166,7 +199,7 @@ const Contact = () => {
                       <br></br>
                       <textarea
                         name=""
-                        id=""
+                        id="message"
                         rows="5"
                         cols="65"
                         placeholder="Enter Your message..."
@@ -175,10 +208,7 @@ const Contact = () => {
                       <br></br>
                       <br></br>
                       <button
-                        onClick={(e) => {
-                          e.preventDefault();
-                          alert("Data added Sucessfully");
-                        }}
+                        onClick={UploadData}
                         className="bg-btnColor p-2 text-white text-[2.45vmin] w-[10vw]"
                       >
                         Submit
