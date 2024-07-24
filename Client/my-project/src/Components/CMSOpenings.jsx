@@ -5,7 +5,12 @@ import NavbarGeneral from "./NavbarGeneral";
 import { NavbarCMS } from "./NavbarCMS";
 import { useEffect, useState } from "react";
 import CareerCard from "./CareerCard";
+import { useNavigate } from "react-router-dom";
 const CMSOpenings = () => {
+  const navigate = useNavigate();
+  if (localStorage.getItem("user") != "Admin2024") {
+    navigate("/CMSLogin");
+  }
   const [state, setstate] = useState(0);
   const [state1, setstate1] = useState(0);
   const [data, setData] = useState([]);
@@ -200,7 +205,7 @@ const CMSOpenings = () => {
 
           {state1 === 1 && (
             <>
-              <div className="w-[100vw] flex justify-center items-center mt-8 ml-[-2vmin] lg:ml-0 gap-x-8 2xl:gap-x-12 flex-wrap  pb-10 gap-y-10">
+              <div className="w-[100vw] flex justify-center items-center mt-4 ml-[-2vmin] lg:ml-0 gap-x-8 2xl:gap-x-12 flex-wrap  pb-10 gap-y-10">
                 <CareerCard data={NonTechnicalData} type="CMS" />
               </div>
             </>

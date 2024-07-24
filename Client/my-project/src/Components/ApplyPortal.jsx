@@ -1,10 +1,11 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import NavbarGeneral from "./NavbarGeneral";
 import { useState } from "react";
 import axios from "axios";
 
 const ApplyPortal = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   const [state, setState] = useState({
     selectedFile: null,
@@ -27,10 +28,16 @@ const ApplyPortal = () => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
+    const role = location.state.data.role;
+    const category = location.state.data.category;
     let formData = new FormData();
     formData.append("name", name);
     formData.append("email", email);
     formData.append("phone", phone);
+    formData.append("filename", state.filename);
+    formData.append("file", state.selectedFile);
+    formData.append("role", role);
+    formData.append("category", category);
     const config = {
       headers: { "content-type": "multipart/form-data" },
     };
@@ -39,9 +46,9 @@ const ApplyPortal = () => {
       .post(`${import.meta.env.VITE_APP_API_URL}` + "apply", formData, config)
       .then((res) => {
         if (res.data.status == 200) {
-          alert("Upload Successful");
+          navigate("/success");
         } else {
-          alert("Upload not Successful");
+          alert("Something went wrong");
         }
       });
   };
@@ -49,17 +56,17 @@ const ApplyPortal = () => {
   return (
     <>
       <NavbarGeneral />
-      <div className="bannerPart flex flex-col w-[100vw] h-[48vmin] bg-bgColor">
-        <p className="text-black font-bold mt-5 ml-3 text-[10vmin] lg:text-[12vmin]">
+      <div className="bannerPart flex flex-col w-[100vw] h-[48vmin] 2xl:h-[35vmin] bg-bgColor">
+        <p className="text-black font-bold mt-5 ml-[4vmin] text-[10vmin] lg:text-[12vmin] 2xl:text-[10vmin]">
           Application <span className="text-btnColor">Portal</span>
         </p>
-        <p className="ml-3 text-[3.5vmin] font-popins">
+        <p className="ml-[4vmin] text-[3.5vmin] font-popins">
           (Please Fill the details in the form to apply for the role)
         </p>
       </div>
-      <div className="form-area w-[100vw] flex justify-center items-center p-5 pt-7">
+      <div className="mt-4 form-area w-[100vw] flex justify-center items-center p-5 pt-7 pb-8 ">
         <div className="formHolder flex justify-center items-center gap-y-6 w-[96vw] md:w-[70vmin]   border-[1px] p-5 ">
-          <form className="flex flex-col justify-center items-center gap-y-4 ">
+          <form className="flex flex-col justify-center items-center gap-y-4 2xl:text-[2.75vmin]">
             <input
               type="text"
               id="name"

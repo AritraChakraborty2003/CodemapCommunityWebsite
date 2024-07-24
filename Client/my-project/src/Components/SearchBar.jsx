@@ -21,7 +21,7 @@ const SearchBar = (props) => {
   };
   return (
     <>
-      <div className="flex gap-x-2 p-1 pr-2 lg:pr-0 holder w-[86vmin] border-gray border-[1px]">
+      <div className="2xl:text-[2.5vmin] flex gap-x-2 p-1 pr-2 lg:pr-0 holder w-[86vmin] border-gray border-[1px]">
         <input
           type="text"
           id="role"

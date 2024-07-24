@@ -16,6 +16,9 @@ import Careers from "./Components/Careers";
 import SearchBar from "./Components/SearchBar";
 import SearchOpenings from "./Components/SearchOpenings";
 import ApplyPortal from "./Components/ApplyPortal";
+import Success from "./Components/Success";
+import CmsLogin from "./Components/CmsLogin";
+import CMSApply from "./Components/CMSApply";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -23,6 +26,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/CMSApply" element={<CMSApply />}></Route>
+          <Route path="/CMSLogin" element={<CmsLogin />}></Route>
+          <Route path="/success" element={<Success />}></Route>
           <Route path="/applyPortal" element={<ApplyPortal />}></Route>
           <Route path="/searchOpenings" element={<SearchOpenings />}></Route>
           <Route path="/search" element={<SearchBar />}></Route>

@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const NavbarCMS = () => {
   const [displayNavHam, setdisplayNavHam] = useState(false);
+  const navigate = useNavigate();
   const showNavHam = () => {
     if (displayNavHam === false) setdisplayNavHam(true);
     else setdisplayNavHam(false);
@@ -34,7 +36,13 @@ const NavbarCMS = () => {
                 <p>HiringLetter</p>
                 <p>Data-Manager</p>
                 <p>Team Data</p>
-                <p>Apply</p>
+                <p
+                  onClick={() => {
+                    navigate("/CMSApply");
+                  }}
+                >
+                  Apply
+                </p>
               </div>
             )) || (
               <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
@@ -46,13 +54,34 @@ const NavbarCMS = () => {
                 <p>HiringLetter</p>
                 <p>Data-Manager</p>
                 <p>Team-Data</p>
-                <p>Apply</p>
+                <p
+                  onClick={() => {
+                    navigate("/CMSApply");
+                  }}
+                >
+                  Apply
+                </p>
+                <p
+                  onClick={() => {
+                    navigate("/CMSOpenings");
+                    if (displayNavHam === false) setdisplayNavHam(true);
+                    else setdisplayNavHam(false);
+                  }}
+                >
+                  Openings
+                </p>
               </div>
             )}
           </div>
           <div className="hidden lg:block">
             <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-center">
-              <button className="w-[30vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4">
+              <button
+                className="w-[30vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4"
+                onClick={() => {
+                  localStorage.removeItem("user");
+                  navigate("/CMSOpenings");
+                }}
+              >
                 Logout
               </button>
             </div>
@@ -79,8 +108,33 @@ const NavbarCMS = () => {
             <p onClick={showNavHam}>HiringLetter</p>
             <p onClick={showNavHam}>Messages Manager</p>
             <p onClick={showNavHam}>Team-Data</p>
+            <p
+              onClick={() => {
+                navigate("/CMSApply");
+                if (displayNavHam === false) setdisplayNavHam(true);
+                else setdisplayNavHam(false);
+              }}
+            >
+              Apply
+            </p>
+            <p
+              onClick={() => {
+                navigate("/CMSApply");
+                if (displayNavHam === false) setdisplayNavHam(true);
+                else setdisplayNavHam(false);
+              }}
+            >
+              Openings
+            </p>
+
             <li>
-              <button className=" 2xl:w-[20vmin] bg-btnColor p-3 rounded-lg text-white ml-[-0.5vmin]">
+              <button
+                onClick={() => {
+                  localStorage.removeItem("user");
+                  navigate("/CMSLogin");
+                }}
+                className=" 2xl:w-[20vmin] bg-btnColor p-3 rounded-lg text-white ml-[-0.5vmin]"
+              >
                 Logout
               </button>
             </li>

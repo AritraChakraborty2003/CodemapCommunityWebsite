@@ -26,10 +26,10 @@ const Careers = () => {
   return (
     <>
       <NavbarGeneral />
-      <div className="h-[26vmin] flex justify-center items-center">
+      <div className="h-[26vmin] 2xl:h-[19vmin] flex justify-center items-center">
         <SearchBar table="Openings" />
       </div>
-      <div className="flex gap-x-7 mt-3 ml-4">
+      <div className="flex gap-x-7 mt-3 ml-4 2xl:ml-8">
         <div>
           <p
             className="text-[4vmin] 2xl:text-[2.75vmin] font-medium"
@@ -70,12 +70,12 @@ const Careers = () => {
         </div>
       </div>
       {state1 === 0 && (
-        <div className="w-[100vw] mt-6 flex justify-center  ml-[-2vmin] lg:ml-[-2vmin] items-center mt-2  gap-x-9 2xl:gap-x-12 flex-wrap  pb-10 gap-y-10">
+        <div className="w-[100vw] mt-8 flex justify-center  ml-[-2vmin] lg:ml-[-2vmin] items-center mt-2  gap-x-9 2xl:gap-x-12 flex-wrap  pb-10 gap-y-10">
           <CareerCard data={TechnicalData} type="Non CMS" />
         </div>
       )}
       {state1 === 1 && (
-        <div className="w-[100vw] mt-6 flex justify-center  ml-[-2vmin] lg:ml-[-2vmin] items-center mt-2  gap-x-9 2xl:gap-x-12 flex-wrap  pb-10 gap-y-10">
+        <div className="w-[100vw] mt-8 flex justify-center  ml-[-2vmin] lg:ml-[-2vmin] items-center mt-2  gap-x-9 2xl:gap-x-12 flex-wrap  pb-10 gap-y-10">
           <CareerCard data={NonTechnicalData} type="Non CMS" />
         </div>
       )}
