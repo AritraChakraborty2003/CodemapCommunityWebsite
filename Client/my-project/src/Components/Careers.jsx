@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import CareerCard from "./CareerCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import SearchBar from "./SearchBar";
 const Careers = () => {
   const [data, setData] = useState([]);
   const [state1, setstate1] = useState(0);
@@ -25,7 +26,10 @@ const Careers = () => {
   return (
     <>
       <NavbarGeneral />
-      <div className="flex gap-x-5 mt-3 ml-4">
+      <div className="h-[26vmin] flex justify-center items-center">
+        <SearchBar table="Openings" />
+      </div>
+      <div className="flex gap-x-7 mt-3 ml-4">
         <div>
           <p
             className="text-[4vmin] 2xl:text-[2.75vmin] font-medium"
@@ -41,7 +45,7 @@ const Careers = () => {
           </p>
           <div
             id="firstLine1"
-            className="w-[18vmin] 2xl:w-[14vmin] h-[5px] bg-black mt-1"
+            className="w-[19vmin] 2xl:w-[14vmin] h-[5px] bg-black mt-1"
           ></div>
         </div>
 
@@ -60,18 +64,18 @@ const Careers = () => {
             Non Technical
             <div
               id="secLine1"
-              className="w-[21vmin] 2xl:w-[18vmin] h-[5px] bg-lightGrey mt-1"
+              className="w-[24vmin] 2xl:w-[18vmin] h-[5px] bg-lightGrey mt-1"
             ></div>
           </p>
         </div>
       </div>
       {state1 === 0 && (
-        <div className="w-[100vw] mt-6 flex justify-center  ml-[-2vmin] lg:ml-[-2vmin] items-center mt-2  gap-x-8 2xl:gap-x-12 flex-wrap  pb-10 gap-y-10">
+        <div className="w-[100vw] mt-6 flex justify-center  ml-[-2vmin] lg:ml-[-2vmin] items-center mt-2  gap-x-9 2xl:gap-x-12 flex-wrap  pb-10 gap-y-10">
           <CareerCard data={TechnicalData} type="Non CMS" />
         </div>
       )}
       {state1 === 1 && (
-        <div className="w-[100vw] mt-6 flex justify-center  ml-[-2vmin] lg:ml-[-2vmin] items-center mt-2  gap-x-8 2xl:gap-x-12 flex-wrap  pb-10 gap-y-10">
+        <div className="w-[100vw] mt-6 flex justify-center  ml-[-2vmin] lg:ml-[-2vmin] items-center mt-2  gap-x-9 2xl:gap-x-12 flex-wrap  pb-10 gap-y-10">
           <CareerCard data={NonTechnicalData} type="Non CMS" />
         </div>
       )}

@@ -2,15 +2,37 @@ The documentation of APIs
 GET Request
 /api/messages - GET - get All messages by website visitor
 /api/messages/data?email="" - GET  - Get messages of a specific email
+
+/* For Openings Section */
 /api/Openings - GET -  Get all open positions in Codemap
-/api/Openings/data?category="" - Get open positions of category="Intern" or category="Core-Team"
-/api/Openings/data?type="" - Get open positions  specific type of positions
+/api/Openings/data?category="" - Get open positions of category="Technical" or category="Non-Technical"
+/api/Openings/data?role="" - Get open positions  specific type of positions
+
+
+/* For Apply Section */
+table - appliers
 /api/Apply/  - Get all applied candidates
-/api/Apply/data?type=""&category="" - Get candidates of specific domain or type and category
+/api/apply/data?category= -GET category wise
+/api/Apply/data?role=""&email="" - Get candidates of specific domain or type and category
+
+
+/* For Accepted Section */
+table - accepts
 /api/accepted/ - GET - get all accepted candidates list
 /api/accepted/data?email="" - GET - get accpeted candidate for email = ""
+/api/accepted/data?category="" - GET accepted as per category
+
+
+/* For rejected Section */
+table - rejectors
 /api/rejected/ - GET - get all rejected candidate list 
 /api/accepted/data?email="" - GET  - get rejected candidate for email = ""
+/api/accepted/data?category="" - GET accepted as per category
+
+
+
+
+
 /api/team/ - GET - get all team candidates list
 /api/team/data?category=""  get all team candidates list as per category
 /api/team/data?email="" -  get team candidate for email = ""

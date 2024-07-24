@@ -13,6 +13,8 @@ import BuildProgress from "./Components/BuildProgress";
 import { CMSOpenings } from "./Components/CMSOpenings";
 import CareerCard from "./Components/CareerCard";
 import Careers from "./Components/Careers";
+import SearchBar from "./Components/SearchBar";
+import SearchOpenings from "./Components/SearchOpenings";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -20,6 +22,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/searchOpenings" element={<SearchOpenings />}></Route>
+          <Route path="/search" element={<SearchBar />}></Route>
           <Route path="/career" element={<Careers />}></Route>
           <Route path="/" element={<Navbar />}></Route>
           <Route path="/CareerCard" element={<CareerCard />}></Route>

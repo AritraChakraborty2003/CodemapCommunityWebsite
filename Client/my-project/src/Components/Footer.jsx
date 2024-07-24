@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="emailBoxHolder flex h-[10vmin] md:h-[7vmin] mt-[8vmin] lg:mt-6 2xl:mt-[4vmin]">
             <input
               type="text"
-              className="w-[80vw] lg:w-[48vw] p-1 md:p-3 text-[2.45vmin]"
+              className="w-[80vw] lg:w-[48vw] p-2 md:p-3 text-[4.5vmin] md:text-[2.45vmin]"
               placeholder="Enter your mail..."
             ></input>
 

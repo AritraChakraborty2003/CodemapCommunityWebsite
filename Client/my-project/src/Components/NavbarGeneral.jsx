@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const NavbarGeneral = () => {
+  const navigate = useNavigate();
   const [displayNavHam, setdisplayNavHam] = useState(false);
   const showNavHam = () => {
     if (displayNavHam === false) setdisplayNavHam(true);
@@ -27,11 +29,17 @@ const NavbarGeneral = () => {
             {(screen.width <= 1280 && screen.height >= 800 && (
               <div className="navIconHolder w-[58.5vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 <p>
-                  <a href="">Home</a>
+                  <a href="/">Home</a>
                 </p>
 
                 <p>Apply Campus-Lead</p>
-                <p>Careers</p>
+                <p
+                  onClick={() => {
+                    navigate("/career");
+                  }}
+                >
+                  Careers
+                </p>
                 <p>Team</p>
                 <p>Events</p>
                 <p>Info</p>
@@ -39,11 +47,17 @@ const NavbarGeneral = () => {
             )) || (
               <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 <p>
-                  <a href="">Home</a>
+                  <a href="/">Home</a>
                 </p>
 
                 <p>Apply-Campus-Lead</p>
-                <p>Careers</p>
+                <p
+                  onClick={() => {
+                    navigate("/career");
+                  }}
+                >
+                  Careers
+                </p>
                 <p>Team</p>
                 <p>Events</p>
                 <p>Info</p>

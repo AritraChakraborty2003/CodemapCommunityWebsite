@@ -14,14 +14,14 @@ const getOpenings = (req, res) => {
 const getOpeningsId = (req, res) => {
   if (req.query.category === undefined) {
     openings
-      .find({ type: req.query.type })
+      .find({ role: req.query.role })
       .then((val) => {
         res.json(val);
       })
       .catch((err) => {
         console.log(err);
       });
-  } else if (req.query.type === undefined) {
+  } else if (req.query.role === undefined) {
     openings
       .find({ category: req.query.category })
       .then((val) => {
@@ -32,7 +32,7 @@ const getOpeningsId = (req, res) => {
       });
   } else {
     openings
-      .find({ category: req.query.category, type: req.query.type })
+      .find({ category: req.query.category, role: req.query.role })
       .then((val) => {
         res.json(val);
       })
