@@ -48,7 +48,14 @@ const CareerCard = (props) => {
             </p>
           </div>
           <div className="flex justify-center items-center mt-3">
-            <button className="w-[26vmin] p-[1.35vmin] ml-3 bg-btnColor mt-2 text-white">
+            <button
+              className="w-[26vmin] p-[1.35vmin] ml-3 bg-btnColor mt-2 text-white"
+              onClick={() => {
+                navigate("/applyPortal", {
+                  state: { data: { category: val.category, role: val.role } },
+                });
+              }}
+            >
               Apply Now
             </button>
           </div>

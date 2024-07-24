@@ -21,6 +21,7 @@ DBConnectFunction(`${process.env.MONGODB_URI}`);
 app.use("/", genRouter);
 app.use("/api/messages", messageRouter);
 app.use("/api/Openings", OpeningsRouter);
+app.use("/api/apply", applyRouter);
 
 //app listen logic
 app.listen(`${process.env.PORT}`, () => {
