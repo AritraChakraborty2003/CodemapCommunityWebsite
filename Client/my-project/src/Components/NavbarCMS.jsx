@@ -1,5 +1,5 @@
 import { useState } from "react";
-const NavbarGeneral = () => {
+const NavbarCMS = () => {
   const [displayNavHam, setdisplayNavHam] = useState(false);
   const showNavHam = () => {
     if (displayNavHam === false) setdisplayNavHam(true);
@@ -12,7 +12,7 @@ const NavbarGeneral = () => {
           <div className="logoHolder lg:h-[15vmin]  flex pt-2 lg:pt-0">
             <div className="iconHolder h-[15vmin] w-[17vmin] md:h-[10vmin] md:w-[10vmin] lg:h-[14vmin] lg:w-[14vmin]  mt-1 lg:mt-1 md:mt-4 ml-2 2xl:ml-4 2xl:mt-3 flex justify-center items-center pt-1">
               <img
-                src="./CMLogo.png"
+                src="./codemapCMS.jpg"
                 className="max-w-full max-h-full object-contain"
               ></img>
             </div>
@@ -27,33 +27,33 @@ const NavbarGeneral = () => {
             {(screen.width <= 1280 && screen.height >= 800 && (
               <div className="navIconHolder w-[58.5vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 <p>
-                  <a href="">Home</a>
+                  <a href="#about">Home</a>
                 </p>
-
-                <p>Apply Campus-Lead</p>
-                <p>Careers</p>
-                <p>Team</p>
                 <p>Events</p>
-                <p>Info</p>
+                <p>Campus Leader</p>
+                <p>HiringLetter</p>
+                <p>Data-Manager</p>
+                <p>Team Data</p>
+                <p>Apply</p>
               </div>
             )) || (
               <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 <p>
-                  <a href="">Home</a>
+                  <a href="#about">Home</a>
                 </p>
-
-                <p>Apply-Campus-Lead</p>
-                <p>Careers</p>
-                <p>Team</p>
                 <p>Events</p>
-                <p>Info</p>
+                <p>Campus Leader</p>
+                <p>HiringLetter</p>
+                <p>Data-Manager</p>
+                <p>Team-Data</p>
+                <p>Apply</p>
               </div>
             )}
           </div>
           <div className="hidden lg:block">
             <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-center">
               <button className="w-[30vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4">
-                LMS Platform
+                Logout
               </button>
             </div>
           </div>
@@ -73,19 +73,15 @@ const NavbarGeneral = () => {
       {displayNavHam === true && (
         <div className="navHamMobile block lg:hidden w-[100vw] bg-bgColor  pl-3 pb-6 ">
           <ul className="space-y-[3vmin] text-lg md:text-[3vmin]">
-            <p onClick={showNavHam}>
-              <a href="">Home</a>
-            </p>
-
-            <p onClick={showNavHam}>Apply-Campus-Lead</p>
-            <p onClick={showNavHam}>Careers</p>
-            <p onClick={showNavHam}>Team</p>
+            <p onClick={showNavHam}>Home</p>
             <p onClick={showNavHam}>Events</p>
-            <p onClick={showNavHam}>Info</p>
-
+            <p onClick={showNavHam}>Campus Leader</p>
+            <p onClick={showNavHam}>HiringLetter</p>
+            <p onClick={showNavHam}>Messages Manager</p>
+            <p onClick={showNavHam}>Team-Data</p>
             <li>
               <button className=" 2xl:w-[20vmin] bg-btnColor p-3 rounded-lg text-white ml-[-0.5vmin]">
-                LMS Platform
+                Logout
               </button>
             </li>
           </ul>
@@ -96,4 +92,5 @@ const NavbarGeneral = () => {
     </>
   );
 };
-export default NavbarGeneral;
+
+export { NavbarCMS };

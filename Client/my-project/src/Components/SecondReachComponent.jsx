@@ -101,16 +101,16 @@ const SecondComponent = () => {
                   bandwidth of soft and hardskills.The Top Performing student
                   clubs of India are:
                   <ol className="space-y-3 mt-2">
-                    <li className="font-medium text-[3vmin] ">
+                    <li className="font-medium text-[2.75vmin] ">
                       1. MAIT Student Club
                     </li>
-                    <li className="font-medium text-[3vmin] ">
+                    <li className="font-medium text-[2.75vmin] ">
                       2. IGDTUW Student Club
                     </li>
-                    <li className="font-medium text-[3vmin] ">
+                    <li className="font-medium text-[2.75vmin] ">
                       3. KCC Student Club
                     </li>
-                    <li className="font-medium text-[3vmin] ">
+                    <li className="font-medium text-[2.75vmin] ">
                       4. IIMT Student Club
                     </li>
                   </ol>
@@ -118,7 +118,7 @@ const SecondComponent = () => {
               </div>
 
               <div className="text-area w-[100vmin] pr-5 h-[75vh] flex justify-end items-center">
-                <div className="imageHolder w-[88vmin] h-[70vh] mt-6 ">
+                <div className="imageHolder w-[88vmin] h-[70vh] mt-5 ">
                   <img
                     src="./desk.jpg"
                     className="max-w-full max-h-full object-contain"

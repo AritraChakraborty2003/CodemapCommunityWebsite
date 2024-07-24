@@ -7,19 +7,21 @@ GET Request
 /api/Openings/data?type="" - Get open positions  specific type of positions
 /api/Apply/  - Get all applied candidates
 /api/Apply/data?type=""&category="" - Get candidates of specific domain or type and category
-/api/accepted/ -
-/api/accepted/data?email=""
-/api/rejected/
-/api/accepted/data?email=""
-/api/team/
-/api/team/data?category=""
+/api/accepted/ - GET - get all accepted candidates list
+/api/accepted/data?email="" - GET - get accpeted candidate for email = ""
+/api/rejected/ - GET - get all rejected candidate list 
+/api/accepted/data?email="" - GET  - get rejected candidate for email = ""
+/api/team/ - GET - get all team candidates list
+/api/team/data?category=""  get all team candidates list as per category
+/api/team/data?email="" -  get team candidate for email = ""
 
 POST Request
 /api/Messages - POST
 /api/Openings/ - POST
 
 
-PUT Request 
+PATCH Request 
 
 
 DELETE Request
+/Openings/delete - POST(as DELETE) - pass role in JSON body to remove Openings 

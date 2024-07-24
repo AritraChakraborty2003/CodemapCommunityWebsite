@@ -10,6 +10,9 @@ import CollabIcon from "./Components/CollabIcon";
 import TestinomialBox from "./Components/TestinomialBox";
 import CardEvent from "./Components/CardEvent";
 import BuildProgress from "./Components/BuildProgress";
+import { CMSOpenings } from "./Components/CMSOpenings";
+import CareerCard from "./Components/CareerCard";
+import Careers from "./Components/Careers";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -17,7 +20,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/career" element={<Careers />}></Route>
           <Route path="/" element={<Navbar />}></Route>
+          <Route path="/CareerCard" element={<CareerCard />}></Route>
+          <Route path="/CMSOpenings" element={<CMSOpenings />}></Route>
           <Route path="/collabIcon" element={<CollabIcon />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/card" element={<Card />}></Route>

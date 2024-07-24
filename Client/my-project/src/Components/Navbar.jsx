@@ -56,14 +56,7 @@ const Navbar = () => {
                 </p>
                 <p
                   onClick={() => {
-                    navigate("/buildProgress", {
-                      state: {
-                        data: {
-                          image: "./progress.webp",
-                          text: "Available positions will be displayed soon...",
-                        },
-                      },
-                    });
+                    navigate("/career");
                   }}
                 >
                   Careers

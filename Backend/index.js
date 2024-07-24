@@ -6,6 +6,7 @@ import multer from "multer";
 import DBConnectFunction from "./Connection/dbConnect.js";
 import { genRouter } from "./Routes/GeneralRouter.js";
 import { messageRouter } from "./Routes/MessagesRouter.js";
+import { OpeningsRouter } from "./Routes/OpeningsRouter.js";
 
 //The applications basics configurations
 dotenv.config();
@@ -19,6 +20,7 @@ DBConnectFunction(`${process.env.MONGODB_URI}`);
 //The GET and POST request use cases
 app.use("/", genRouter);
 app.use("/api/messages", messageRouter);
+app.use("/api/Openings", OpeningsRouter);
 
 //app listen logic
 app.listen(`${process.env.PORT}`, () => {
