@@ -1,4 +1,4 @@
-import { rejecters } from "../Model/Rejecters";
+import { rejecters } from "../Model/Rejecters.js";
 const PostRejecters = () => {
   return (req, res) => {
     const name = req.body.name;

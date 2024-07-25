@@ -5,6 +5,8 @@ import { NavbarCMS } from "./NavbarCMS";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CardApply from "./CardApply";
+import { RejecterDisplay } from "./RejctersDisplay";
+import AcceptersDisplay from "./AcceptersDisplay";
 
 const CMSApply = () => {
   const navigate = useNavigate();
@@ -33,7 +35,7 @@ const CMSApply = () => {
       {(localStorage.getItem("user") === "Admin2024" && (
         <>
           <NavbarCMS />
-          <div className="flex flex-col w-[100vw] p-2 flex justify-center items-center mt-3">
+          <div className="flex flex-col w-[100vw] p-6 flex justify-center items-center mt-3">
             <div className="flex gap-x-[9vmin]">
               <div>
                 <p
@@ -146,10 +148,33 @@ const CMSApply = () => {
           </div>
 
           <div className="flex  flex-wrap  justify-center items-center p-5 gap-y-4">
-            {" "}
-            {state === 0 && <CardApply data={TechnicalData} type="Apply" />}
-            {state === 1 && <CardApply data={NonTechnicalData} type="Apply" />}
+            {/* The State===0 for Non Technical */}
+            {state === 0 && state1 == 0 && (
+              <CardApply data={TechnicalData} type="Apply" type1="Accepted" />
+            )}
+            {state === 0 && state1 === 1 && (
+              <AcceptersDisplay type="Technical" type1="accept1" />
+            )}
+            {state === 0 && state1 === 2 && (
+              <RejecterDisplay type="Technical" />
+            )}
+
+            {/* The State===1 for Non Technical */}
+            {state === 1 && state1 === 0 && (
+              <CardApply
+                data={NonTechnicalData}
+                type="Apply"
+                type1="Accepted"
+              />
+            )}
+            {state === 1 && state1 === 1 && (
+              <AcceptersDisplay type="Non Technical" type1="accept1" />
+            )}
+            {state === 1 && state1 === 2 && (
+              <RejecterDisplay type="Non Technical" />
+            )}
           </div>
+
           <Footer />
         </>
       )) || <Navigate to="/CMSLogin"></Navigate>}

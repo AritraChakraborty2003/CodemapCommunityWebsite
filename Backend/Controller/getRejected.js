@@ -1,5 +1,5 @@
 import { rejecters } from "../Model/Rejecters.js";
-const getRejected = () => {
+const getRejected = (req, res) => {
   rejecters
     .find()
     .then((val) => {
