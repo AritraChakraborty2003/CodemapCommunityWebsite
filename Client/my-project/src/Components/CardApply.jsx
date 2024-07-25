@@ -16,7 +16,20 @@ const CardApply = (props) => {
       })
       .then((res) => {
         if (res.data.status === 200) {
-          alert("Data updated succesfully");
+          axios
+            .post(`${import.meta.env.VITE_APP_API_URL}` + "apply/delete", {
+              email: val.email,
+            })
+            .then((res) => {
+              if (res.data.status === 200) {
+                alert("Updated Successfully");
+              } else {
+                alert("Something went wrong");
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
         } else {
           alert("Something went wrong");
         }
@@ -38,7 +51,24 @@ const CardApply = (props) => {
       })
       .then((res) => {
         if (res.data.status === 200) {
-          alert("Data updated succesfully");
+          if (res.data.status === 200) {
+            axios
+              .post(`${import.meta.env.VITE_APP_API_URL}` + "apply/delete", {
+                email: val.email,
+              })
+              .then((res) => {
+                if (res.data.status === 200) {
+                  alert("Updated Successfully");
+                } else {
+                  alert("Something went wrong");
+                }
+              })
+              .catch((err) => {
+                console.log(err);
+              });
+          } else {
+            alert("Something went wrong");
+          }
         } else {
           alert("Something went wrong");
         }

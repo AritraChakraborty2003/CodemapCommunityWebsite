@@ -1,4 +1,5 @@
 import express from "express";
+import { DeleteApplication } from "../Controller/DeleteApplication.js";
 import multer from "multer";
 import fs from "fs";
 import { postApplication } from "../Controller/PostApplication.js";
@@ -23,6 +24,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage });
 
 applicationRouter.post("/", upload.single("file"), postApplication());
+applicationRouter.post("/delete", DeleteApplication());
 applicationRouter.get("/", GetApplication);
 applicationRouter.get("/:id", GetApplicationId);
 
