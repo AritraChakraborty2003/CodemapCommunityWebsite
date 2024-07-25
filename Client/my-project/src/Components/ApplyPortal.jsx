@@ -28,29 +28,34 @@ const ApplyPortal = () => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
-    const role = location.state.data.role;
-    const category = location.state.data.category;
-    let formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("phone", phone);
-    formData.append("filename", state.filename);
-    formData.append("file", state.selectedFile);
-    formData.append("role", role);
-    formData.append("category", category);
-    const config = {
-      headers: { "content-type": "multipart/form-data" },
-    };
-    let control = true;
-    axios
-      .post(`${import.meta.env.VITE_APP_API_URL}` + "apply", formData, config)
-      .then((res) => {
-        if (res.data.status == 200) {
-          navigate("/success");
-        } else {
-          alert("Something went wrong");
-        }
-      });
+
+    if (name != "" && email != "" && phone != "") {
+      const role = location.state.data.role;
+      const category = location.state.data.category;
+      let formData = new FormData();
+      formData.append("name", name);
+      formData.append("email", email);
+      formData.append("phone", phone);
+      formData.append("filename", state.filename);
+      formData.append("file", state.selectedFile);
+      formData.append("role", role);
+      formData.append("category", category);
+      const config = {
+        headers: { "content-type": "multipart/form-data" },
+      };
+      let control = true;
+      axios
+        .post(`${import.meta.env.VITE_APP_API_URL}` + "apply", formData, config)
+        .then((res) => {
+          if (res.data.status == 200) {
+            navigate("/success");
+          } else {
+            alert("Something went wrong");
+          }
+        });
+    } else {
+      alert("All fields are mandatory");
+    }
   };
 
   return (
