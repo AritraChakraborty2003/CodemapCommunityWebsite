@@ -1,9 +1,31 @@
 import axios from "axios";
+import moment from "moment";
+import { jsPDF } from "jspdf";
 import { useNavigate } from "react-router-dom";
 const CardApply = (props) => {
   const navigate = useNavigate();
   const backendLink = `${import.meta.env.VITE_APP_API_URL_GENERAL}`;
+  const getPdf = () => {
+    const doc = new jsPDF();
+    doc.setFont("serif", "normal");
+    doc.setFontSize(35);
+    doc.text("CodeMap", 44, 21);
+    var img = new Image();
+    img.src = "./codemap.jpeg";
+    doc.addImage(img, "jpeg", 5, 2, 35, 30);
+    doc.setFontSize(12);
+    doc.text("+91-7585824862", 133, 10);
+    doc.text("codemap2024@gmail.com", 133, 17);
+    doc.setFontSize(11.5);
+    doc.text("1st Floor,IIMT-LBF Incubation Center", 133, 24);
+    doc.text("Knowlwdge Park III,Greater Noida,UP", 133, 31);
+    doc.text("201310", 133, 38);
+    doc.setLineWidth(1);
 
+    doc.line(5, 43, 200, 43);
+    doc.text("Date: " + moment().format("Do MMM YYYY"), 133, 52);
+    doc.save("document.pdf");
+  };
   const postApply = (val) => {
     axios
       .post(`${import.meta.env.VITE_APP_API_URL}` + "accepted", {
@@ -125,7 +147,10 @@ const CardApply = (props) => {
             <>
               <input type="file" className="file mt-3" />
               <>
-                <button className="bg-btnColor text-white p-2 rounded-[3px] mt-2">
+                <button
+                  className="bg-btnColor text-white p-2 rounded-[3px] mt-2"
+                  onClick={getPdf}
+                >
                   Generate Hiring Letter
                 </button>
                 <button className="bg-Green text-white p-2 rounded-[3px] mt-2">

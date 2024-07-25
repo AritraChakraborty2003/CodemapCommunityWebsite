@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import CardApply from "./CardApply";
+
 import axios from "axios";
+
 const AcceptersDisplay = (props) => {
   const [data, setData] = useState([]);
   useEffect(() => {
