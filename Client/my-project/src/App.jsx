@@ -19,6 +19,7 @@ import ApplyPortal from "./Components/ApplyPortal";
 import Success from "./Components/Success";
 import CmsLogin from "./Components/CmsLogin";
 import CMSApply from "./Components/CMSApply";
+import CardApply from "./Components/CardApply";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -26,6 +27,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/CardApply" element={<CardApply />}></Route>
           <Route path="/CMSApply" element={<CMSApply />}></Route>
           <Route path="/CMSLogin" element={<CmsLogin />}></Route>
           <Route path="/success" element={<Success />}></Route>
