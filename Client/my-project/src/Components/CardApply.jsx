@@ -207,7 +207,7 @@ const CardApply = (props) => {
       86
     );
     doc.text(
-      `${val.role} intern in our firm and we  believe you will make a valuable contribution `,
+      `${val.role} intern in our firm and we  believe you will make a valuable contribution.`,
       10,
       94
     );
