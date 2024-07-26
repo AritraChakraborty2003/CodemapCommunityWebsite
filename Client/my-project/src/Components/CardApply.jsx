@@ -213,7 +213,7 @@ const CardApply = (props) => {
     );
     doc.setFont("roboto", "bold");
     doc.text(
-      `to team.The benefits and perks associated with the internship are as follows:-`,
+      `The benefits and perks associated with the internship are as follows:-`,
       10,
       102
     );
