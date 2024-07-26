@@ -379,7 +379,7 @@ const CardApply = (props) => {
   };
   return (
     <>
-      {props.data.map((val) => (
+      {props.data.map((val, ind) => (
         <div className="flex flex-col box-Holder rounded-lg bg-bgColor w-[90vw] pb-3 p-2 md:w-[65vmin] md:h-[50vmin] 2xl:w-[49vmin]  2xl:h-[35vmin] border-[1px] mt-2 ml-3">
           <div className="row1 font-bold text-[4.15vmin] 2xl:text-[4vmin]  ml-1 mt-3">
             <div className="flex gap-x-3">
@@ -423,7 +423,14 @@ const CardApply = (props) => {
 
           {props.type1 === "accept1" && (
             <>
-              <input type="file" className="file mt-3" />
+              <input
+                type="file"
+                className="file mt-3"
+                id={"file" + ind}
+                onChange={(e) => {
+                  fileSelectedHandler(e, ind);
+                }}
+              />
               <>
                 <button
                   className="bg-btnColor text-white p-2 rounded-[3px] mt-2"
@@ -433,7 +440,12 @@ const CardApply = (props) => {
                 >
                   Generate Hiring Letter
                 </button>
-                <button className="bg-Green text-white p-2 rounded-[3px] mt-2">
+                <button
+                  className="bg-Green text-white p-2 rounded-[3px] mt-2"
+                  onClick={() => {
+                    sendEmail(val);
+                  }}
+                >
                   Send Email
                 </button>
               </>
