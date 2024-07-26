@@ -2,8 +2,53 @@ import axios from "axios";
 import moment from "moment";
 import { jsPDF } from "jspdf";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 const CardApply = (props) => {
   const navigate = useNavigate();
+
+  const [state, setState] = useState({
+    selectedFile: null,
+    filename: null,
+  });
+
+  const fileSelectedHandler = (event, ind) => {
+    event.preventDefault();
+    let file = event.target.files[0].name;
+    setState({
+      selectedFile: event.target.files[0],
+      filename: document.getElementById("file" + ind).value,
+    });
+
+    console.log(file);
+  };
+
+  const sendEmail = (val) => {
+    const name1 = val.name;
+    const email = val.email;
+    const role = val.role;
+    const internid = name1.split(" ")[0] + "0307";
+    let formData = new FormData();
+    formData.append("name", name1);
+    formData.append("email", email);
+    formData.append("filename", state.filename);
+    formData.append("file", state.selectedFile);
+    formData.append("role", role);
+    formData.append("internid", internid);
+    const config = {
+      headers: { "content-type": "multipart/form-data" },
+    };
+    let control = true;
+    axios
+      .post(`${import.meta.env.VITE_APP_API_URL}` + "interns", formData, config)
+      .then((res) => {
+        if (res.data.status == 200) {
+          alert("Email Sent");
+        } else {
+          alert("Something went wrong");
+        }
+      });
+  };
+
   const backendLink = `${import.meta.env.VITE_APP_API_URL_GENERAL}`;
 
   const responsibilites = {
