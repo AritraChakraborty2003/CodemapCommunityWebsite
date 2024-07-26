@@ -229,7 +229,9 @@ const CardApply = (props) => {
       222
     );
     doc.text("Mode & Duration: Online & duration is 3 months", 10, 230);
-    doc.text("Reporting To: Mr. Aritra Chakraborty", 10, 238);
+    if (val.category === "Technical")
+      doc.text("Reporting To: Mr. Aritra Chakraborty", 10, 238);
+    else doc.text("Reporting To: Mr. Abhishek Kr. Pandey", 10, 238);
     doc.text("Joining Date: 28th July 2024", 10, 246);
     var img1 = new Image();
     img1.src = "./AbhiSign.jpeg";
