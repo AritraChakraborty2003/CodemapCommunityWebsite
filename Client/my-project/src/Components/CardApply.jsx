@@ -242,13 +242,20 @@ const CardApply = (props) => {
     img3.src = "./CodeMapStamp.png";
     doc.addImage(img3, "png", 80, 253, 35, 35);
 
-    var img2 = new Image();
-    img2.src = "./AriSign.png";
-    doc.addImage(img2, "png", 155, 257, 25, 25);
+    if (val.category === "Technical") {
+      var img2 = new Image();
+      img2.src = "./AriSign.png";
+      doc.addImage(img2, "png", 155, 257, 25, 25);
 
-    doc.text("Aritra Chakraborty", 150, 285);
-    doc.text("(Managing Partner)", 150, 290);
-    doc.save("document.pdf");
+      doc.text("Aritra Chakraborty", 150, 285);
+      doc.text("(Managing Partner)", 150, 290);
+    }
+    doc.save(
+      val.name.split(" ")[0] +
+        "_" +
+        val.name.split(" ")[1] +
+        "_internship_joiningletter.pdf"
+    );
   };
   const postApply = (val) => {
     axios
