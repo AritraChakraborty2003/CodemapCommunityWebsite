@@ -207,13 +207,13 @@ const CardApply = (props) => {
       86
     );
     doc.text(
-      `${val.role} intern in our firm and we  believe you will make a valuable contribution to`,
+      `${val.role} intern in our firm and we  believe you will make a valuable contribution `,
       10,
       94
     );
     doc.setFont("roboto", "bold");
     doc.text(
-      `team.The benefits and perks associated with the internship are as follows:-`,
+      `to team.The benefits and perks associated with the internship are as follows:-`,
       10,
       102
     );
