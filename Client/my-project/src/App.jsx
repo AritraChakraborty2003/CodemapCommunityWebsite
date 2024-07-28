@@ -25,6 +25,7 @@ import { InternDashboard } from "./Components/InternDashboard";
 import InternTraining from "./Components/InternTrainings";
 import InternDocx from "./Components/InternDocx";
 import InternApply from "./Components/InternApply";
+import { InternTrainingCMS } from "./Components/InternTrainingCMS";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,6 +34,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route
+            path="/InternTrainingCMS"
+            element={<InternTrainingCMS />}
+          ></Route>
           <Route path="/InternApply" element={<InternApply />}></Route>
           <Route path="/InternDocx" element={<InternDocx />}></Route>
           <Route path="/InternTraining" element={<InternTraining />}></Route>

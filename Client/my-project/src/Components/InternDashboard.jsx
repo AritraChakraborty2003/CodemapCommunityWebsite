@@ -6,11 +6,11 @@ import Footer from "./Footer";
 const InternDashboard = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  console.log(location.state.data1);
+
   const displayObj = [
     {
       image: "./TrainingsIntern.png",
-      details: "Intern Trainings",
+      details: "Intern Training",
     },
     {
       image: "./issuedDoc.png",
@@ -26,7 +26,7 @@ const InternDashboard = () => {
     },
     { image: "./scoreandleaderboard.png", details: "Check Score" },
     { image: "./suggestionicon.png", details: " Add suggestion" },
-    { image: "./complaint.png", details: "Leave a complaint" },
+    { image: "./complaint.png", details: "Complaint" },
   ];
 
   return (
