@@ -36,7 +36,7 @@ const InternDocx = () => {
           <div className="flex justify-evenly gap-x-7 card p-2 text-black border-grey border-[1px] w-[60vmin] lg:w-[40vmin] text-[4vmin] lg:text-[3vmin]">
             Hiring Letter
             <a
-              href={"http://localhost:8000/" + data.hiringletter}
+              href={`${import.meta.env.VITE_APP_API_URL}` + data.hiringletter}
               target="_blank"
             >
               <img src="./download.png" height={20} width={20}></img>
