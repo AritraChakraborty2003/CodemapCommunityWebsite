@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-const NavbarCMS = () => {
+const NavbarCMS = (props) => {
   const [displayNavHam, setdisplayNavHam] = useState(false);
   const navigate = useNavigate();
   const showNavHam = () => {
@@ -29,13 +29,16 @@ const NavbarCMS = () => {
             {(screen.width <= 1280 && screen.height >= 800 && (
               <div className="navIconHolder w-[58.5vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 <p>
-                  <a href="#about">Home</a>
+                  <a>LMS</a>
                 </p>
                 <p>Events</p>
-                <p>Campus Leader</p>
+                <p>CL</p>
                 <p>HiringLetter</p>
                 <p>Data-Manager</p>
                 <p>Team Data</p>
+                <p onClick={() => navigate("/InternTraining")}>
+                  TrainingIntern
+                </p>
                 <p
                   onClick={() => {
                     navigate("/CMSApply");
@@ -47,13 +50,16 @@ const NavbarCMS = () => {
             )) || (
               <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 <p>
-                  <a href="#about">Home</a>
+                  <a>LMS</a>
                 </p>
                 <p>Events</p>
-                <p>Campus Leader</p>
+                <p>CL</p>
                 <p>HiringLetter</p>
                 <p>Data-Manager</p>
                 <p>Team-Data</p>
+                <p onClick={() => navigate("/InternTraining")}>
+                  TrainingIntern
+                </p>
                 <p
                   onClick={() => {
                     navigate("/CMSApply");
@@ -78,8 +84,13 @@ const NavbarCMS = () => {
               <button
                 className="w-[30vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4"
                 onClick={() => {
-                  localStorage.removeItem("user");
-                  navigate("/CMSOpenings");
+                  if (props.type === "CMS") {
+                    localStorage.removeItem("user");
+                    navigate("/CMSOpenings");
+                  } else if (props.type === "Interns") {
+                    localStorage.removeItem("userIntern");
+                    navigate("/InternLogin");
+                  }
                 }}
               >
                 Logout
@@ -102,12 +113,21 @@ const NavbarCMS = () => {
       {displayNavHam === true && (
         <div className="navHamMobile block lg:hidden w-[100vw] bg-bgColor  pl-3 pb-6 ">
           <ul className="space-y-[3vmin] text-lg md:text-[3vmin]">
-            <p onClick={showNavHam}>Home</p>
+            <p onClick={showNavHam}>LMS</p>
+
             <p onClick={showNavHam}>Events</p>
-            <p onClick={showNavHam}>Campus Leader</p>
+            <p onClick={showNavHam}>CL</p>
             <p onClick={showNavHam}>HiringLetter</p>
             <p onClick={showNavHam}>Messages Manager</p>
             <p onClick={showNavHam}>Team-Data</p>
+            <p
+              onClick={() => {
+                showNavHam;
+                navigate("/InternTraining");
+              }}
+            >
+              TrainingIntern
+            </p>
             <p
               onClick={() => {
                 navigate("/CMSApply");

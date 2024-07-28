@@ -7,7 +7,7 @@ const OurReach = () => {
   useEffect(() => {
     setTimeout(() => {
       setCount(count + 1);
-    }, 6000);
+    }, 10000);
   }, [count]);
   return (
     <>

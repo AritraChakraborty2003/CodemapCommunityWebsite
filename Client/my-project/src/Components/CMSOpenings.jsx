@@ -60,7 +60,7 @@ const CMSOpenings = () => {
   console.log(TechnicalData);
   return (
     <>
-      <NavbarCMS />
+      <NavbarCMS type="CMS" />
       <div className="flex flex-col w-[100vw] p-2 flex justify-center items-center mt-3">
         <div className="flex gap-x-[7vmin]">
           <div>

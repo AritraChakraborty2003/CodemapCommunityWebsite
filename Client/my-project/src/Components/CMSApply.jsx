@@ -34,7 +34,7 @@ const CMSApply = () => {
     <>
       {(localStorage.getItem("user") === "Admin2024" && (
         <>
-          <NavbarCMS />
+          <NavbarCMS type="CMS" />
           <div className="flex flex-col w-[100vw] p-6 flex justify-center items-center mt-3">
             <div className="flex gap-x-[9vmin]">
               <div>

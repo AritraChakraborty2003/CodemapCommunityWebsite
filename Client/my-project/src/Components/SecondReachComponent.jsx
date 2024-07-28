@@ -36,7 +36,7 @@ const SecondComponent = () => {
             <div className="text-area w-[95vw]   pl-3 flex justify-center mt-7 md:items-center">
               <div className="imageHolder w-[93vw] h-[40vh] flex justify-center md:items-center">
                 <img
-                  src="./desk.jpg"
+                  src="./coder3.jpg"
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
@@ -79,7 +79,7 @@ const SecondComponent = () => {
                 <div className="text-area w-[81vmin] h-[80vh]  flex justify-end items-center mt-5">
                   <div className="imageHolder w-[76vmin] h-[70vh]">
                     <img
-                      src="./desk.jpg"
+                      src="./coder3.jpg"
                       className="max-w-full max-h-full object-contain"
                     ></img>
                   </div>
@@ -117,11 +117,11 @@ const SecondComponent = () => {
                 </p>
               </div>
 
-              <div className="text-area w-[100vmin] pr-5 h-[75vh] flex justify-end items-center">
-                <div className="imageHolder w-[88vmin] h-[70vh] mt-5 ">
+              <div className="text-area w-[100vmin] pr-5 h-[80vh] flex justify-end items-center">
+                <div className="imageHolder w-[88vmin] h-[70vh] mt-[4vmin] ">
                   <img
-                    src="./desk.jpg"
-                    className="max-w-full max-h-full object-contain"
+                    src="./coder3.jpg"
+                    className="max-w-full max-h-full object-contain mt-[5vmin] ml-[-3vmin]"
                   ></img>
                 </div>
               </div>
@@ -161,7 +161,7 @@ const SecondComponent = () => {
               <div className="text-area w-[80vmin]  flex justify-start items-center">
                 <div className="imageHolder w-[80vmin] h-[75vh] flex justify-start items-center ml-4">
                   <img
-                    src="./desk.jpg"
+                    src="./coder3.jpg"
                     className="max-w-full max-h-full object-contain"
                   ></img>
                 </div>
@@ -203,7 +203,7 @@ const SecondComponent = () => {
               <div className="text-area w-[87vmin]  pl-10 h-[80vh]">
                 <div className="imageHolder w-[83vmin] h-[75vh] mt-[5vmin]">
                   <img
-                    src="./desk.jpg"
+                    src="./coder3.jpg"
                     className="max-w-full max-h-full object-contain"
                   ></img>
                 </div>

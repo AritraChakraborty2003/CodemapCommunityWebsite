@@ -22,6 +22,9 @@ import CMSApply from "./Components/CMSApply";
 import CardApply from "./Components/CardApply";
 import { InternLogin } from "./Components/InternLogin";
 import { InternDashboard } from "./Components/InternDashboard";
+import InternTraining from "./Components/InternTrainings";
+import InternDocx from "./Components/InternDocx";
+import InternApply from "./Components/InternApply";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -30,6 +33,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/InternApply" element={<InternApply />}></Route>
+          <Route path="/InternDocx" element={<InternDocx />}></Route>
+          <Route path="/InternTraining" element={<InternTraining />}></Route>
           <Route path="/InternDashboard" element={<InternDashboard />}></Route>
           <Route path="/InternLogin" element={<InternLogin />}></Route>
           <Route path="/CardApply" element={<CardApply />}></Route>

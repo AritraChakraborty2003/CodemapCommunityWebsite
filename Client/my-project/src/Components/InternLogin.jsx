@@ -15,11 +15,14 @@ const InternLogin = () => {
       })
       .then((res) => {
         if (res.data.status === 200) {
+          console.log(res);
           if (res.data.name === "Invalid user") {
             alert("Invalid Credentials");
           } else {
             localStorage.setItem("userIntern", "internadmin");
-            navigate("/InternDashboard", { state: { data: res.data.name } });
+            navigate("/InternDashboard", {
+              state: { data: res.data.name, data1: email },
+            });
           }
         } else {
           alert("Something went wrong");

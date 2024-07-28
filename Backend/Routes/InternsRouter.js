@@ -1,7 +1,9 @@
 import express from "express";
 import { postInterns } from "../Controller/postInterns.js";
-import { getInterns } from "../Controller/getInterns.js";
+import { getInterns, getInternID } from "../Controller/getInterns.js";
 import multer from "multer";
+import { postInternsLeave } from "../Controller/postInternsLeave.js";
+import { getInternsLeave } from "../Controller/getInternsLeave.js";
 import { findInterns } from "../Controller/findInterns.js";
 import fs from "fs";
 var storage = multer.diskStorage({
@@ -21,6 +23,8 @@ var upload = multer({ storage: storage });
 
 const InternsRouter = express.Router();
 InternsRouter.get("/", getInterns);
+InternsRouter.get("/:id", getInternID);
+InternsRouter.post("/apply", upload.single("file"), postInternsLeave());
 InternsRouter.post("/find", findInterns());
 InternsRouter.post("/", upload.single("file"), postInterns());
 
