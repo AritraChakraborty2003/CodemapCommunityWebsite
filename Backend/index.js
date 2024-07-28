@@ -11,6 +11,7 @@ import { OpeningsRouter } from "./Routes/OpeningsRouter.js";
 import { applicationRouter } from "./Routes/applicationRouter.js";
 import { acceptedRouter } from "./Routes/accepted.js";
 import { InternsRouter } from "./Routes/InternsRouter.js";
+import { TrainingsRouter } from "./Routes/TrainingsRouter.js";
 //The applications basics configurations
 dotenv.config();
 const app = express();
@@ -30,6 +31,8 @@ app.use("/api/apply", applicationRouter);
 app.use("/api/accepted", acceptedRouter);
 app.use("/api/rejected", RejectedRouters);
 app.use("/api/interns", InternsRouter);
+app.use("/api/trainings", TrainingsRouter);
+
 //app listen logic
 app.listen(`${process.env.PORT}`, () => {
   console.log("Backend Connected");
