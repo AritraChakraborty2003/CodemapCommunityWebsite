@@ -42,8 +42,12 @@ const Navbar = () => {
                 <p>
                   <a href="#about">About-us</a>
                 </p>
-                <p>
-                  <a href="#support">Support</a>
+                <p
+                  onClick={() => {
+                    navigate("/InternLogin");
+                  }}
+                >
+                  Intern-HRMS
                 </p>
                 <p>
                   <a href="#Our-Reach">Our-Reach</a>
@@ -86,8 +90,12 @@ const Navbar = () => {
                 <p>
                   <a href="#about">About-us</a>
                 </p>
-                <p>
-                  <a href="#support">Support</a>
+                <p
+                  onClick={() => {
+                    navigate("/InternLogin");
+                  }}
+                >
+                  Intern-HRMS
                 </p>
                 <p>
                   <a href="#Our-Reach">Our-Reach</a>
@@ -165,8 +173,12 @@ const Navbar = () => {
             <li onClick={showNavHam}>
               <a href="#about">About-us</a>
             </li>
-            <li onClick={showNavHam}>
-              <a href="#support">Support</a>
+            <li
+              onClick={() => {
+                navigate("/InternLogin");
+              }}
+            >
+              Intern-HRMS
             </li>
             <li onClick={showNavHam}>
               <a href="#Our-Reach">Our Reach</a>
