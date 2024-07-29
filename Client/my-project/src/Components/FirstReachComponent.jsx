@@ -267,12 +267,6 @@ const FirstReachComponent = () => {
             </>
           ))}
       </div>
-      <div className="w-[90vw] ml-2  h-[8vmin] flex justify-center items-center gap-x-4 2xl:mt-[-2.45vmin]">
-        <div className="ml-9 flex justify-center items-center gap-x-4 w-[10vmin]">
-          <div className="dot1 bg-black h-[2vmin] w-[2vmin] rounded-[1vmin] border-[1px]"></div>
-          <div className="dot2  h-[2vmin] w-[2vmin] rounded-[1vmin] border-[1px]"></div>
-        </div>
-      </div>
     </>
   );
 };

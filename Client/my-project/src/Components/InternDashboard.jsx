@@ -26,7 +26,7 @@ const InternDashboard = () => {
     },
     { image: "./scoreandleaderboard.png", details: "Check Score" },
     { image: "./suggestionicon.png", details: " Add suggestion" },
-    { image: "./complaint.png", details: "Complaint" },
+    { image: "./complaint.png", details: "Box complaint" },
   ];
 
   return (
@@ -34,9 +34,9 @@ const InternDashboard = () => {
       {(localStorage.getItem("userIntern") === "internadmin" && (
         <>
           <NavbarCMS type="Interns" />
-          <p className="text-[7vmin] font-bold ml-3">
+          <p className="text-[5.75vmin] font-bold ml-3">
             Welcome{" "}
-            <span className="text-btnColor text-[8vmin] font-poppins">
+            <span className="text-btnColor text-[6vmin] font-poppins">
               {location.state.data.split(" ")[0]}
             </span>
             ,

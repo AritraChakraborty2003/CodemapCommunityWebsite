@@ -28,58 +28,69 @@ const NavbarCMS = (props) => {
           <div className="holderNavIcon hidden lg:block">
             {(screen.width <= 1280 && screen.height >= 800 && (
               <div className="navIconHolder w-[58.5vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
-                <p>
-                  <a>LMS</a>
-                </p>
-                <p>Events</p>
-                <p>CL</p>
-                <p>HiringLetter</p>
-                <p>Data-Manager</p>
-                <p>Team Data</p>
                 {props.type === "CMS" && (
-                  <p onClick={() => navigate("/InternTraining")}>
-                    TrainingIntern
-                  </p>
+                  <>
+                    <p>
+                      <a>LMS</a>
+                    </p>
+                    <p>Events</p>
+                    <p>CL</p>
+                    <p>HiringLetter</p>
+                    <p>Data-Manager</p>
+                    <p>Team Data</p>
+                    <p onClick={() => navigate("/InternTraining")}>
+                      TrainingIntern
+                    </p>
+                    <p
+                      onClick={() => {
+                        navigate("/CMSApply");
+                      }}
+                    >
+                      Apply
+                    </p>
+                  </>
                 )}
-                <p
-                  onClick={() => {
-                    navigate("/CMSApply");
-                  }}
-                >
-                  Apply
-                </p>
               </div>
             )) || (
               <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
-                <p>
-                  <a>LMS</a>
-                </p>
-                <p>Events</p>
-                <p>CL</p>
-                <p>HiringLetter</p>
-                <p>Data-Manager</p>
-                <p>Team-Data</p>
                 {props.type === "CMS" && (
-                  <p onClick={() => navigate("/InternTrainingCMS")}>
-                    TrainingIntern
-                  </p>
+                  <>
+                    <p>
+                      <a>LMS</a>
+                    </p>
+                    <p>Events</p>
+                    <p>CL</p>
+                    <p>HiringLetter</p>
+                    <p>Data-Manager</p>
+                    <p>Team Data</p>
+                    <p onClick={() => navigate("/InternTraining")}>
+                      TrainingIntern
+                    </p>
+                  </>
                 )}
-                <p
-                  onClick={() => {
-                    navigate("/CMSApply");
-                  }}
-                >
-                  Apply
-                </p>
-                <p
-                  onClick={() => {
-                    navigate("/CMSOpenings");
-                    if (displayNavHam === false) setdisplayNavHam(true);
-                    else setdisplayNavHam(false);
-                  }}
-                >
-                  Openings
-                </p>
+                {props.type === "CMS" && (
+                  <>
+                    <p onClick={() => navigate("/InternTrainingCMS")}>
+                      TrainingIntern
+                    </p>
+                    <p
+                      onClick={() => {
+                        navigate("/CMSApply");
+                      }}
+                    >
+                      Apply
+                    </p>
+                    <p
+                      onClick={() => {
+                        navigate("/CMSOpenings");
+                        if (displayNavHam === false) setdisplayNavHam(true);
+                        else setdisplayNavHam(false);
+                      }}
+                    >
+                      Openings
+                    </p>
+                  </>
+                )}
               </div>
             )}
           </div>
@@ -117,41 +128,51 @@ const NavbarCMS = (props) => {
       {displayNavHam === true && (
         <div className="navHamMobile block lg:hidden w-[100vw] bg-bgColor  pl-3 pb-6 ">
           <ul className="space-y-[3vmin] text-lg md:text-[3vmin]">
-            <p onClick={showNavHam}>LMS</p>
-
-            <p onClick={showNavHam}>Events</p>
-            <p onClick={showNavHam}>CL</p>
-            <p onClick={showNavHam}>HiringLetter</p>
-            <p onClick={showNavHam}>Messages Manager</p>
-            <p onClick={showNavHam}>Team-Data</p>
             {props.type === "CMS" && (
-              <p
-                onClick={() => {
-                  showNavHam;
-                  navigate("/InternTrainingCMS");
-                }}
-              >
-                TrainingIntern
-              </p>
+              <>
+                <p>
+                  <a>LMS</a>
+                </p>
+                <p>Events</p>
+                <p>CL</p>
+                <p>HiringLetter</p>
+                <p>Data-Manager</p>
+                <p>Team Data</p>
+                <p onClick={() => navigate("/InternTraining")}>
+                  TrainingIntern
+                </p>
+              </>
             )}
-            <p
-              onClick={() => {
-                navigate("/CMSApply");
-                if (displayNavHam === false) setdisplayNavHam(true);
-                else setdisplayNavHam(false);
-              }}
-            >
-              Apply
-            </p>
-            <p
-              onClick={() => {
-                navigate("/CMSApply");
-                if (displayNavHam === false) setdisplayNavHam(true);
-                else setdisplayNavHam(false);
-              }}
-            >
-              Openings
-            </p>
+            {props.type === "CMS" && (
+              <>
+                <p
+                  onClick={() => {
+                    showNavHam;
+                    navigate("/InternTrainingCMS");
+                  }}
+                >
+                  TrainingIntern
+                </p>
+                <p
+                  onClick={() => {
+                    navigate("/CMSApply");
+                    if (displayNavHam === false) setdisplayNavHam(true);
+                    else setdisplayNavHam(false);
+                  }}
+                >
+                  Apply
+                </p>
+                <p
+                  onClick={() => {
+                    navigate("/CMSApply");
+                    if (displayNavHam === false) setdisplayNavHam(true);
+                    else setdisplayNavHam(false);
+                  }}
+                >
+                  Openings
+                </p>
+              </>
+            )}
 
             <li>
               <button

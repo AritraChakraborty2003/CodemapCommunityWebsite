@@ -1,1 +1,2 @@
-
+const sendMail = () => {};
+export { sendMail };

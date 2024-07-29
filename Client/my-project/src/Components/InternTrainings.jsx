@@ -7,13 +7,16 @@ import { useState } from "react";
 import Footer from "./Footer";
 import { TechnicalSyllabus } from "./TechnicalSyllabus";
 import { NonTechnicalSyllabus } from "./NonTechnicalSyllabus";
+import { TechnicalVideos } from "./TechnicalVideos";
+import { NonTechnicalVideos } from "./NonTechnicalVideos";
+
 const InternTraining = () => {
   const navigate = useNavigate();
   const [state1, setstate1] = useState(0);
   const [state, setstate] = useState(0);
   return (
     <>
-      {(localStorage.getItem("user") === "Admin2024" && (
+      {(localStorage.getItem("userIntern") === "internadmin" && (
         <>
           <NavbarCMS type="Interns" />
           <div className="flex gap-x-[12vmin] mt-10 ml-4 2xl:ml-8 pb-5 justify-center items-center">
@@ -48,7 +51,7 @@ const InternTraining = () => {
                   setstate(1);
                 }}
               >
-                Videos
+                Videos Rec.
                 <div
                   id="secLine1"
                   className="w-[20vmin] 2xl:w-[18vmin] h-[5px] bg-lightGrey mt-1"
@@ -99,6 +102,9 @@ const InternTraining = () => {
 
           {state === 0 && state1 === 0 && <TechnicalSyllabus />}
           {state === 0 && state1 == 1 && <NonTechnicalSyllabus />}
+
+          {state === 1 && state1 === 0 && <TechnicalVideos />}
+          {state === 1 && state1 === 1 && <NonTechnicalVideos />}
           <Footer />
         </>
       )) || <Navigate to="/InternLogin" />}
@@ -106,4 +112,3 @@ const InternTraining = () => {
   );
 };
 export default InternTraining;
-

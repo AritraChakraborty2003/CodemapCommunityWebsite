@@ -6,6 +6,8 @@ import { postInternsLeave } from "../Controller/postInternsLeave.js";
 import { getInternsLeave } from "../Controller/getInternsLeave.js";
 import { findInterns } from "../Controller/findInterns.js";
 import fs from "fs";
+import { getSuggestion } from "../Controller/getsuggestions.js";
+import { getComplaints } from "../Controller/getcomplaints.js";
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     var dir = "./uploads";
@@ -22,6 +24,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage });
 
 const InternsRouter = express.Router();
+
 InternsRouter.get("/", getInterns);
 InternsRouter.get("/:id", getInternID);
 InternsRouter.post("/apply", upload.single("file"), postInternsLeave());

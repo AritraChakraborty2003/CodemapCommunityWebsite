@@ -41,7 +41,9 @@ const InternApply = () => {
       )
       .then((res) => {
         if (res.data.status === 200) {
+          alert("Data Added successfully");
         } else {
+          alert("Something went wrong");
         }
       });
   };

@@ -12,6 +12,9 @@ import { applicationRouter } from "./Routes/applicationRouter.js";
 import { acceptedRouter } from "./Routes/accepted.js";
 import { InternsRouter } from "./Routes/InternsRouter.js";
 import { TrainingsRouter } from "./Routes/TrainingsRouter.js";
+import { complaintsRouter } from "./Routes/complaintsRouter.js";
+import { leaverouter } from "./Routes/leaveRouter.js";
+import { suggestionsRouter } from "./Routes/suggestionsRouter.js";
 //The applications basics configurations
 dotenv.config();
 const app = express();
@@ -32,6 +35,9 @@ app.use("/api/accepted", acceptedRouter);
 app.use("/api/rejected", RejectedRouters);
 app.use("/api/interns", InternsRouter);
 app.use("/api/trainings", TrainingsRouter);
+app.use("/api/complaint", complaintsRouter);
+app.use("/api/suggestion", suggestionsRouter);
+app.use("/api/leave", leaverouter);
 
 //app listen logic
 app.listen(`${process.env.PORT}`, () => {

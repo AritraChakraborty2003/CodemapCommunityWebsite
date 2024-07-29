@@ -26,6 +26,11 @@ import InternTraining from "./Components/InternTrainings";
 import InternDocx from "./Components/InternDocx";
 import InternApply from "./Components/InternApply";
 import { InternTrainingCMS } from "./Components/InternTrainingCMS";
+import { DataCardPost } from "./Components/DataCardPost";
+import { InternAdd } from "./Components/InternAdd";
+import { Interncomplaint } from "./Components/Interncomplaint";
+import { InternAllocation } from "./Components/InternAllocation";
+import { InternScore } from "./Components/InternScore";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -38,6 +43,14 @@ function App() {
             path="/InternTrainingCMS"
             element={<InternTrainingCMS />}
           ></Route>
+          <Route
+            path="/InternAllocation"
+            element={<InternAllocation />}
+          ></Route>
+          <Route path="/InternScore" element={<InternScore />}></Route>
+          <Route path="/InternComplaint" element={<Interncomplaint />}></Route>
+          <Route path="/InternAdd" element={<InternAdd />}></Route>
+          <Route path="/DataCardPost" element={<DataCardPost />}></Route>
           <Route path="/InternApply" element={<InternApply />}></Route>
           <Route path="/InternDocx" element={<InternDocx />}></Route>
           <Route path="/InternTraining" element={<InternTraining />}></Route>

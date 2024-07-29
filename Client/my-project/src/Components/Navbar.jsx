@@ -10,6 +10,7 @@ import UpcommingEvents from "./UpcommingEvents";
 import Testinomials from "./Testinomials";
 import OurReach from "./OurReach";
 import { useNavigate } from "react-router-dom";
+import SecondComponent from "./SecondReachComponent";
 const Navbar = () => {
   const [displayNavHam, setdisplayNavHam] = useState(false);
   const showNavHam = () => {
@@ -236,6 +237,9 @@ const Navbar = () => {
 
       <div id="Our-Reach">
         <OurReach />
+      </div>
+      <div id="Our-Reach2">
+        <SecondComponent />
       </div>
       <div id="Testinomials">
         <Testinomials />
