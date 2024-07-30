@@ -15,6 +15,7 @@ import { TrainingsRouter } from "./Routes/TrainingsRouter.js";
 import { complaintsRouter } from "./Routes/complaintsRouter.js";
 import { leaverouter } from "./Routes/leaveRouter.js";
 import { suggestionsRouter } from "./Routes/suggestionsRouter.js";
+import { videosRouter } from "./Routes/videosRouter.js";
 //The applications basics configurations
 dotenv.config();
 const app = express();
@@ -38,6 +39,7 @@ app.use("/api/trainings", TrainingsRouter);
 app.use("/api/complaint", complaintsRouter);
 app.use("/api/suggestion", suggestionsRouter);
 app.use("/api/leave", leaverouter);
+app.use("/api/videos", videosRouter);
 
 //app listen logic
 app.listen(`${process.env.PORT}`, () => {

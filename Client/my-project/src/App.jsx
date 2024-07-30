@@ -31,7 +31,8 @@ import { InternAdd } from "./Components/InternAdd";
 import { Interncomplaint } from "./Components/Interncomplaint";
 import { InternAllocation } from "./Components/InternAllocation";
 import { InternScore } from "./Components/InternScore";
-
+import VideoCMS from "./Components/VideosCMS";
+import { VideoPlayer } from "./Components/VideoPlayer";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -47,6 +48,8 @@ function App() {
             path="/InternAllocation"
             element={<InternAllocation />}
           ></Route>
+          <Route path="/VideoPlayer" element={<VideoPlayer />}></Route>
+          <Route path="/VideoCMS" element={<VideoCMS />}></Route>
           <Route path="/InternScore" element={<InternScore />}></Route>
           <Route path="/InternComplaint" element={<Interncomplaint />}></Route>
           <Route path="/InternAdd" element={<InternAdd />}></Route>

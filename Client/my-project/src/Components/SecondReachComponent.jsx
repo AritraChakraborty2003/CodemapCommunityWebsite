@@ -2,7 +2,7 @@ const SecondComponent = () => {
   return (
     <>
       <div className="mt-3 pb-5">
-        <h3 className="mt-6 2xl:mt-10 ml-4 font-poppins font-bold text-[7.5vmin]">
+        <h3 className="mt-6 2xl:mt-10 ml-2 font-poppins font-bold text-[7.5vmin]">
           Our <span className="text-btnColor">Students-Club</span>
         </h3>
         <div className="about-area flex justify-center mt-[-5vmin]  lg:items-center flex-wrap-reverse ml-[1vmin]">
@@ -37,7 +37,7 @@ const SecondComponent = () => {
                 </p>
               </div>
 
-              <div className="text-area w-[95vw]   pl-3 flex justify-center mt-1 md:items-center">
+              <div className="text-area w-[95vw]    flex justify-center mt-1 md:items-center">
                 <div className="imageHolder w-[93vw] h-[40vh] flex justify-center md:items-center">
                   <img
                     src="./coder3.jpg"
@@ -51,7 +51,7 @@ const SecondComponent = () => {
               screen.width <= 1280 &&
               screen.height >= 780 && (
                 <>
-                  <div className="photo-area pl-4 w-[75vmin]  h-[80vh] flex flex-col gap-y-4 justify-center items-center">
+                  <div className="photo-area  w-[75vmin]  h-[80vh] flex flex-col gap-y-4 justify-center items-center">
                     <p className="font-poppins  text-[5vmin] font-bold ">
                       Our Student Clubs and Its Goals
                     </p>
@@ -92,8 +92,8 @@ const SecondComponent = () => {
               )) ||
             (screen.width >= 1280 && screen.width < 1400 && (
               <>
-                <div className="photo-area w-[111vmin] pl-2  h-[75vh] flex flex-col gap-y-2 justify-center items-center">
-                  <p className="font-poppins  text-[5vmin] font-bold ml-[-2vmin]">
+                <div className="photo-area w-[111vmin] pl-[-2vmin]  h-[75vh] flex flex-col gap-y-2 justify-center items-center">
+                  <p className="font-poppins  text-[5vmin] font-bold ml-[-2vmin] ">
                     Our Student Clubs and Its Goals & Mission
                   </p>
                   <p className="font-poppins  text-[3.15vmin] text-bannerGrey">
@@ -102,14 +102,14 @@ const SecondComponent = () => {
                     students across pan India.Codemap thrive to become the
                     leading company with largest technical clubs spread accross
                     India.Our company equips our student community in multiple
-                    domain accross wide bandwidth of soft and hardskills.The Top
+                    domain accross wide bandwidtsoft and hardskills.The Top
                     Performing student clubs of India are:
                     <ol className="space-y-3 mt-2">
                       <li className="font-medium text-[2.75vmin] ">
                         1. MAIT Student Club
                       </li>
                       <li className="font-medium text-[2.75vmin] ">
-                        2. IGDTUW Student Club
+                        2. IGDTUW Student Clubh of
                       </li>
                       <li className="font-medium text-[2.75vmin] ">
                         3. KCC Student Club
@@ -121,7 +121,7 @@ const SecondComponent = () => {
                   </p>
                 </div>
 
-                <div className="text-area w-[100vmin] pr-5 h-[80vh] flex justify-end items-center">
+                <div className="text-area w-[100vmin]  h-[80vh] flex justify-end items-center">
                   <div className="imageHolder w-[88vmin] h-[70vh] mt-[4vmin] ">
                     <img
                       src="./coder3.jpg"

@@ -63,8 +63,12 @@ const NavbarCMS = (props) => {
                     <p>HiringLetter</p>
                     <p>Data-Manager</p>
                     <p>Team Data</p>
-                    <p onClick={() => navigate("/InternTraining")}>
-                      TrainingIntern
+                    <p
+                      onClick={() => {
+                        navigate("/VideoCMS");
+                      }}
+                    >
+                      CMS_Videos
                     </p>
                   </>
                 )}
@@ -138,8 +142,12 @@ const NavbarCMS = (props) => {
                 <p>HiringLetter</p>
                 <p>Data-Manager</p>
                 <p>Team Data</p>
-                <p onClick={() => navigate("/InternTraining")}>
-                  TrainingIntern
+                <p
+                  onClick={() => {
+                    navigate("/VideoCMS");
+                  }}
+                >
+                  CMS_Videos
                 </p>
               </>
             )}

@@ -250,9 +250,7 @@ const Navbar = () => {
       <div id="Our-Reach">
         <OurReach />
       </div>
-      <div id="Our-Reach2">
-        <SecondComponent />
-      </div>
+
       <div id="Testinomials">
         <Testinomials />
       </div>
