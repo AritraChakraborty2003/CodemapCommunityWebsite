@@ -16,7 +16,7 @@ const VideoPlayer = (props) => {
               width={380}
               height={230}
             />
-            <p className="text-2xl font-bold mt-1">{val.name}</p>
+            <p className="text-xl font-mediun mt-1">{val.name}</p>
           </div>
         </>
       ))}
