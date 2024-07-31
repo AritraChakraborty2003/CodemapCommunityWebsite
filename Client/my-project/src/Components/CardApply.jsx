@@ -277,7 +277,7 @@ const CardApply = (props) => {
     if (val.category === "Technical")
       doc.text("Reporting To: Mr. Aritra Chakraborty", 10, 238);
     else doc.text("Reporting To: Mr. Abhishek Kr. Pandey", 10, 238);
-    doc.text("Joining Date: 28th July 2024", 10, 246);
+    doc.text("Joining Date: 1st August 2024", 10, 246);
     var img1 = new Image();
     img1.src = "./AbhiSign.jpeg";
     doc.addImage(img1, "jpeg", 14, 257, 25, 25);
