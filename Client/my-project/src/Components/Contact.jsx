@@ -319,7 +319,7 @@ const Contact = () => {
                           name=""
                           id=""
                           rows="5"
-                          cols="60"
+                          cols="63"
                           placeholder="Enter Your message..."
                           className=" bg-bgColor p-3  border-[1px] rounded-lg text-[2vmin]"
                         ></textarea>
