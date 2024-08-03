@@ -261,7 +261,7 @@ const About = () => {
                         <p className="ml-3 text-[2.5vmin] font-bold text-btnColor">
                           //About our Community Platform
                         </p>
-                        <p className="ml-3 text-[3.56vmin] font-extrabold mt-1">
+                        <p className="ml-3 text-[4.3vmin] font-extrabold mt-1">
                           An Ultimate Technical Community For
                         </p>
                         <p className="ml-3 text-[3.56vmin] font-extrabold">
