@@ -258,18 +258,18 @@ const About = () => {
                   <>
                     <div className="p-2 text-area w-[85vmin]  h-[80vh]">
                       <div className="font-poppins">
-                        <p className="ml-3 text-[2.5vmin] font-bold text-btnColor">
+                        <p className="ml-1 text-[2.5vmin] font-bold text-btnColor">
                           //About our Community Platform
                         </p>
-                        <p className="ml-3 text-[4.3vmin] font-extrabold mt-1">
+                        <p className="ml-1 text-[3.56vmin] font-extrabold mt-1">
                           An Ultimate Technical Community For
                         </p>
-                        <p className="ml-3 text-[3.56vmin] font-extrabold">
+                        <p className="ml-1 text-[3.56vmin] font-extrabold">
                           Your Career Growth
                         </p>
                       </div>
 
-                      <div className="ml-3 holder w-[74vmin] text-[2.65vmin] text-bannerGrey">
+                      <div className="ml-1 holder w-[74vmin] text-[2.65vmin] text-bannerGrey">
                         The Codemap community is an ultimate coding community
                         for all tech enthusiasts who want to pursue a promising
                         career in the contemporary technical industry we have
