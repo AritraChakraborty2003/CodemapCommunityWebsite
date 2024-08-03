@@ -1,5 +1,3 @@
 const sendMail = () =>{
-
-
 }
 export {sendMail}

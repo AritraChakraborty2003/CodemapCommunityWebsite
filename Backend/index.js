@@ -14,6 +14,7 @@ import { InternsRouter } from "./Routes/InternsRouter.js";
 import { TrainingsRouter } from "./Routes/TrainingsRouter.js";
 import { complaintsRouter } from "./Routes/complaintsRouter.js";
 import { leaverouter } from "./Routes/leaveRouter.js";
+import { questionRouter } from "./Routes/questionRouter.js";
 import { suggestionsRouter } from "./Routes/suggestionsRouter.js";
 import { videosRouter } from "./Routes/videosRouter.js";
 //The applications basics configurations
@@ -40,6 +41,7 @@ app.use("/api/complaint", complaintsRouter);
 app.use("/api/suggestion", suggestionsRouter);
 app.use("/api/leave", leaverouter);
 app.use("/api/videos", videosRouter);
+app.use("/api/questions",questionRouter)
 
 //app listen logic
 app.listen(`${process.env.PORT}`, () => {

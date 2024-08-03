@@ -32,7 +32,10 @@ import { Interncomplaint } from "./Components/Interncomplaint";
 import { InternAllocation } from "./Components/InternAllocation";
 import { InternScore } from "./Components/InternScore";
 import VideoCMS from "./Components/VideosCMS";
+import InternSection from "./Components/InternSection";
 import { VideoPlayer } from "./Components/VideoPlayer";
+import RulesPage from "./Components/rulesPage";
+import QuestionArea from "./Components/questionArea";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -48,6 +51,9 @@ function App() {
             path="/InternAllocation"
             element={<InternAllocation />}
           ></Route>
+          <Route path="/questionArea" element={<QuestionArea />}></Route>
+          <Route path="/rulesPage" element={<RulesPage />}></Route>
+          <Route path="/InternSection" element={<InternSection />}></Route>
           <Route path="/VideoPlayer" element={<VideoPlayer />}></Route>
           <Route path="/VideoCMS" element={<VideoCMS />}></Route>
           <Route path="/InternScore" element={<InternScore />}></Route>

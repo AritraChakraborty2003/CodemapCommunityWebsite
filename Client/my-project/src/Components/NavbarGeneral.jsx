@@ -66,7 +66,7 @@ const NavbarGeneral = () => {
           </div>
           <div className="hidden lg:block">
             <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-center">
-              <button className="w-[30vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4">
+              <button className="w-[20vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4">
                 LMS Platform
               </button>
             </div>
@@ -98,7 +98,7 @@ const NavbarGeneral = () => {
             <p onClick={showNavHam}>Info</p>
 
             <li>
-              <button className=" 2xl:w-[20vmin] bg-btnColor p-3 rounded-lg text-white ml-[-0.5vmin]">
+              <button className="w-[15vmin] 2xl:w-[20vmin] bg-btnColor p-3 rounded-lg text-white ml-[-0.5vmin]">
                 LMS Platform
               </button>
             </li>

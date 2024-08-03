@@ -99,9 +99,9 @@ const NavbarCMS = (props) => {
             )}
           </div>
           <div className="hidden lg:block">
-            <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-center">
+            <div className="buttonHolder h-[21vmin] lg:h-[15vmin]  flex items-center justify-center">
               <button
-                className="w-[30vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4"
+                className="w-[20vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4"
                 onClick={() => {
                   if (props.type === "CMS") {
                     localStorage.removeItem("user");
