@@ -136,7 +136,7 @@ const Navbar = () => {
             )}
           </div>
           <div className="hidden lg:block">
-            <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-center">
+            <div className="buttonHolder h-[23vmin] lg:h-[15vmin]  flex items-center justify-start">
               <button
                 onClick={() => {
                   navigate("/buildProgress", {
