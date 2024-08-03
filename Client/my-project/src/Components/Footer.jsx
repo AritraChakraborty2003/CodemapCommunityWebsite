@@ -71,7 +71,7 @@ const Footer = () => {
               ></img>
             </div>
             <div className="w-[78vw]">
-              <p className="text-center md:text-[2.35vmin] mt-3">
+              <p className="text-center md:text-[2.35vmin] mt-3 ml-3">
                 Call-Us At: +91 8090570646, 9354072118 , <br></br>
                 7585824862
               </p>
