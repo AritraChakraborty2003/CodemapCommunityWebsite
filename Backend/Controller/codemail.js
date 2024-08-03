@@ -1,2 +1,3 @@
-const sendMail = () => {};
+const sendMail = () =>{
+}
 export { sendMail };
