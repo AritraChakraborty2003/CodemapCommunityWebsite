@@ -21,6 +21,7 @@ const postQuestions = () =>{
 
 
       questionsObj.save()
+          return res.status(200).send({ status: 200 });
 
    }
 }
