@@ -148,7 +148,7 @@ const Navbar = () => {
                     },
                   });
                 }}
-                className="w-[20vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4"
+                className="w-[24vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4"
               >
                 LMS Platform
               </button>

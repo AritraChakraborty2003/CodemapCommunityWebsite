@@ -1,14 +1,12 @@
-import { questions } from "../Model/questions.js"
-const getQuestions = () =>
-{
-    questions
+import { questions } from "../Model/questions.js";
+const getQuestions = (req, res) => {
+  questions
     .find()
-    .then((val)=>{
-        res.json(val)
+    .then((val) => {
+      res.json(val);
     })
-    .catch((err)=>{
-        console.log(err)
-    })
-
-}
-export {getQuestions}
+    .catch((err) => {
+      console.log(err);
+    });
+};
+export { getQuestions };

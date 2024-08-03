@@ -36,6 +36,7 @@ import InternSection from "./Components/InternSection";
 import { VideoPlayer } from "./Components/VideoPlayer";
 import RulesPage from "./Components/rulesPage";
 import QuestionArea from "./Components/questionArea";
+import { CMSAddQuestions } from "./Components/CMSAddQuestions";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -51,6 +52,7 @@ function App() {
             path="/InternAllocation"
             element={<InternAllocation />}
           ></Route>
+          <Route path="/CMSAddQuestions" element={<CMSAddQuestions />}></Route>
           <Route path="/questionArea" element={<QuestionArea />}></Route>
           <Route path="/rulesPage" element={<RulesPage />}></Route>
           <Route path="/InternSection" element={<InternSection />}></Route>

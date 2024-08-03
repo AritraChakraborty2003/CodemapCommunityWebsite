@@ -48,11 +48,18 @@ const NavbarCMS = (props) => {
                     >
                       Apply
                     </p>
+                    <p
+                      onClick={() => {
+                        navigate("/CMSAddQuestions");
+                      }}
+                    >
+                      Add Questions
+                    </p>
                   </>
                 )}
               </div>
             )) || (
-              <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
+              <div className="navIconHolder w-[65vw] text-[2vmin] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 {props.type === "CMS" && (
                   <>
                     <p>
@@ -69,6 +76,13 @@ const NavbarCMS = (props) => {
                       }}
                     >
                       CMS_Videos
+                    </p>
+                    <p
+                      onClick={() => {
+                        navigate("/CMSAddQuestions");
+                      }}
+                    >
+                      CMS_Questions
                     </p>
                   </>
                 )}
