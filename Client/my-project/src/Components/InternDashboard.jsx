@@ -27,6 +27,7 @@ const InternDashboard = () => {
     { image: "./scoreandleaderboard.png", details: "Check Score" },
     { image: "./suggestionicon.png", details: " Add suggestion" },
     { image: "./complaint.png", details: "Box complaint" },
+    {image:"./test.png", details:"Test Section"}
   ];
 
   return (
