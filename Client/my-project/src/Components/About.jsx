@@ -146,7 +146,7 @@ const About = () => {
                     </p>
                   </div>
 
-                  <div className="ml-8 holder w-[90vmin]  text-bannerGrey">
+                  <div className="ml-8 holder w-[100vmin]  text-bannerGrey">
                     The Codemap community is an ultimate coding community for
                     all tech enthusiasts who want to pursue a promising career
                     in the contemporary technical industry we have strong vision
@@ -193,62 +193,129 @@ const About = () => {
             )) ||
             (screen.width >= 1400 && screen.width <= 2047 && (
               <>
-                <div className="text-area w-[90vmin]  h-[80vh]">
-                  <div className="font-poppins">
-                    <p className="ml-8 text-[2.5vmin] font-bold text-btnColor">
-                      //About our Community Platform
-                    </p>
-                    <p className="ml-8 text-[3.56vmin] font-extrabold mt-1">
-                      An Ultimate Technical Community For
-                    </p>
-                    <p className="ml-8 text-[3.56vmin] font-extrabold">
-                      Your Career Growth
-                    </p>
-                  </div>
+                {(screen.height >= 901 && (
+                  <>
+                    <div className="text-area w-[90vmin]  h-[80vh]">
+                      <div className="font-poppins">
+                        <p className="ml-8 text-[2.5vmin] font-bold text-btnColor">
+                          //About our Community Platform
+                        </p>
+                        <p className="ml-8 text-[3.56vmin] font-extrabold mt-1">
+                          An Ultimate Technical Community For
+                        </p>
+                        <p className="ml-8 text-[3.56vmin] font-extrabold">
+                          Your Career Growth
+                        </p>
+                      </div>
 
-                  <div className="ml-8 holder w-[85vmin] text-[2.65vmin] text-bannerGrey">
-                    The Codemap community is an ultimate coding community for
-                    all tech enthusiasts who want to pursue a promising career
-                    in the contemporary technical industry we have strong vision
-                    to help students grow and learn new skills with more
-                    networking oppurtunies by the community.We focus mainly on:
-                    <ul>
-                      <li>1. Technical Bootcamps and Blogs</li>
-                      <li>
-                        2. Community Support in solving technical problems
-                      </li>{" "}
-                      <li>3. Certifications on the topics mastered</li>
-                      <li>
-                        4. Internship oppurtunites to top performing students
-                      </li>
-                      <li>
-                        5. We charge absolutely 0 for all the features as we
-                        have the moto to create a skilled and abled technical
-                        community for India
-                      </li>
-                      <li>
-                        6. Organizing technical events and sessions online and
-                        offline in regular time intervals
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="photo-area w-[90vmin] h-[70vh] ml-3">
-                  <div className="area w-[88vmin] h-[50vh] mt-5 ml-3 flex flex-start items-center">
-                    <img
-                      src="./t1.png"
-                      className="max-h-full max-w-full object-contain"
-                    ></img>
-                  </div>
-                  <div className="w-[90vmin] flex ml-[4vmin] mt-[3vmin]">
-                    <div className="w-[5vmin] h-[5vmin]">
-                      <img src="./rightarrow.png"></img>
+                      <div className="ml-8 holder w-[85vmin] text-[2.65vmin] text-bannerGrey">
+                        The Codemap community is an ultimate coding community
+                        for all tech enthusiasts who want to pursue a promising
+                        career in the contemporary technical industry we have
+                        strong vision to help students grow and learn new skills
+                        with more networking oppurtunies by the community.We
+                        focus mainly on:
+                        <ul>
+                          <li>1. Technical Bootcamps and Blogs</li>
+                          <li>
+                            2. Community Support in solving technical problems
+                          </li>{" "}
+                          <li>3. Certifications on the topics mastered</li>
+                          <li>
+                            4. Internship oppurtunites to top performing
+                            students
+                          </li>
+                          <li>
+                            5. We charge absolutely 0 for all the features as we
+                            have the moto to create a skilled and abled
+                            technical community for India
+                          </li>
+                          <li>
+                            6. Organizing technical events and sessions online
+                            and offline in regular time intervals
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <p className="text-lightBlue font-medium text-xl mt-2">
-                      &nbsp;LEARN MORE ABOUT OUR TEAM
-                    </p>
-                  </div>
-                </div>
+                    <div className="photo-area w-[90vmin] h-[70vh] ml-3">
+                      <div className="area w-[88vmin] h-[50vh] mt-5 ml-3 flex flex-start items-center">
+                        <img
+                          src="./t1.png"
+                          className="max-h-full max-w-full object-contain"
+                        ></img>
+                      </div>
+                      <div className="w-[90vmin] flex ml-[4vmin] mt-[3vmin]">
+                        <div className="w-[5vmin] h-[5vmin]">
+                          <img src="./rightarrow.png"></img>
+                        </div>
+                        <p className="text-lightBlue font-medium text-xl mt-2">
+                          &nbsp;LEARN MORE ABOUT OUR TEAM
+                        </p>
+                      </div>
+                    </div>
+                  </>
+                )) || (
+                  <>
+                    <div className="text-area w-[77vmin]  h-[80vh]">
+                      <div className="font-poppins">
+                        <p className="ml-1 text-[2.5vmin] font-bold text-btnColor">
+                          //About our Community Platform
+                        </p>
+                        <p className="ml-1 text-[3.56vmin] font-extrabold mt-1">
+                          An Ultimate Technical Community For
+                        </p>
+                        <p className="ml-1 text-[3.56vmin] font-extrabold">
+                          Your Career Growth
+                        </p>
+                      </div>
+
+                      <div className="ml-1 holder w-[74vmin] text-[2.65vmin] text-bannerGrey">
+                        The Codemap community is an ultimate coding community
+                        for all tech enthusiasts who want to pursue a promising
+                        career in the contemporary technical industry we have
+                        strong vision to help students grow and learn new skills
+                        with more networking oppurtunies by the community.We
+                        focus mainly on:
+                        <ul>
+                          <li>1. Technical Bootcamps and Blogs</li>
+                          <li>
+                            2. Community Support in solving technical problems
+                          </li>{" "}
+                          <li>3. Certifications on the topics mastered</li>
+                          <li>
+                            4. Internship oppurtunites to top performing
+                            students
+                          </li>
+                          <li>
+                            5. We charge absolutely 0 for all the features as we
+                            have the moto to create a skilled and abled
+                            technical community for India
+                          </li>
+                          <li>
+                            6. Organizing technical events and sessions online
+                            and offline in regular time intervals
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="photo-area w-[70vmin] h-[70vh] ml-3">
+                      <div className="area w-[68vmin] h-[50vh] mt-5 ml-3 flex flex-start items-center">
+                        <img
+                          src="./t1.png"
+                          className="max-h-full max-w-full object-contain"
+                        ></img>
+                      </div>
+                      <div className="w-[70vmin] flex ml-[4vmin] mt-[3vmin]">
+                        <div className="w-[5vmin] h-[5vmin]">
+                          <img src="./rightarrow.png"></img>
+                        </div>
+                        <p className="text-lightBlue font-medium text-xl mt-2">
+                          &nbsp;LEARN MORE ABOUT OUR TEAM
+                        </p>
+                      </div>
+                    </div>
+                  </>
+                )}
               </>
             )) ||
             (screen.width >= 2048 && (
