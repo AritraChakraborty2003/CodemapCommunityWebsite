@@ -9,7 +9,7 @@ const Scorepage = () => {
 
   const updateData = () => {
     axios
-      .post(`${import.meta.env.VITE_APP_API_URL}`+"trainings/attempts", {
+      .post(`${import.meta.env.VITE_APP_API_URL}`+"questions/attempts", {
         name: location.state.name,
         email: location.state.email,
         score: localStorage.getItem("score"),
