@@ -92,13 +92,16 @@ const QuestionArea = () => {
           "black";
       }
 
-        navigate("/ScorePage", {
-              state: {
-                name: location.state.name,
-                email: location.state.email,
-           
+      navigate("/ScorePage", {
+        state: {
+          name: location.state.name,
+          email: location.state.email,
+          score: localStorage.getItem("score"),
+        },
+      });
     }
-  
+  };
+
   return (
     <>
       <NavbarCMS type="Interns"></NavbarCMS>
