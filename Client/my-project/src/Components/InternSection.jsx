@@ -1,12 +1,12 @@
 import { NavbarCMS } from "./NavbarCMS";
 import Footer from "./Footer";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect , useState } from "react";
 import axios from "axios";
 const InternSection = () => {
   const location = useLocation();
   const navigate = useNavigate();
-
+  const [data,setData]=useState([])
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_APP_API_URL}` + "questions/attempts")
@@ -40,6 +40,7 @@ const InternSection = () => {
   return (
     <>
       <NavbarCMS type="Interns"></NavbarCMS>
+      {console.log(data)}
       <div className="mainArea w-[100vw] p-10 flex justify-center items-center ">
         <div className="formArea flex  flex-col  gap-y-6 border-[1px] p-5 w-[90vw] md:w-[60vmin]">
           <p className="font-bold text-lg">Please Fill the details:</p>
