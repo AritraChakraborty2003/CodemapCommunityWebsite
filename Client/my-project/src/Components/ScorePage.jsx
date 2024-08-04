@@ -16,7 +16,7 @@ const Scorepage = () => {
         role: location.state.role,
       })
       .then((res) => {
-        if (res.data.startus === 200) {
+        if (res.data.status === 200) {
           navigate("/InternLogin");
         } else {
           alert("Something Went wrong");
