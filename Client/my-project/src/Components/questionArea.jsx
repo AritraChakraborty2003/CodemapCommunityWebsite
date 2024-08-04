@@ -98,8 +98,7 @@ const QuestionArea = () => {
                 email: location.state.email,
            
     }
-  };
-
+  
   return (
     <>
       <NavbarCMS type="Interns"></NavbarCMS>
