@@ -93,7 +93,11 @@ const QuestionArea = () => {
       }
 
       axios
+<<<<<<< HEAD
         .post(`${import.meta.env.VITE_APP_API_URL}` + "questions/attempts", {
+=======
+        .post(`${import.meta.env.VITE_APP_API_URL}`+"questions/attempts", {
+>>>>>>> f960b24a7a8e779aac897263ca80246419589e83
           name: location.state.name,
           email: location.state.email,
         })
@@ -103,6 +107,7 @@ const QuestionArea = () => {
               state: {
                 name: location.state.name,
                 email: location.state.email,
+                score:localStorage.getItem("score"),
               },
             });
           } else {

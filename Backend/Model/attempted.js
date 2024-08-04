@@ -10,6 +10,10 @@ const attemptedSchema = mongoose.Schema(
       type: String,
       require: true,
     },
+    score: {
+      type: String,
+      require: true,
+    },
     attempted: {
       type: String,
       require: true,
