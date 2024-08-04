@@ -1,11 +1,29 @@
 import { NavbarCMS } from "./NavbarCMS";
 import Footer from "./Footer";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 const InternSection = () => {
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    axios
+      .get(`${import.meta.env.VITE_APP_API_URL}` + "questions/attempts")
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   const submitData = () => {
     const role = document.getElementById("role").value;
+
+    data.map((val) => {
+      if (val.email === location.state.email) {
+        alert("Already attempted the quiz");
+      }
+    });
+
     if (role === "*") {
       alert("Please select your role");
     } else {
