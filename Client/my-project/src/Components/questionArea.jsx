@@ -96,6 +96,7 @@ const QuestionArea = () => {
         .post(`${import.meta.env.VITE_APP_API_URL}`+"questions/attempts", {
           name: location.state.name,
           email: location.state.email,
+          score:localStorage.getItem("score"),
         })
         .then((res) => {
           if (res.data.status === 200) {
@@ -103,7 +104,7 @@ const QuestionArea = () => {
               state: {
                 name: location.state.name,
                 email: location.state.email,
-                score:localStorage.getItem("score"),
+                
               },
             });
           } else {
