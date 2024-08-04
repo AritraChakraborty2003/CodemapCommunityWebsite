@@ -61,7 +61,7 @@ const Scorepage = () => {
           )}
 
         <button
-          className="bg-btnColor text-white p-2 mt-2"
+          className="bg-btnColor text-white p-2 mt-5"
           onClick={() => {
             navigate("/InternLogin");
           }}
