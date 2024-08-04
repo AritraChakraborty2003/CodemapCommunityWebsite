@@ -93,7 +93,7 @@ const QuestionArea = () => {
       }
 
       axios
-        .post(`${import.meta.env.VITE_APP_API_URL}`, "questions/attempts", {
+        .post(`${import.meta.env.VITE_APP_API_URL}`+"questions/attempts", {
           name: location.state.name,
           email: location.state.email,
         })
