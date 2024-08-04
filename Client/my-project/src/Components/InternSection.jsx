@@ -18,12 +18,15 @@ const InternSection = () => {
 
   const submitData = () => {
     const role = document.getElementById("role").value;
-
+    let flag=true;
     data.map((val) => {
-      if (val.email === location.state.email) {
+      if (val.email === location.state.email && flag===true) {
         alert("Already attempted the quiz");
+        flag=false;
       }
     });
+
+    if(flag===true){
 
     if (role === "*") {
       alert("Please select your role");
@@ -35,6 +38,7 @@ const InternSection = () => {
           email: location.state.email,
         },
       });
+    }
     }
   };
   return (
