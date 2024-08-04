@@ -2,6 +2,7 @@ import { NavbarCMS } from "./NavbarCMS";
 import Footer from "./Footer";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import axios from "axios";
 const InternSection = () => {
   const location = useLocation();
   const navigate = useNavigate();
