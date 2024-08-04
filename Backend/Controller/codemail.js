@@ -1,3 +1,1 @@
-const sendMail = () =>{
-}
-export {sendMail}
+
