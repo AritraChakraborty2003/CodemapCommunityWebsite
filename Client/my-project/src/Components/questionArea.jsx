@@ -92,25 +92,11 @@ const QuestionArea = () => {
           "black";
       }
 
-      axios
-        .post(`${import.meta.env.VITE_APP_API_URL}`+"questions/attempts", {
-          name: location.state.name,
-          email: location.state.email,
-          score:localStorage.getItem("score"),
-        })
-        .then((res) => {
-          if (res.data.status === 200) {
-            navigate("/ScorePage", {
+        navigate("/ScorePage", {
               state: {
                 name: location.state.name,
                 email: location.state.email,
-                
-              },
-            });
-          } else {
-            alert("Something Went wrong");
-          }
-        });
+           
     }
   };
 
