@@ -9,7 +9,7 @@ const Scorepage = () => {
 
   const updateData = () => {
     axios
-      .post(`${import.meta.env.VITE_APP_API_URL}`, "trainings/attempts", {
+      .post(`${import.meta.env.VITE_APP_API_URL}`+"trainings/attempts", {
         name: location.state.name,
         email: location.state.email,
         score: localStorage.getItem("score"),
@@ -34,7 +34,7 @@ const Scorepage = () => {
           <p className="text-[10vmin] font-bold">
             Hey <span className="text-btnColor">{location.state.name},</span>
           </p>
-          {(parseInt(localStorage.getItem("score")) > 80 && (
+          {(parseInt(localStorage.getItem("score")) >= 80 && (
             <p className="text-[4vmin] font-medium">
               Very Good,&nbsp;Your Score is:&nbsp;
               {parseInt(localStorage.getItem("score"))}/100
@@ -54,7 +54,7 @@ const Scorepage = () => {
             )}
         </div>
 
-        {(parseInt(localStorage.getItem("score")) > 80 && (
+        {(parseInt(localStorage.getItem("score")) >= 80 && (
           <img
             src="./happyicon.png"
             height={120}
