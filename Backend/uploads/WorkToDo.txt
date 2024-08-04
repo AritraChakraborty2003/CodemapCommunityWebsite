@@ -1,0 +1,10 @@
+Work to do
+1. To build restAPIs for Anish Project 
+2. Elderly Figma Design
+
+2.1.a Train Anish and Meet abhishek
+b. Office related works
+
+3. Learn on React.js     2.5hr
+4. Learn on rest API 	 2hr
+5. Figma for self HackProject+RestApis+IOT   1hr
