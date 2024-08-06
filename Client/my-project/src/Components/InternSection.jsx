@@ -22,7 +22,7 @@ const InternSection = () => {
   return (
     <>
       <NavbarCMS type="Interns"></NavbarCMS>
-      {console.log(data)}
+  
       <div className="mainArea w-[100vw] p-10 flex justify-center items-center ">
         <div className="formArea flex  flex-col  gap-y-6 border-[1px] p-5 w-[90vw] md:w-[60vmin]">
           <p className="font-bold text-lg">Please Fill the details:</p>
