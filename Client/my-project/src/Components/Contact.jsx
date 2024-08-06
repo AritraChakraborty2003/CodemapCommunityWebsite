@@ -36,7 +36,7 @@ const Contact = () => {
         <h1 className="mt-6 2xl:mt-10  font-poppins font-bold text-[12vmin]">
           <span className="text-btnColor">Contact-</span>Us
         </h1>
-        <div className="about-area flex justify-center items-center flex-wrap-reverse ml-[-2vmin]">
+        <div className="about-area flex justify-center items-center flex-wrap-reverse ml-[-2vmin] 2xl:gap-x-10">
           {(screen.width <= 900 && (
             <>
               <div className="text-area w-[95vw] md:w-[80vw]  mt-[6vmin]  border-[2px] p-3 flex flex-col justify-center items-center">
@@ -222,8 +222,8 @@ const Contact = () => {
               <>
                 {(screen.height >= 901 && (
                   <>
-                    <div className="photo-area w-[90vmin] h-[80vh] flex justify-end items-center">
-                      <div className="imageHolder w-[80vmin] h-[60vh] p-3">
+                    <div className="photo-area w-[70vmin] h-[80vh] flex justify-end items-center">
+                      <div className="imageHolder w-[60vmin] h-[60vh] p-3">
                         <img
                           src="./customersupport.png"
                           alt=""
@@ -235,7 +235,7 @@ const Contact = () => {
                       <p className="text-[4vmin] font-bold font-poppins">
                         Please fill the details...
                       </p>
-                      <div className=" w-[70vmin] h-[50vh] mt-3 ">
+                      <div className=" w-[75vmin] h-[50vh] mt-3 ">
                         <form>
                           <div className="inputHolder  bg-bgColor flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg ">
                             <img src="./user.png" height={20} width={37}></img>

@@ -1,6 +1,21 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 const InternCard = (props) => {
   const navigate = useNavigate();
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`${import.meta.env.VITE_APP_API_URL}` + "questions/attempts")
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <>
       {props.data.map((val) => (
@@ -18,9 +33,22 @@ const InternCard = (props) => {
             <button
               className="bg-btnColor text-white p-2"
               onClick={() => {
-                navigate("/Intern" + val.details.split(" ")[1], {
-                  state: { email: props.email, name: props.name },
-                });
+                if (val.details.split(" ")[1] === "Score") {
+                  navigate("/Intern" + val.details.split(" ")[1], {
+                    state: {
+                      email: props.email,
+                      name: props.name,
+                      scoreData: data,
+                    },
+                  });
+                } else {
+                  navigate("/Intern" + val.details.split(" ")[1], {
+                    state: {
+                      email: props.email,
+                      name: props.name,
+                    },
+                  });
+                }
               }}
             >
               Go To Page

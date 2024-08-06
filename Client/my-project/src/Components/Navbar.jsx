@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
           <div className="holderNavIcon hidden lg:block">
             {(screen.width <= 1280 && screen.height >= 800 && (
-              <div className="navIconHolder w-[58.5vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
+              <div className="navIconHolder w-[56vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 <p>
                   <a href="#about">About-us</a>
                 </p>
@@ -86,7 +86,7 @@ const Navbar = () => {
                 </p>
               </div>
             )) || (
-              <div className="navIconHolder w-[65vw] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
+              <div className="navIconHolder w-[65vw] 2xl:w-[64vw] 2xl:text-[2.15vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 <p>
                   <a href="#about">About-us</a>
                 </p>
@@ -148,7 +148,7 @@ const Navbar = () => {
                     },
                   });
                 }}
-                className="w-[24vmin] 2xl:w-full   bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4"
+                className="w-[24vmin] 2xl:w-[19vmin]  bg-btnColor p-3 rounded-lg text-lg text-white 2xl:text-[2.45vmin] 2xl:p-4"
               >
                 LMS Platform
               </button>

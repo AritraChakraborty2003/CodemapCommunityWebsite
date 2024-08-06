@@ -92,28 +92,14 @@ const QuestionArea = () => {
           "black";
       }
 
-      axios
-<<<<<<< HEAD
-        .post(`${import.meta.env.VITE_APP_API_URL}` + "questions/attempts", {
-=======
-        .post(`${import.meta.env.VITE_APP_API_URL}`+"questions/attempts", {
->>>>>>> f960b24a7a8e779aac897263ca80246419589e83
+      navigate("/ScorePage", {
+        state: {
           name: location.state.name,
           email: location.state.email,
-        })
-        .then((res) => {
-          if (res.data.status === 200) {
-            navigate("/ScorePage", {
-              state: {
-                name: location.state.name,
-                email: location.state.email,
-                score:localStorage.getItem("score"),
-              },
-            });
-          } else {
-            alert("Something Went wrong");
-          }
-        });
+          role: location.state.role,
+          score: localStorage.getItem("score"),
+        },
+      });
     }
   };
 

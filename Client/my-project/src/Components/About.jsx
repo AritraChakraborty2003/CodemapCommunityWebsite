@@ -195,20 +195,20 @@ const About = () => {
               <>
                 {(screen.height >= 901 && (
                   <>
-                    <div className="text-area w-[90vmin]  h-[80vh]">
+                    <div className="text-area w-[80vmin]  h-[80vh] ml-1">
                       <div className="font-poppins">
-                        <p className="ml-2 text-[2.5vmin] font-bold text-btnColor">
+                        <p className="ml-1 text-[2.5vmin] font-bold text-btnColor">
                           //About our Community Platform
                         </p>
-                        <p className="ml-2 text-[3.56vmin] font-extrabold mt-1">
+                        <p className="ml-1 text-[3.56vmin] font-extrabold mt-1">
                           An Ultimate Technical Community For
                         </p>
-                        <p className="ml-2 text-[3.56vmin] font-extrabold">
+                        <p className="ml-1 text-[3.56vmin] font-extrabold">
                           Your Career Growth
                         </p>
                       </div>
 
-                      <div className="ml-2 holder w-[85vmin] text-[2.65vmin] text-bannerGrey">
+                      <div className="ml-2 holder w-[75vmin] text-[2.65vmin] text-bannerGrey">
                         The Codemap community is an ultimate coding community
                         for all tech enthusiasts who want to pursue a promising
                         career in the contemporary technical industry we have
@@ -237,8 +237,8 @@ const About = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className="photo-area w-[90vmin] h-[70vh] ml-3">
-                      <div className="area w-[88vmin] h-[50vh] mt-5 ml-3 flex flex-start items-center">
+                    <div className="photo-area w-[70vmin] h-[70vh] ml-3">
+                      <div className="area w-[68vmin] h-[50vh] mt-5 ml-3 flex flex-start items-center">
                         <img
                           src="./t1.png"
                           className="max-h-full max-w-full object-contain"
@@ -269,7 +269,7 @@ const About = () => {
                         </p>
                       </div>
 
-                      <div className="ml-1 holder w-[74vmin] text-[2.65vmin] text-bannerGrey">
+                      <div className="ml-1 holder w-[80vmin] text-[2.65vmin] text-bannerGrey">
                         The Codemap community is an ultimate coding community
                         for all tech enthusiasts who want to pursue a promising
                         career in the contemporary technical industry we have
@@ -298,8 +298,8 @@ const About = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className="photo-area w-[74vmin] h-[70vh] ml-3">
-                      <div className="area w-[68vmin] h-[50vh] mt-5 ml-3 flex flex-start items-center">
+                    <div className="photo-area w-[80vmin] h-[70vh] ml-3">
+                      <div className="area w-[77vmin] h-[50vh] mt-5 ml-3 flex flex-start items-center">
                         <img
                           src="./t1.png"
                           className="max-h-full max-w-full object-contain"

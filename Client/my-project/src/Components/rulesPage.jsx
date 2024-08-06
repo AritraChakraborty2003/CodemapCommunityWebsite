@@ -58,6 +58,7 @@ const RulesPage = () => {
                   data: data,
                   name: location.state.name,
                   email: location.state.email,
+                  role: location.state.data,
                 },
               });
             }}

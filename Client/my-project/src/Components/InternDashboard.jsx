@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const InternDashboard = () => {
   const location = useLocation();
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const displayObj = [
     {
@@ -27,7 +27,7 @@ const InternDashboard = () => {
     { image: "./scoreandleaderboard.png", details: "Check Score" },
     { image: "./suggestionicon.png", details: " Add suggestion" },
     { image: "./complaint.png", details: "Box complaint" },
-    {image:"./test.png", details:"Test Section"}
+    { image: "./test.png", details: "Test Section" },
   ];
 
   return (
@@ -35,6 +35,7 @@ const InternDashboard = () => {
       {(localStorage.getItem("userIntern") === "internadmin" && (
         <>
           <NavbarCMS type="Interns" />
+
           <p className="text-[5.75vmin] font-bold ml-3">
             Welcome{" "}
             <span className="text-btnColor text-[6vmin] font-poppins">

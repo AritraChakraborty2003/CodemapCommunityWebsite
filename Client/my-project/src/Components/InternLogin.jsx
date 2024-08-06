@@ -35,8 +35,8 @@ const InternLogin = () => {
   return (
     <>
       <NavbarGenral />
-      <div className="bg-bgColor w-[96w] h-[90vh] md:h-[85vh] flex  justify-center items-center">
-        <div className="mt-[-12vmin] lg:mt-0 card w-[96vw] md:w-[80vmin] 2xl:w-[60vmin] p-8 2xl:p-10 border-lightGrey border-[1px] shadow-2xl">
+      <div className="bg-bgColor w-[96w] h-[87vh] md:h-[85vh] flex  justify-center items-center">
+        <div className="mt-[-20vmin] lg:mt-0 card w-[87vw] md:w-[80vmin] 2xl:w-[60vmin] p-6  2xl:p-10 border-lightGrey border-[1px] shadow-2xl">
           <form className="flex flex-col gap-y-2">
             <div className="holder flex w-[100%] flex justify-center items-center gap-x-3">
               <div className="imageHolder w-[26vmin] h-[26vmin] md:w-[19vmin] md:h-[19vmin] lg:w-[13vmin] lg:h-[13vmin] ">

@@ -14,6 +14,10 @@ const attemptedSchema = mongoose.Schema(
       type: String,
       require: true,
     },
+    role: {
+      type: String,
+      require: true,
+    },
     attempted: {
       type: String,
       require: true,

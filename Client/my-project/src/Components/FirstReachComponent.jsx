@@ -164,15 +164,15 @@ const FirstReachComponent = () => {
             <>
               {(screen.height >= 901 && (
                 <>
-                  <div className="text-area w-[90vmin] pb-2 flex justify-end items-center">
-                    <div className="imageHolder w-[80vmin] pb-2  text-[3.25vmin]">
+                  <div className="text-area w-[80vmin] pb-2 flex justify-end items-center">
+                    <div className="imageHolder w-[75vmin] pb-2  text-[3.25vmin]">
                       <img
                         src="./IndiaMap.png"
                         className="max-w-full max-h-full object-contain"
                       ></img>
                     </div>
                   </div>
-                  <div className="photo-area w-[90vmin]  pb-2 flex flex-col gap-y-2 justify-center items-center">
+                  <div className="photo-area w-[75vmin]  pb-2 flex flex-col gap-y-2 justify-center items-center">
                     <p className="font-poppins  text-[5vmin]  font-bold  ">
                       We are spread accross the Pan India Level
                     </p>

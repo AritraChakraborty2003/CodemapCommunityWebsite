@@ -38,6 +38,8 @@ import RulesPage from "./Components/rulesPage";
 import QuestionArea from "./Components/questionArea";
 import { CMSAddQuestions } from "./Components/CMSAddQuestions";
 import Scorepage from "./Components/ScorePage";
+import TestResult from "./Components/TestResult";
+import { LeaderboardPage } from "./Components/LeaderboardPage";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -53,6 +55,8 @@ function App() {
             path="/InternAllocation"
             element={<InternAllocation />}
           ></Route>
+          <Route path="/LeaderboardPage" element={<LeaderboardPage />}></Route>
+          <Route path="/InternResult" element={<TestResult />}></Route>
           <Route path="/ScorePage" element={<Scorepage />}></Route>
           <Route path="/CMSAddQuestions" element={<CMSAddQuestions />}></Route>
           <Route path="/questionArea" element={<QuestionArea />}></Route>
