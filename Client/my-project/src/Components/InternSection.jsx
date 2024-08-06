@@ -1,30 +1,11 @@
 import { NavbarCMS } from "./NavbarCMS";
 import Footer from "./Footer";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-import axios from "axios";
 const InternSection = () => {
   const location = useLocation();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    axios
-      .get(`${import.meta.env.VITE_APP_API_URL}` + "questions/attempts")
-      .then((res) => {
-        setData(res.data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
   const submitData = () => {
     const role = document.getElementById("role").value;
-
-    data.map((val) => {
-      if (val.email === location.state.email) {
-        alert("Already attempted the quiz");
-      }
-    });
-
     if (role === "*") {
       alert("Please select your role");
     } else {
@@ -36,10 +17,12 @@ const InternSection = () => {
         },
       });
     }
+    }
   };
   return (
     <>
       <NavbarCMS type="Interns"></NavbarCMS>
+      {console.log(data)}
       <div className="mainArea w-[100vw] p-10 flex justify-center items-center ">
         <div className="formArea flex  flex-col  gap-y-6 border-[1px] p-5 w-[90vw] md:w-[60vmin]">
           <p className="font-bold text-lg">Please Fill the details:</p>

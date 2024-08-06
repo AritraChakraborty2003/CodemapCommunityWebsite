@@ -177,6 +177,8 @@ const QuestionArea = () => {
           state: {
             name: location.state.name,
             email: location.state.email,
+             role: location.state.role,
+          score: localStorage.getItem("score"),
           },
         })}
     </>
