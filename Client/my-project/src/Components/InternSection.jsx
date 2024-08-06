@@ -17,8 +17,8 @@ const InternSection = () => {
         },
       });
     }
-    }
   };
+
   return (
     <>
       <NavbarCMS type="Interns"></NavbarCMS>
@@ -64,4 +64,5 @@ const InternSection = () => {
     </>
   );
 };
+
 export default InternSection;
