@@ -8,8 +8,8 @@ const LeaderboardPage = (props) => {
             <p className="text-[6vmin] md:text-[4vmin] font-medium">
               <b>Name:</b> {props.data[0].name}{" "}
             </p>
-            <p className="text-[4vmin] md:text-[3.12vmin] font-bold">
-              Score: {props.data[0].score}/100
+            <p className="text-[4vmin] md:text-[3.11vmin] font-bold">
+              Score: {props.data[0].score}
             </p>
           </div>
         </div>
@@ -19,8 +19,8 @@ const LeaderboardPage = (props) => {
             <p className="text-[6vmin] md:text-[4vmin] font-medium">
               <b>Name:</b> {props.data[1].name}{" "}
             </p>
-            <p className="text-[4vmin] md:text-[3.12vmin]  font-bold">
-              Score: {props.data[1].score}/100
+            <p className="text-[4vmin] md:text-[3.11vmin]  font-bold">
+              Score: {props.data[1].score}
             </p>
           </div>
         </div>
@@ -30,8 +30,8 @@ const LeaderboardPage = (props) => {
             <p className="text-[6vmin] md:text-[4vmin] font-medium">
               <b>Name:</b> {props.data[2].name}{" "}
             </p>
-            <p className="text-[4vmin] md:text-[3.12vmin] font-bold">
-              Score: {props.data[2].score}/100
+            <p className="text-[4vmin] md:text-[3.11vmin] font-bold">
+              Score: {props.data[2].score}
             </p>
           </div>
         </div>
