@@ -2,8 +2,22 @@ import { NavbarCMS } from "./NavbarCMS";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import RemoveTask from "./RemoveTask";
 const CMSTaskManager = () => {
   const [state, setstate] = useState(0);
+  const [state1, setState1] = useState({
+    selectedFile: null,
+    filename: null,
+  });
+  const fileSelectedHandler = (event) => {
+    event.preventDefault();
+    let file = event.target.files[0].name;
+    setState1({
+      selectedFile: event.target.files[0],
+      filename: document.getElementById("file").value,
+    });
+    console.log(file);
+  };
 
   const updateData = (e) => {
     e.preventDefault();
@@ -34,6 +48,41 @@ const CMSTaskManager = () => {
         console.log(err);
       });
   };
+
+  const updateReference = (e) => {
+    e.preventDefault();
+    const pname1 = document.getElementById("pname1").value;
+    const link = document.getElementById("link").value;
+
+    if (pname1 != "" && link != "") {
+      let formData = new FormData();
+      formData.append("pname", pname1);
+      formData.append("link", link);
+
+      formData.append("filename", state1.filename);
+      formData.append("file", state1.selectedFile);
+
+      const config = {
+        headers: { "content-type": "multipart/form-data" },
+      };
+
+      axios
+        .post(
+          `${import.meta.env.VITE_APP_API_URL}` + "references",
+          formData,
+          config
+        )
+        .then((res) => {
+          if (res.data.status == 200) {
+            alert("Data added successfully");
+          } else {
+            alert("Something went wrong");
+          }
+        });
+    } else {
+      alert("All fields are mandatory");
+    }
+  };
   return (
     <>
       <NavbarCMS type="CMS" />
@@ -46,6 +95,10 @@ const CMSTaskManager = () => {
                 document.getElementById("firstLine").style.backgroundColor =
                   "#000000";
                 document.getElementById("secLine").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine1").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine2").style.backgroundColor =
                   "#D3D3D3";
                 setstate(0);
               }}
@@ -66,6 +119,10 @@ const CMSTaskManager = () => {
                   "#000000";
                 document.getElementById("firstLine").style.backgroundColor =
                   "#D3D3D3";
+                document.getElementById("secLine1").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine2").style.backgroundColor =
+                  "#D3D3D3";
                 setstate(1);
               }}
             >
@@ -76,11 +133,91 @@ const CMSTaskManager = () => {
               ></div>
             </p>
           </div>
+
+          <div id="code">
+            <p
+              id="showOpenings1"
+              className="text-[3.5vmin] 2xl:text-[2.75vmin] font-medium"
+              onClick={() => {
+                document.getElementById("secLine1").style.backgroundColor =
+                  "#000000";
+                document.getElementById("firstLine").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine2").style.backgroundColor =
+                  "#D3D3D3";
+                setstate(3);
+              }}
+            >
+              Remove Task
+              <div
+                id="secLine1"
+                className="w-[23vmin] 2xl:w-[19vmin] h-[5px] bg-lightGrey mt-1"
+              ></div>
+            </p>
+          </div>
+
+          <div id="code">
+            <p
+              id="showOpenings2"
+              className="text-[3.5vmin] 2xl:text-[2.75vmin] font-medium"
+              onClick={() => {
+                document.getElementById("secLine2").style.backgroundColor =
+                  "#000000";
+                document.getElementById("secLine1").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("firstLine").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine").style.backgroundColor =
+                  "#D3D3D3";
+                setstate(4);
+              }}
+            >
+              Submitted Task
+              <div
+                id="secLine2"
+                className="w-[23vmin] 2xl:w-[19vmin] h-[5px] bg-lightGrey mt-1"
+              ></div>
+            </p>
+          </div>
         </div>
       </div>
 
+      {state === 0 && (
+        <div className="formHolder p-5 flex justify-center items-center">
+          <form className="p-[5vmin] flex flex-col gap-y-6  border-gray-light border-2 w-[95vw] md:w-[70vmin]">
+            <input
+              type="text"
+              id="pname1"
+              className="text border-b-[1px] p-2"
+              placeholder="Enter project name..."
+            />
+            <input
+              type="text"
+              id="link"
+              className="text border-b-[1px] p-2"
+              placeholder="Enter video link..."
+            />
+            <input
+              type="file"
+              id="file"
+              className="text border-b-[1px] p-2"
+              onChange={fileSelectedHandler}
+              placeholder="Enter Reference file..."
+            />
+            <button
+              type="submit"
+              className="w-[50vmin] md:w-[30vmin] p-3 bg-black text-white"
+              onClick={updateReference}
+            >
+              Add Reference
+            </button>
+          </form>
+        </div>
+      )}
       {state === 1 && (
-        <div className="formHolder p-10 flex justify-center items-center">
+        <div className="formHolder p-5 flex justify-center items-center">
           <form className="p-[5vmin] flex flex-col gap-y-6  border-gray-light border-2 w-[95vw] md:w-[70vmin]">
             <input
               type="text"
@@ -127,6 +264,12 @@ const CMSTaskManager = () => {
               Add data
             </button>
           </form>
+        </div>
+      )}
+
+      {state == 3 && (
+        <div className="formHolder p-5 flex justify-center items-center">
+          <RemoveTask />
         </div>
       )}
       <Footer />

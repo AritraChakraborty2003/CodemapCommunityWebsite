@@ -20,7 +20,7 @@ const InternCard = (props) => {
     <>
       {props.data.map((val) => (
         <div className="cardHolder  bg-bgColor shadow-lg p-3 pb-6 rounded-md border-[1px] w-[80vw] pb-5 pb-2 lg:w-[45vmin] 2xl:w-[50vmin]  flex flex-col justify-center items-center  ">
-          <div className="imageHolder bg-white p-1 w-[75vw] h-[35vmin] border-2 lg:w-[40vmin] lg:h-[30vmin] 2xl:w-[30vmin] border-lightGrey border-[1px] mt-1 rounded-md flex justify-center items-center">
+          <div className="imageHolder bg-white p-1 w-[75vw] h-[35vmin] border-2 lg:w-[40vmin] lg:h-[30vmin] 2xl:w-[30vmin] 2xl:p-4 border-lightGrey border-[1px] mt-1 rounded-md flex justify-center items-center">
             <img
               src={val.image}
               className="max-w-full max-h-full object-contain"
@@ -31,7 +31,7 @@ const InternCard = (props) => {
               <b>{val.details} </b>
             </p>
             <button
-              className="bg-btnColor text-white p-2"
+              className="bg-btnColor text-white p-3"
               onClick={() => {
                 if (val.details.split(" ")[1] === "Score") {
                   navigate("/Intern" + val.details.split(" ")[1], {

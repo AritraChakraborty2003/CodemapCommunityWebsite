@@ -9,7 +9,7 @@ const postTasks = () => {
     const task4 = req.body.task4;
 
     const taskobj = new tasks({
-      pname: pname,
+      projectname: pname,
       email: email,
       task: task1,
       attempted: "false",
@@ -18,7 +18,7 @@ const postTasks = () => {
     taskobj.save();
 
     const taskobj1 = new tasks({
-      pname: pname,
+      projectname: pname,
       email: email,
       task: task2,
       attempted: "false",
@@ -26,7 +26,7 @@ const postTasks = () => {
 
     taskobj1.save();
     const taskobj2 = new tasks({
-      pname: pname,
+      projectname: pname,
       email: email,
       task: task3,
       attempted: "false",
@@ -34,7 +34,7 @@ const postTasks = () => {
 
     taskobj2.save();
     const taskobj3 = new tasks({
-      pname: pname,
+      projectname: pname,
       email: email,
       task: task4,
       attempted: "false",

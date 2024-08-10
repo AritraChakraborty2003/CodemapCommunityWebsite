@@ -41,6 +41,7 @@ import Scorepage from "./Components/ScorePage";
 import TestResult from "./Components/TestResult";
 import { LeaderboardPage } from "./Components/LeaderboardPage";
 import CMSTaskManager from "./Components/CMSTaskManager";
+import TaskCard from "./Components/TaskCard";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -56,6 +57,8 @@ function App() {
             path="/InternAllocation"
             element={<InternAllocation />}
           ></Route>
+
+          <Route path="Taskcard" element={<TaskCard />}></Route>
           <Route path="/CMSTaskManager" element={<CMSTaskManager />}></Route>
           <Route path="/LeaderboardPage" element={<LeaderboardPage />}></Route>
           <Route path="/InternResult" element={<TestResult />}></Route>
