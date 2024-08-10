@@ -40,6 +40,7 @@ import { CMSAddQuestions } from "./Components/CMSAddQuestions";
 import Scorepage from "./Components/ScorePage";
 import TestResult from "./Components/TestResult";
 import { LeaderboardPage } from "./Components/LeaderboardPage";
+import CMSTaskManager from "./Components/CMSTaskManager";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -55,6 +56,7 @@ function App() {
             path="/InternAllocation"
             element={<InternAllocation />}
           ></Route>
+          <Route path="/CMSTaskManager" element={<CMSTaskManager />}></Route>
           <Route path="/LeaderboardPage" element={<LeaderboardPage />}></Route>
           <Route path="/InternResult" element={<TestResult />}></Route>
           <Route path="/ScorePage" element={<Scorepage />}></Route>

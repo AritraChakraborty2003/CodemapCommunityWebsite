@@ -36,7 +36,9 @@ const NavbarCMS = (props) => {
                     <p>Events</p>
                     <p>CL</p>
                     <p>HiringLetter</p>
-                    <p>Data-Manager</p>
+                    <p onClick={() => navigate("/CMSTaskManager")}>
+                      Task-Manager
+                    </p>
                     <p>Team Data</p>
                     <p onClick={() => navigate("/InternTraining")}>
                       TrainingIntern
@@ -68,7 +70,9 @@ const NavbarCMS = (props) => {
                     <p>Events</p>
                     <p>CL</p>
                     <p>HiringLetter</p>
-                    <p>Data-Manager</p>
+                    <p onClick={() => navigate("/CMSTaskManager")}>
+                      Task-Manager
+                    </p>
                     <p>Team Data</p>
                     <p
                       onClick={() => {
@@ -154,7 +158,7 @@ const NavbarCMS = (props) => {
                 <p>Events</p>
                 <p>CL</p>
                 <p>HiringLetter</p>
-                <p>Data-Manager</p>
+                <p onClick={() => navigate("/CMSTaskManager")}>Task-Manager</p>
                 <p>Team Data</p>
                 <p
                   onClick={() => {

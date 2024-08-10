@@ -17,6 +17,7 @@ import { leaverouter } from "./Routes/leaveRouter.js";
 import { questionRouter } from "./Routes/questionRouter.js";
 import { suggestionsRouter } from "./Routes/suggestionsRouter.js";
 import { videosRouter } from "./Routes/videosRouter.js";
+import { TaskRouter } from "./Model/TaskRouter.js";
 //The applications basics configurations
 dotenv.config();
 const app = express();
@@ -41,7 +42,8 @@ app.use("/api/complaint", complaintsRouter);
 app.use("/api/suggestion", suggestionsRouter);
 app.use("/api/leave", leaverouter);
 app.use("/api/videos", videosRouter);
-app.use("/api/questions",questionRouter)
+app.use("/api/questions", questionRouter);
+app.use("/api/task", TaskRouter);
 
 //app listen logic
 app.listen(`${process.env.PORT}`, () => {
