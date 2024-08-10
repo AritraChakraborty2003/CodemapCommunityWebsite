@@ -202,9 +202,14 @@ const NavbarCMS = (props) => {
 
             <li>
               <button
-                onClick={() => {
-                  localStorage.removeItem("user");
-                  navigate("/CMSLogin");
+                 onClick={() => {
+                  if (props.type === "CMS") {
+                    localStorage.removeItem("user");
+                    navigate("/CMSOpenings");
+                  } else if (props.type === "Interns") {
+                    localStorage.removeItem("userIntern");
+                    navigate("/InternLogin");
+                  }
                 }}
                 className=" 2xl:w-[20vmin] bg-btnColor p-3 rounded-lg text-white ml-[-0.5vmin]"
               >
