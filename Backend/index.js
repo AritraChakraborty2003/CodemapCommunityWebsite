@@ -17,7 +17,7 @@ import { leaverouter } from "./Routes/leaveRouter.js";
 import { questionRouter } from "./Routes/questionRouter.js";
 import { suggestionsRouter } from "./Routes/suggestionsRouter.js";
 import { videosRouter } from "./Routes/videosRouter.js";
-import { TaskRouter } from "./Model/TaskRouter.js";
+import { TaskRouter } from "./Routes/TaskRouter.js";
 import { ReferenceRouter } from "./Routes/ReferenceRouter.js";
 //The applications basics configurations
 dotenv.config();
