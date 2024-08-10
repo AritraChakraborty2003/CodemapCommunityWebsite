@@ -24,7 +24,7 @@ const InternAllocation = () => {
         console.log(err);
       });
   }, []);
-
+  console.log(data);
   return (
     <>
       <NavbarCMS type="Interns" />
@@ -73,7 +73,7 @@ const InternAllocation = () => {
 
       {state === 0 && (
         <>
-          <TaskCard data={data} />
+          <TaskCard data={data} email={location.state.email} />
         </>
       )}
 

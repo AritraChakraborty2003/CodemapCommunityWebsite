@@ -1,4 +1,6 @@
+import axios from "axios";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const TaskCard = (props) => {
   const getDate = () => {
@@ -9,6 +11,43 @@ const TaskCard = (props) => {
     const year = today.getFullYear();
 
     return `${date}/${month}/${year}`;
+  };
+
+  const addProgress = (task, projectname) => {
+    const link = document.getElementById("link").value;
+    axios
+      .post(`${import.meta.env.VITE_APP_API_URL}` + "task/update", {
+        task: task,
+        projectname: projectname,
+      })
+      .then((res) => {
+        if (res.data.status === 200) {
+          /*axios
+            .post(`${import.meta.env.VITE_APP_API_URL}` + "progress", {
+              task: task,
+              projectname: projectname,
+              email: props.email,
+              link: link,
+            })
+            .then((res) => {
+              if (res.data.status === 200) {
+                alert("Data added successfully");
+              } else {
+                alert("Something went wrong");
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+        } else {
+          alert("Something went wrong");
+        }*/
+          alert("Done");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
   const [currentdate, setDate] = useState(getDate());
   return (
@@ -37,6 +76,9 @@ const TaskCard = (props) => {
               <button
                 className="bg-btnColor text-white p-2 text-[3vmin] 2xl:text-[2.5vmin]"
                 id="done"
+                onClick={() => {
+                  addProgress(val.task, val.projectname);
+                }}
               >
                 Submit Work
               </button>
