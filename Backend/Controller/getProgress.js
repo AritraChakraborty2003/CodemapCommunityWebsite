@@ -1,5 +1,5 @@
 import { progresses } from "../Model/progress.js";
-const getProgress = () => {
+const getProgress = (req, res) => {
   progresses
     .find()
     .then((val) => {

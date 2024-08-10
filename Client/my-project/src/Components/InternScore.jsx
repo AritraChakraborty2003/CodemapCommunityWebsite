@@ -110,7 +110,7 @@ const InternScore = () => {
               />
             </div>
             <p className="text-[5.6vmin] font-medium mt-[4vmin] font-poppins">
-              Your total score is: <b>{yourScore}/100</b>
+              Your total score is: <b>{yourScore}</b>
             </p>
           </div>
         </>

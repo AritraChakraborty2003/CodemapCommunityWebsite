@@ -73,7 +73,7 @@ const InternAllocation = () => {
 
       {state === 0 && (
         <>
-          <TaskCard data={data} email={location.state.email} />
+          <TaskCard data={data} email={location.state.email} type="user" />
         </>
       )}
 

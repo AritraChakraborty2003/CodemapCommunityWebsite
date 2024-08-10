@@ -22,7 +22,7 @@ const TaskCard = (props) => {
       })
       .then((res) => {
         if (res.data.status === 200) {
-          /*axios
+          axios
             .post(`${import.meta.env.VITE_APP_API_URL}` + "progress", {
               task: task,
               projectname: projectname,
@@ -31,7 +31,7 @@ const TaskCard = (props) => {
             })
             .then((res) => {
               if (res.data.status === 200) {
-                alert("Data added successfully");
+                window.location.reload();
               } else {
                 alert("Something went wrong");
               }
@@ -41,14 +41,21 @@ const TaskCard = (props) => {
             });
         } else {
           alert("Something went wrong");
-        }*/
-          alert("Done");
         }
       })
       .catch((err) => {
         console.log(err);
       });
   };
+
+  const UpdateTask = (val) => {
+    if (val === "Accept") {
+      alert("Will do something soon");
+    } else {
+      alert("Will Do Something");
+    }
+  };
+
   const [currentdate, setDate] = useState(getDate());
   return (
     <>
@@ -67,21 +74,55 @@ const TaskCard = (props) => {
               <div className="ProjectName font-poppins font-medium text-[3vmin] 2xl:text-[2.5vmin]">
                 <b>Deadline:</b>&nbsp;&nbsp;{currentdate}
               </div>
-              <input
-                type="text"
-                id="link"
-                className="text p-2 w-[97%] text-[3vmin] 2xl:text-[2.5vmin]"
-                placeholder="Enter the github Link of work"
-              />
-              <button
-                className="bg-btnColor text-white p-2 text-[3vmin] 2xl:text-[2.5vmin]"
-                id="done"
-                onClick={() => {
-                  addProgress(val.task, val.projectname);
-                }}
-              >
-                Submit Work
-              </button>
+              {(props.type === "user" && (
+                <>
+                  <input
+                    type="text"
+                    id="link"
+                    className="text p-2 w-[97%] text-[3vmin] 2xl:text-[2.5vmin]"
+                    placeholder="Enter the github Link of work"
+                  />
+                  <button
+                    className="bg-btnColor text-white p-2 text-[3vmin] 2xl:text-[2.5vmin]"
+                    id="done"
+                    onClick={() => {
+                      addProgress(val.task, val.projectname);
+                    }}
+                  >
+                    Submit Work
+                  </button>
+                </>
+              )) || (
+                <>
+                  <div className="ProjectName font-poppins font-medium text-[3vmin] 2xl:text-[2.5vmin]">
+                    <b>Email: </b>&nbsp;&nbsp;{val.email}
+                  </div>
+                  <div className="ProjectName font-poppins font-medium text-[3vmin] 2xl:text-[2.5vmin]">
+                    <b>Link:</b>&nbsp;&nbsp;
+                    <a href={val.link} target="_blank">
+                      {val.link}
+                    </a>
+                  </div>
+                  <div className="flex gap-x-[6vmin]">
+                    <button
+                      className="bg-btnColor text-white p-2"
+                      onClick={() => {
+                        UpdateTask("Accept");
+                      }}
+                    >
+                      Accept
+                    </button>
+                    <button
+                      className="bg-btnColor text-white p-2"
+                      onClick={() => {
+                        UpdateTask("Reject");
+                      }}
+                    >
+                      Reject
+                    </button>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         ))}

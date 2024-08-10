@@ -3,12 +3,27 @@ import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import RemoveTask from "./RemoveTask";
+import TaskCard from "./TaskCard";
 const CMSTaskManager = () => {
   const [state, setstate] = useState(0);
+
+  const [data, setData] = useState([]);
   const [state1, setState1] = useState({
     selectedFile: null,
     filename: null,
   });
+
+  useEffect(() => {
+    axios
+      .get(`${import.meta.env.VITE_APP_API_URL}` + "progress")
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   const fileSelectedHandler = (event) => {
     event.preventDefault();
     let file = event.target.files[0].name;
@@ -272,6 +287,8 @@ const CMSTaskManager = () => {
           <RemoveTask />
         </div>
       )}
+
+      {state == 4 && <TaskCard data={data} type="admin" />}
       <Footer />
     </>
   );
