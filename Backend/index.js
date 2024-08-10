@@ -20,6 +20,7 @@ import { videosRouter } from "./Routes/videosRouter.js";
 import { TaskRouter } from "./Routes/TaskRouter.js";
 import { ReferenceRouter } from "./Routes/ReferenceRouter.js";
 import { progressRouter } from "./Routes/progressRouter.js";
+import { ReportRouter } from "./Routes/ReportRouter.js";
 //The applications basics configurations
 dotenv.config();
 const app = express();
@@ -48,6 +49,7 @@ app.use("/api/questions", questionRouter);
 app.use("/api/task", TaskRouter);
 app.use("/api/references", ReferenceRouter);
 app.use("/api/progress", progressRouter);
+app.use("/api/reports", ReportRouter);
 
 //app listen logic
 app.listen(`${process.env.PORT}`, () => {

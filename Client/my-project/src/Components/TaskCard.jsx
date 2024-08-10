@@ -48,11 +48,33 @@ const TaskCard = (props) => {
       });
   };
 
-  const UpdateTask = (val) => {
+  const UpdateTask = (val, project, task) => {
     if (val === "Accept") {
       alert("Will do something soon");
     } else {
-      alert("Will Do Something");
+      axios
+        .post(`${import.meta.env.VITE_APP_API_URL}` + "progress/delete", {
+          projectname: project,
+          task: task,
+        })
+        .then((res) => {
+          if (res.data.status === 200) {
+            axios
+              .post(`${import.meta.env.VITE_APP_API_URL}` + "task/revert", {
+                projectname: project,
+                task: task,
+              })
+              .then((res) => {
+                if (res.data.status === 200) {
+                  window.location.reload();
+                } else {
+                  alert("Something went wrong");
+                }
+              });
+          } else {
+            alert("Something went wrong");
+          }
+        });
     }
   };
 
@@ -100,7 +122,7 @@ const TaskCard = (props) => {
                   <div className="ProjectName font-poppins font-medium text-[3vmin] 2xl:text-[2.5vmin]">
                     <b>Link:</b>&nbsp;&nbsp;
                     <a href={val.link} target="_blank">
-                      {val.link}
+                      Click on the link
                     </a>
                   </div>
                   <div className="flex gap-x-[6vmin]">
@@ -115,7 +137,7 @@ const TaskCard = (props) => {
                     <button
                       className="bg-btnColor text-white p-2"
                       onClick={() => {
-                        UpdateTask("Reject");
+                        UpdateTask("Reject", val.projectname, val.task);
                       }}
                     >
                       Reject

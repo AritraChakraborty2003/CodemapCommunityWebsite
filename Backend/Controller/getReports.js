@@ -1,5 +1,5 @@
 import { reports } from "../Model/report.js";
-const getReports = () => {
+const getReports = (req, res) => {
   reports
     .find()
     .then((val) => {
