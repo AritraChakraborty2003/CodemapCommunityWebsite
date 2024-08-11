@@ -1,7 +1,7 @@
 import { tasks } from "../Model/tasks.js";
 const taskRemover = () => {
   return (req, res) => {
-    const projectname = req.body.name;
+    const projectname = req.body.projectname;
     const email = req.body.email;
     const task = req.body.task;
     tasks

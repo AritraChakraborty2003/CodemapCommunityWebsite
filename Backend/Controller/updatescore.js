@@ -6,7 +6,9 @@ const UpdateScore = () => {
     attempts
       .findOne({ email: email })
       .then((doc) => {
-        doc.score += 10;
+        const updated_score = Number(doc.score) + 10;
+        const stringValScore = updated_score.toString();
+        doc.score = stringValScore;
         doc.save();
       })
       .catch((err) => {
