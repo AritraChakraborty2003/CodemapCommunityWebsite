@@ -48,9 +48,71 @@ const TaskCard = (props) => {
       });
   };
 
-  const UpdateTask = (val, project, task) => {
+  const UpdateTask = (val, project, task, email) => {
     if (val === "Accept") {
-      alert("Will do something soon");
+      axios
+        .post(`${import.meta.env.VITE_APP_API_URL}` + "questions/update", {
+          email: email,
+        })
+        .then((res) => {
+          if (res.data.status === 200) {
+            axios
+              .post(`${import.meta.env.VITE_APP_API_URL}` + "progress/delete", {
+                projectname: project,
+                task: task,
+              })
+              .then((res) => {
+                if (res.data.status === 200) {
+                  axios
+                    .post(`${import.meta.env.VITE_APP_API_URL}` + "reports", {
+                      projectname: project,
+                      email: email,
+                      task: task,
+                    })
+                    .then((res) => {
+                      if (res.data.status === 200) {
+                        axios
+                          .post(
+                            `${import.meta.env.VITE_APP_API_URL}` +
+                              "task/remove",
+                            {
+                              projectname: project,
+                              email: email,
+                              task: task,
+                            }
+                          )
+                          .then((res) => {
+                            if (res.data.status === 200) {
+                              alert("Updated succesfully");
+                              window.location.reload();
+                            } else {
+                              alert("Something went wrong");
+                            }
+                          })
+                          .catch((err) => {
+                            alert("Something went wrong");
+                          });
+                      } else {
+                        alert("Something went wrong");
+                      }
+                    })
+                    .catch((err) => {
+                      alert("Something went wrong");
+                    });
+                } else {
+                  alert("Something went wrong");
+                }
+              })
+              .catch((err) => {
+                alert("Something went wrong");
+              });
+          } else {
+            alert("Something went wrong");
+          }
+        })
+        .catch((err) => {
+          alert("Something went wrong");
+        });
     } else {
       axios
         .post(`${import.meta.env.VITE_APP_API_URL}` + "progress/delete", {
@@ -129,7 +191,12 @@ const TaskCard = (props) => {
                     <button
                       className="bg-btnColor text-white p-2"
                       onClick={() => {
-                        UpdateTask("Accept");
+                        UpdateTask(
+                          "Accept",
+                          val.projectname,
+                          val.task,
+                          val.email
+                        );
                       }}
                     >
                       Accept
@@ -137,7 +204,12 @@ const TaskCard = (props) => {
                     <button
                       className="bg-btnColor text-white p-2"
                       onClick={() => {
-                        UpdateTask("Reject", val.projectname, val.task);
+                        UpdateTask(
+                          "Reject",
+                          val.projectname,
+                          val.task,
+                          val.email
+                        );
                       }}
                     >
                       Reject
