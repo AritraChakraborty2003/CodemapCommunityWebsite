@@ -8,6 +8,7 @@ const CmsLogin = () => {
     if (
       (email === "aritra.codemap2024@gmail.com" &&
         password === "Aritra0307@2024") ||
+      (email === "animetra14@gmail.com" && password === "Anish0307@2024") ||
       (email === "abhishek.codemap2024@gmail.com" &&
         password === "Abhi0307@2024")
     ) {

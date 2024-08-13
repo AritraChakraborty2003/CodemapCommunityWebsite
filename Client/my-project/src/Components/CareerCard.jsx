@@ -23,7 +23,7 @@ const CareerCard = (props) => {
   return (
     <>
       {props.data.map((val) => (
-        <div className="flex flex-col box-Holder rounded-lg bg-bgColor w-[90vw] pb-10 md:w-[58vmin]  2xl:w-[49vmin]  border-[1px] mt-2 ml-3">
+        <div className="flex flex-wrap flex-col box-Holder rounded-lg bg-bgColor w-[90vw] pb-10 md:w-[58vmin]  2xl:w-[49vmin]  border-[1px] mt-2 ml-3">
           <div className="row1 font-bold text-[5vmin] 2xl:text-[4vmin]  ml-3 mt-3">
             <div className="flex gap-x-3">
               {props.type === "CMS" && (
