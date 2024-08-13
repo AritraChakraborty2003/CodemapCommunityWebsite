@@ -21,6 +21,8 @@ import { TaskRouter } from "./Routes/TaskRouter.js";
 import { ReferenceRouter } from "./Routes/ReferenceRouter.js";
 import { progressRouter } from "./Routes/progressRouter.js";
 import { ReportRouter } from "./Routes/ReportRouter.js";
+import { DeadlineRouter } from "./Routes/DeadlineRouter.js";
+
 //The applications basics configurations
 dotenv.config();
 const app = express();
@@ -50,6 +52,7 @@ app.use("/api/task", TaskRouter);
 app.use("/api/references", ReferenceRouter);
 app.use("/api/progress", progressRouter);
 app.use("/api/reports", ReportRouter);
+app.use("/api/deadline", DeadlineRouter);
 
 //app listen logic
 app.listen(`${process.env.PORT}`, () => {

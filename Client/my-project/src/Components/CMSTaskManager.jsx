@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import RemoveTask from "./RemoveTask";
 import TaskCard from "./TaskCard";
+import { CMSTaskDate } from "./CMSTaskDate";
 const CMSTaskManager = () => {
   const [state, setstate] = useState(0);
 
@@ -102,10 +103,10 @@ const CMSTaskManager = () => {
     <>
       <NavbarCMS type="CMS" />
       <div className="flex flex-col w-[100vw] p-2 flex justify-center items-center mt-3">
-        <div className="flex gap-x-[7vmin]">
+        <div className="flex flex-wrap gap-x-[6vmin] gap-y-[4vmin] lg:gap-x-[10vmin]">
           <div>
             <p
-              className="text-[3.5vmin] 2xl:text-[2.75vmin] font-medium"
+              className="text-[3.15vmin] 2xl:text-[2.75vmin] font-medium"
               onClick={() => {
                 document.getElementById("firstLine").style.backgroundColor =
                   "#000000";
@@ -114,6 +115,8 @@ const CMSTaskManager = () => {
                 document.getElementById("secLine1").style.backgroundColor =
                   "#D3D3D3";
                 document.getElementById("secLine2").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine3").style.backgroundColor =
                   "#D3D3D3";
                 setstate(0);
               }}
@@ -128,7 +131,7 @@ const CMSTaskManager = () => {
           <div id="code">
             <p
               id="showOpenings"
-              className="text-[3.5vmin] 2xl:text-[2.75vmin] font-medium"
+              className="text-[3.15vmin] 2xl:text-[2.75vmin] font-medium"
               onClick={() => {
                 document.getElementById("secLine").style.backgroundColor =
                   "#000000";
@@ -137,6 +140,8 @@ const CMSTaskManager = () => {
                 document.getElementById("secLine1").style.backgroundColor =
                   "#D3D3D3";
                 document.getElementById("secLine2").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine3").style.backgroundColor =
                   "#D3D3D3";
                 setstate(1);
               }}
@@ -152,7 +157,7 @@ const CMSTaskManager = () => {
           <div id="code">
             <p
               id="showOpenings1"
-              className="text-[3.5vmin] 2xl:text-[2.75vmin] font-medium"
+              className="text-[3.15vmin] 2xl:text-[2.75vmin] font-medium"
               onClick={() => {
                 document.getElementById("secLine1").style.backgroundColor =
                   "#000000";
@@ -161,6 +166,8 @@ const CMSTaskManager = () => {
                 document.getElementById("secLine").style.backgroundColor =
                   "#D3D3D3";
                 document.getElementById("secLine2").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine3").style.backgroundColor =
                   "#D3D3D3";
                 setstate(3);
               }}
@@ -176,7 +183,7 @@ const CMSTaskManager = () => {
           <div id="code">
             <p
               id="showOpenings2"
-              className="text-[3.5vmin] 2xl:text-[2.75vmin] font-medium"
+              className="text-[3.15vmin] 2xl:text-[2.75vmin] font-medium"
               onClick={() => {
                 document.getElementById("secLine2").style.backgroundColor =
                   "#000000";
@@ -186,12 +193,40 @@ const CMSTaskManager = () => {
                   "#D3D3D3";
                 document.getElementById("secLine").style.backgroundColor =
                   "#D3D3D3";
+                document.getElementById("secLine3").style.backgroundColor =
+                  "#D3D3D3";
                 setstate(4);
               }}
             >
               Submitted Task
               <div
                 id="secLine2"
+                className="w-[23vmin] 2xl:w-[19vmin] h-[5px] bg-lightGrey mt-1"
+              ></div>
+            </p>
+          </div>
+
+          <div id="code">
+            <p
+              id="showOpenings1"
+              className="text-[3.15vmin] 2xl:text-[2.75vmin] font-medium"
+              onClick={() => {
+                document.getElementById("secLine3").style.backgroundColor =
+                  "#000000";
+                document.getElementById("firstLine").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine2").style.backgroundColor =
+                  "#D3D3D3";
+                document.getElementById("secLine1").style.backgroundColor =
+                  "#D3D3D3";
+                setstate(5);
+              }}
+            >
+              Add Date
+              <div
+                id="secLine3"
                 className="w-[23vmin] 2xl:w-[19vmin] h-[5px] bg-lightGrey mt-1"
               ></div>
             </p>
@@ -289,6 +324,8 @@ const CMSTaskManager = () => {
       )}
 
       {state == 4 && <TaskCard data={data} type="admin" />}
+
+      {state === 5 && <CMSTaskDate />}
       <Footer />
     </>
   );

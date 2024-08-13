@@ -1,8 +1,9 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const TaskCard = (props) => {
+  const [data, setData] = useState([]);
   const getDate = () => {
     const today = new Date();
 
@@ -12,6 +13,16 @@ const TaskCard = (props) => {
 
     return `${date}/${month}/${year}`;
   };
+  useEffect(() => {
+    axios
+      .get(`${import.meta.env.VITE_APP_API_URL}` + "deadline")
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const addProgress = (task, projectname) => {
     const link = document.getElementById("link").value;
@@ -156,7 +167,9 @@ const TaskCard = (props) => {
               </div>
 
               <div className="ProjectName font-poppins font-medium text-[3vmin] 2xl:text-[2.5vmin]">
-                <b>Deadline:</b>&nbsp;&nbsp;{currentdate}
+                <b>Deadline:</b>&nbsp;&nbsp;
+                {data.length == 0 && "Loading"}
+                {data.length > 0 && data[0].deadline}
               </div>
               {(props.type === "user" && (
                 <>
