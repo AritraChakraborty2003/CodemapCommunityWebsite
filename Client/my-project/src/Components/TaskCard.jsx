@@ -174,7 +174,7 @@ const TaskCard = (props) => {
               <div className="ProjectName font-poppins font-medium text-[3vmin] 2xl:text-[2.5vmin]">
                 <b>Deadline:</b>&nbsp;&nbsp;
                 {data.length == 0 && "Loading"}
-                {data.length > 0 && data[0].deadline}
+                {data.length > 0 && data[data.length-1].deadline}
               </div>
               {(props.type === "user" && (
                 <>
