@@ -30,7 +30,7 @@ const ReferenceArea = (props) => {
           {data.length > 0 && (
             <div className="imageHolder h-[4vmin] w-[4vmin] ">
               <a
-                href={`${import.meta.env.VITE_APP_API_URL_2}` + data[0].file}
+                href={`${import.meta.env.VITE_APP_API_URL_1}` + data[0].file}
                 target="_blank"
               >
                 <img

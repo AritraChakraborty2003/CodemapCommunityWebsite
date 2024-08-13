@@ -26,6 +26,7 @@ const TaskCard = (props) => {
 
   const addProgress = (task, projectname) => {
     const link = document.getElementById("link").value;
+    if(link!=""){
     axios
       .post(`${import.meta.env.VITE_APP_API_URL}` + "task/update", {
         task: task,
@@ -57,6 +58,10 @@ const TaskCard = (props) => {
       .catch((err) => {
         console.log(err);
       });
+    }
+    else{
+      alert("Please Enter the project Link")
+    }
   };
 
   const UpdateTask = (val, project, task, email) => {
