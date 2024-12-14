@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import { Navigate } from "react-router-dom";

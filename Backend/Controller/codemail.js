@@ -39,7 +39,7 @@ async function sendMail(email, subject, msg, filename) {
       attachments: [
         {
           fileName: filename,
-          path: "https://www.api.codemap.online/" + filename,
+          path: "https://www.community.api.codemap.online/" + filename,
         },
       ],
     };
@@ -52,4 +52,3 @@ async function sendMail(email, subject, msg, filename) {
 }
 
 export { sendMail };
-

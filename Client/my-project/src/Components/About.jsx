@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 const About = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const About = () => {
               <div className="text-area w-[95vw]  pb-6 pt-3">
                 <div className="font-poppins">
                   <p className="ml-3 text-[3.5vmin] font-bold text-btnColor">
-                    //About our Community Platform
+                    About our Community Platform
                   </p>
                   <p className="ml-3 text-[4vmin] font-extrabold mt-1">
                     An Ultimate Technical Community For
