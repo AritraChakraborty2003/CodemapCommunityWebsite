@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import FirstReachComponent from "./Components/FirstReachComponent";
@@ -44,8 +43,6 @@ import CMSTaskManager from "./Components/CMSTaskManager";
 import TaskCard from "./Components/TaskCard";
 import { Termination } from "./Components/Termination";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <BrowserRouter>
