@@ -8,6 +8,7 @@ import Collab from "./Collab";
 import Contact from "./Contact";
 import UpcommingEvents from "./UpcommingEvents";
 import Testinomials from "./Testinomials";
+import RevolvingHeader from "./RevolvingHeader";
 import OurReach from "./OurReach";
 import { useNavigate } from "react-router-dom";
 // import SecondComponent from "./SecondReachComponent";
@@ -20,6 +21,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <>
+      {screen.width >= 1000 && <RevolvingHeader />}
       <div className="holderNav bg-bgColor pb-2">
         <div className="navBarBox w-[100vw] bg-bgColor flex ">
           <div className="logoHolder lg:h-[15vmin]  flex pt-2 lg:pt-0 ml-2">

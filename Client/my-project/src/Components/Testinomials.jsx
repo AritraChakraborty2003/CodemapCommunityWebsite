@@ -17,7 +17,7 @@ const Testinomials = () => {
       org: "Uday Pratap college",
       rating: 5,
       comment:
-        "Really wonderful and nice experience.Very nice and smooth application experience for the Quiz and Registration",
+        "Really wonderful and nice experience.Very nice and smooth application experience for the Quiz and Registration for the Mentor Mentee Event",
     },
     {
       name: "Chandrapal Singh",
@@ -39,7 +39,7 @@ const Testinomials = () => {
             //&nbsp;Our Testinomials
           </p>
         </div>
-        <div className="testBoxArea pb-2 pt-2 lg:h-[70vh] ml-2 flex justify-center items-center">
+        <div className="testBoxArea pb-2 pt-2 lg:h-[65vh] ml-2 flex justify-center items-center">
           <div className="testBoxHolder flex items-center gap-x-4">
             <div
               className="leftArrowHolder p-1 w-[11vmin] h-[12vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin]  flex justify-center items-center"

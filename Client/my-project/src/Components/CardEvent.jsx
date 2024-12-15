@@ -2,7 +2,7 @@
 const CardEvent = (props) => {
   return (
     <>
-      <div className="cardHolder  bg-bgColor shadow-lg p-3 rounded-md  w-[80vw]  pb-10 pt-10 lg:w-[28vw] 2xl:w-[27vw]  flex flex-col justify-center items-center  ">
+      <div className="cardHolder  bg-bgColor  p-3 rounded-md  w-[80vw]  pb-10 pt-10 lg:w-[28vw] 2xl:w-[27vw]  flex flex-col justify-center items-center  ">
         <div className="imageHolder p-1 w-[75vw] h-[35vmin]  lg:w-[15vw] lg:h-[15vmin] 2xl:w-[15vw]  mt-1 rounded-md flex justify-center items-center">
           <img
             src={props.image}
