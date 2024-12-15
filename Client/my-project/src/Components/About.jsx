@@ -257,7 +257,7 @@ const About = () => {
                   </>
                 )) || (
                   <>
-                    <div className="text-area  w-[55%] lg:pl-4 2xl:pl-2 h-[80vh]">
+                    <div className="text-area  w-[55%] lg:pl-6 2xl:pl-2 h-[80vh]">
                       <div className="font-poppins">
                         <p className="text-[2.5vmin] font-bold text-btnColor">
                           //About our Community Platform

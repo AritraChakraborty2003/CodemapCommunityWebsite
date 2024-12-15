@@ -187,8 +187,8 @@ const FirstReachComponent = () => {
                     </p>
                     <div className="box-area mt-7 flex gap-x-7">
                       <div className="box1 ">
-                        <div className="w-[35vmin] pb-10  bg-bgColor flex flex-col  items-center pt-3">
-                          <p className="font-bold mt-2 text-xl 2xl:text-[3vmin]">
+                        <div className="w-[35vmin] pb-10  bg-bgColor flex flex-col  items-center pt-5">
+                          <p className="font-bold mt-2 text-[4.75vmin] 2xl:text-[4vmin]">
                             Cities
                           </p>
 
@@ -196,8 +196,8 @@ const FirstReachComponent = () => {
                         </div>
                       </div>
                       <div className="box2">
-                        <div className="w-[35vmin] pb-10 bg-bgColor flex flex-col items-center pt-3">
-                          <p className="font-bold mt-2 text-xl 2xl:text-[3vmin]  ">
+                        <div className="w-[35vmin] pb-10 bg-bgColor flex flex-col items-center pt-5">
+                          <p className="font-bold mt-2 text-[4.75vmin] 2xl:text-[4vmin]  ">
                             Students
                           </p>
 
@@ -238,7 +238,7 @@ const FirstReachComponent = () => {
                       <div className="box-area mt-6 flex gap-x-7">
                         <div className="box1">
                           <div className="w-[35vmin] h-[20vmin] 2xl:h-[18vmin] bg-bgColor flex flex-col  items-center ">
-                            <p className="font-bold mt-2 text-xl 2xl:text-2xl  tracking-[0.15vmin]">
+                            <p className="font-bold mt-2 text-[4vmin] 2xl:text-2xl  tracking-[0.15vmin]">
                               Cities
                             </p>
 
@@ -249,7 +249,7 @@ const FirstReachComponent = () => {
                         </div>
                         <div className="box2">
                           <div className="w-[40vmin] h-[20vmin] 2xl:h-[18vmin] bg-bgColor flex flex-col  items-center">
-                            <p className="font-bold mt-2 text-xl 2xl:text-2xl tracking-[0.15vmin]">
+                            <p className="font-bold mt-2 text-[4vmin] 2xl:text-2xl tracking-[0.15vmin]">
                               Students
                             </p>
 

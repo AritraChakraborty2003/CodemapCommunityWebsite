@@ -34,7 +34,7 @@ const Banner = () => {
         </div>
       )) || (
         <div className="h-[85vh] w-[100vw] pb-5 overflow-x-hidden bg-bgColor flex justify-center items-center flex-col gap-y-4">
-          <div className="mt-[-5vmin] lg:mt-0 flex gap-x-2 items-center h-[20vmin]  md:h-[25vmin] lg:h-[10vmin]  lg:ml-0">
+          <div className="mt-[-5vmin] lg:mt-[-3.5vmin] flex gap-x-2 items-center h-[20vmin]  md:h-[25vmin] lg:h-[10vmin]  lg:ml-0">
             <p className="text-center mt-[-2vmin] text-[4.15vmin] md:text-[3.65vmin] lg:text-[3.45vmin] lg:font-normal font-poppins pl-3 pr-3 md:pl-2 md:pr-2">
               Your own Technical Community where ideas turn into innovation
             </p>
