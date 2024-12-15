@@ -43,7 +43,7 @@ const ApplyPortal = () => {
       const config = {
         headers: { "content-type": "multipart/form-data" },
       };
-      let control = true;
+      // let control = true;
       axios
         .post(`${import.meta.env.VITE_APP_API_URL}` + "apply", formData, config)
         .then((res) => {

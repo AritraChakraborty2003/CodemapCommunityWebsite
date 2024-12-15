@@ -1,4 +1,5 @@
-import Navbar from "./Navbar";
+/* eslint-disable react/prop-types */
+// import Navbar from "./Navbar";
 import { NavbarCMS } from "./NavbarCMS";
 import Footer from "./Footer";
 import axios from "axios";

@@ -1,11 +1,12 @@
+/* eslint-disable no-undef */
 import { NavbarCMS } from "./NavbarCMS";
 import Footer from "./Footer";
-import { useLocation, useNavigate } from "react-router-dom";
-import axios from "axios";
+import { useLocation } from "react-router-dom";
+// import axios from "axios";
 
 const Scorepage = () => {
   const location = useLocation();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <>
       <NavbarCMS type="Interns"></NavbarCMS>
