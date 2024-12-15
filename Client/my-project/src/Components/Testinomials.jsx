@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import { useState } from "react";
 import TestinomialBox from "./TestinomialBox";
 
@@ -9,33 +10,33 @@ const Testinomials = () => {
       org: "Allenhouse Business School",
       rating: 5,
       comment:
-        "Its a very engaging and amazing community platform.Fantastic application experience",
+        "Its a very engaging and amazing community platform.Fantastic application experience.Kudos to Codemap and team",
     },
     {
       name: "Deo Narayan Singh",
       org: "Uday Pratap college",
       rating: 5,
       comment:
-        "Really wonderful and nice experience.Very nice and smooth application experience",
+        "Really wonderful and nice experience.Very nice and smooth application experience for the Quiz and Registration",
     },
     {
       name: "Chandrapal Singh",
       org: "IIMT Engineering College,Meerut",
       rating: 4,
       comment:
-        "Good application and nice event experience for the IIC Mentor-Mentee Event",
+        "Good application and nice event experience for the IIC Mentor-Mentee. Great Event Management by the Codemap Team",
     },
   ];
   return (
     <>
-      <div className="testinomialHolder w-[100vw]  space-y-6 lg:space-y-0  pb-10 lg:pb-5 lg:h-[100vh] bg-bgColor">
+      <div className="testinomialHolder w-[100vw]  space-y-6 lg:space-y-0  pb-5 lg:pb-3 bg-bgColor">
         <div>
-          <p className="text-[13vmin] font-bold ml-3">
-            Testino
-            <span className="text-btnColor">mials</span>
+          <p className="text-[8.95vmin] font-bold ml-3">
+            Testimo
+            <span className="text-btnColor">nials</span>
           </p>
           <p className="text-btnColor font-bold ml-5 text-[4.25vmin] lg:text-[3.75vmin]">
-            //Our Testinomials
+            //&nbsp;Our Testinomials
           </p>
         </div>
         <div className="testBoxArea pb-2 pt-2 lg:h-[70vh] ml-2 flex justify-center items-center">
@@ -46,7 +47,7 @@ const Testinomials = () => {
                 if (index <= 0) {
                   setindex(0);
                 } else {
-                  setindex(index - 1);
+                  setindex((index - 1) % 3);
                 }
               }}
             >
@@ -62,7 +63,7 @@ const Testinomials = () => {
               className="rightArrowHolder mr-2 p-1  w-[11vmin] h-[12vmin] lg:w-[10vmin] lg:h-[10vmin] rounded-[5vmin]  flex justify-center items-center"
               onClick={() => {
                 if (index >= 2) {
-                  setindex(2);
+                  setindex((index + 1) % 3);
                 } else {
                   setindex(index + 1);
                 }

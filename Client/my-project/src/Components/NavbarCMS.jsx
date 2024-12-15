@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const NavbarCMS = (props) => {
@@ -11,17 +12,19 @@ const NavbarCMS = (props) => {
     <>
       <div className="holderNav bg-bgColor pb-2">
         <div className="navBarBox w-[100vw] bg-bgColor flex ">
-          <div className="logoHolder lg:h-[15vmin]  flex pt-2 lg:pt-0">
-            <div className="iconHolder h-[15vmin] w-[17vmin] md:h-[10vmin] md:w-[10vmin] lg:h-[14vmin] lg:w-[14vmin]  mt-1 lg:mt-1 md:mt-4 ml-2 2xl:ml-4 2xl:mt-3 flex justify-center items-center pt-1">
+          <div className="logoHolder lg:h-[15vmin]  flex pt-2 lg:pt-0 ml-2">
+            <div className="iconHolderflex h-[20vmin] w-[15vmin] lg:h-[15vmin] lg:w-[16vmin] justify-center items-center">
               <img
-                src="./codemapCMS.jpg"
-                className="max-w-full max-h-full object-contain"
+                src="./Codemap_CMS.png"
+                className="max-w-full max-h-full object-contain mt-3"
               ></img>
             </div>
             <div className="flex font-semibold items-center textHolder h-[12vmin] w-[51vw] md:w-[67vw] lg:h-[10vmin] lg:w-full mt-4 lg:mt-4 ml-2 2xl:mt-5">
-              <p className=" text-[5vmin] md:text-[4vmin] 2xl:text-[3.75vmin] ml-1 font-poppins mt-[1vmin]">
+              <p className=" text-[5vmin] md:text-[4vmin] 2xl:text-[3.75vmin] ml-1 font-poppins mt-[1vmin] font-bold">
                 Code
-                <span className="md:text-[4vmin] 2xl:text-[3.75vmin]">Map</span>
+                <span className="md:text-[4vmin] 2xl:text-[3.75vmin] text-btnColor">
+                  Map
+                </span>
               </p>
             </div>
           </div>
@@ -61,7 +64,7 @@ const NavbarCMS = (props) => {
                 )}
               </div>
             )) || (
-              <div className="navIconHolder w-[65vw] text-[2vmin] 2xl:w-[69vw] 2xl:text-[2.45vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
+              <div className="navIconHolder w-[65vw] text-[2vmin] 2xl:w-[69vw] 2xl:text-[1.85vmin] h-[15vmin] flex justify-center items-center gap-x-4 2xl:gap-x-5">
                 {props.type === "CMS" && (
                   <>
                     <p>
@@ -202,7 +205,7 @@ const NavbarCMS = (props) => {
 
             <li>
               <button
-                 onClick={() => {
+                onClick={() => {
                   if (props.type === "CMS") {
                     localStorage.removeItem("user");
                     navigate("/CMSOpenings");

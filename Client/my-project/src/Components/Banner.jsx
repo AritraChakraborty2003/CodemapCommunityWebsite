@@ -35,14 +35,14 @@ const Banner = () => {
       )) || (
         <div className="h-[85vh] w-[100vw] pb-5 overflow-x-hidden bg-bgColor flex justify-center items-center flex-col gap-y-4">
           <div className="mt-[-5vmin] lg:mt-0 flex gap-x-2 items-center h-[20vmin]  md:h-[25vmin] lg:h-[10vmin]  lg:ml-0">
-            <p className="text-center mt-[-2vmin] text-[4.15vmin] md:text-[3.65vmin] lg:text-[4vmin] lg:font-medium font-poppins pl-3 pr-3 md:pl-2 md:pr-2">
+            <p className="text-center mt-[-2vmin] text-[4.15vmin] md:text-[3.65vmin] lg:text-[3.45vmin] lg:font-normal font-poppins pl-3 pr-3 md:pl-2 md:pr-2">
               Your own Technical Community where ideas turn into innovation
             </p>
           </div>
           <p className="text-center text-[15vmin] md:text-[12.4vmin] mt-[-4vmin] lg:mt-[-1vmin] font-bold font-poppins pb-2">
             CodeMap <span className="text-btnColor">Community</span>
           </p>
-          <p className="text-[4.25vmin] md:text-[3.75vmin] lg:text-[3.45vmin]  font-poppins mt-[-2.5vmin]">
+          <p className="text-[4.25vmin] md:text-[3.75vmin] lg:text-[3vmin]  font-poppins mt-[-2.5vmin]">
             ( Where Ideas Transform Into Innovation )
           </p>
 

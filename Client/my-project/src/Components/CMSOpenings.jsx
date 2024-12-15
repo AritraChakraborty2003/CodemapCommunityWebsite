@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import axios from "axios";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
@@ -53,11 +54,13 @@ const CMSOpenings = () => {
       });
   };
 
+  console.log(data);
   const TechnicalData = data.filter((val) => val.category === "Technical");
   const NonTechnicalData = data.filter(
     (val) => val.category === "Non Technical"
   );
   console.log(TechnicalData);
+
   return (
     <>
       <NavbarCMS type="CMS" />

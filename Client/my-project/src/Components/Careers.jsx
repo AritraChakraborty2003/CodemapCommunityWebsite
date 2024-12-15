@@ -4,6 +4,7 @@ import CareerCard from "./CareerCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import SearchBar from "./SearchBar";
+// import { NavbarCMS } from "./NavbarCMS";
 const Careers = () => {
   const [data, setData] = useState([]);
   const [state1, setstate1] = useState(0);
@@ -26,6 +27,7 @@ const Careers = () => {
   return (
     <>
       <NavbarGeneral />
+
       <div className="h-[26vmin] 2xl:h-[19vmin] flex justify-center items-center">
         <SearchBar table="Openings" />
       </div>

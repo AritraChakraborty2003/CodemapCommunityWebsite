@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
 import { Rating } from "react-simple-star-rating";
 
 const TestinomialBox = (props) => {
@@ -100,8 +102,8 @@ const TestinomialBox = (props) => {
                 </p>
               </div>
             </div>
-            <div className="row2 border-t-2 h-[30vmin] w-[91vmin] ml-1 flex justify-center lg:items-center ml-3">
-              <p className="text-[3.8vmin] 2xl:text-[4vmin] ml-4 mt-[-3vmin]">
+            <div className="row2 border-t-2 h-[30vmin] w-[91vmin] ml-1 flex justify-center ">
+              <p className="text-[3.8vmin] lg:text-[3.45vmin] 2xl:text-[3.35vmin] mt-[5vmin]  text-center tracking-[1.35px]">
                 " {props.data.comment} "
               </p>
             </div>

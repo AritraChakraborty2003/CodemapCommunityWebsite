@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { useLocation, useNavigate } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import Navbar from "./Navbar";
 import { NavbarCMS } from "./NavbarCMS";
 import Footer from "./Footer";
 
@@ -59,18 +61,18 @@ const InternTrainingCMS = () => {
     <>
       {(localStorage.getItem("user") === "Admin2024" && (
         <>
-          <NavbarCMS />
-          <div className="bannerPart flex flex-col w-[100vw] h-[48vmin] 2xl:h-[35vmin] bg-bgColor">
-            <p className="text-black font-bold mt-5 ml-[4vmin] text-[10vmin] lg:text-[12vmin] 2xl:text-[10vmin]">
+          <NavbarCMS type="CMS" />
+          <div className="bannerPart flex flex-col w-[100vw] h-[48vmin] 2xl:h-[45vmin] bg-bgColor">
+            <p className="text-black font-bold mt-8 ml-[4vmin] text-[10vmin] lg:text-[13vmin] 2xl:text-[10vmin]">
               Syllabus <span className="text-btnColor">Portal</span>
             </p>
-            <p className="ml-[4vmin] text-[3.5vmin] font-popins">
+            <p className="ml-[4vmin] text-[3.5vmin] lg:text-[2.75vmin] font-popins">
               (Please Fill the details in the form to apply for the role)
             </p>
           </div>
           <div className="mt-4 form-area w-[100vw] flex justify-center items-center p-5 pt-7 pb-8 ">
-            <div className="formHolder flex justify-center items-center gap-y-6 w-[96vw] md:w-[70vmin]   border-[1px] p-5 ">
-              <form className="flex flex-col justify-center items-center gap-y-4 2xl:text-[2.75vmin]">
+            <div className="formHolder flex justify-center items-center gap-y-6 w-[96vw] md:w-[70vmin]   border-[1px] p-6 ">
+              <form className="flex flex-col justify-center items-center gap-y-4 2xl:text-[2.35vmin]">
                 <input
                   type="text"
                   id="name"
@@ -95,28 +97,28 @@ const InternTrainingCMS = () => {
                 <input
                   type="text"
                   id="topic1"
-                  placeholder="Enter topic1..."
+                  placeholder="Enter topic 1..."
                   className="w-[60vmin] border-b-[1px]"
                 ></input>
                 <br></br>
                 <input
                   type="text"
                   id="topic2"
-                  placeholder="Enter topic2..."
+                  placeholder="Enter topic 2..."
                   className="w-[60vmin] border-b-[1px]"
                 ></input>
                 <br></br>
                 <input
                   type="text"
                   id="topic3"
-                  placeholder="Enter topic3..."
+                  placeholder="Enter topic 3..."
                   className="w-[60vmin] border-b-[1px]"
                 ></input>
                 <br></br>
                 <input
                   type="text"
                   id="topic4"
-                  placeholder="Entertopic4..."
+                  placeholder="Enter topic 4..."
                   className="w-[60vmin] border-b-[1px]"
                 ></input>
                 <br></br>

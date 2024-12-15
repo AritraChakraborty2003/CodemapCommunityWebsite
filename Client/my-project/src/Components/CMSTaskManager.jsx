@@ -235,8 +235,8 @@ const CMSTaskManager = () => {
       </div>
 
       {state === 0 && (
-        <div className="formHolder p-5 flex justify-center items-center">
-          <form className="p-[5vmin] flex flex-col gap-y-6  border-gray-light border-2 w-[95vw] md:w-[70vmin]">
+        <div className="formHolder p-5 flex justify-center items-center pb-[8vmin] ">
+          <form className="p-[5vmin] mt-4 flex flex-col gap-y-6  mt-6 border-gray-light border-2 w-[95vw] md:w-[70vmin] 2xl:text-[1.95vmin]">
             <input
               type="text"
               id="pname1"

@@ -3,8 +3,8 @@ import CollabIcon from "./CollabIcon";
 const Collab = () => {
   return (
     <>
-      <div className="CollabHolder bg-bgColor pb-8 pl-1">
-        <p className="text-[10.5vmin] font-bold mt-2 ml-1">
+      <div className="CollabHolder bg-bgColor pb-12 pl-1 pt-10">
+        <p className="text-[8.95vmin] font-bold mt-2 ml-1">
           Our&nbsp;
           <span className="text-btnColor">Collaborations</span>
         </p>
