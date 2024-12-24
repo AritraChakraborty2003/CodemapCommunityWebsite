@@ -53,7 +53,7 @@ const Contact = () => {
             </div>
 
             <div className="formHolderBody pl-4">
-              <div className="form flex flex-col w-[96%] gap-y-9 mt-12">
+              <div className="form flex flex-col w-[96%] gap-y-9 mt-12 text-[2.25vmin]">
                 <input
                   type="text"
                   className="border-[1px] p-3 border-lightGrey rounded-md"
@@ -91,7 +91,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="detailsHolder">
+              <div className="detailsHolder text-[2.25vmin]">
                 <div className="detailsHolder flex flex-col gap-y-4">
                   <div className="flex  w-[100%] gap-x-3">
                     <div className="flex  pl-3 pr-3 justify-center items-center gap-x-3">
