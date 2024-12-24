@@ -34,7 +34,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="aboutHolder  w-[100vw] ml-[2vmin] 2xl:h-full 2xl:pb-[10vmin] mt-5 pb-[11vmin]">
+      <div className="aboutHolder 2xl:text-[2.35vmin] w-[100vw] ml-[2vmin] 2xl:h-full 2xl:pb-[10vmin] mt-5 pb-[11vmin]">
         <div className="contactAccountHolder">
           <h1 className="mt-6 2xl:mt-10  font-poppins font-bold text-[8.95vmin]">
             <span className="text-btnColor">Contact-</span>Us
@@ -47,33 +47,34 @@ const Contact = () => {
               <p className="text-purple text-[7vmin] font-medium ">
                 Get In Touch
               </p>
-              <p className="tracking-wide text-lg mt-3">
+              <p className="tracking-wide text-[2vmin] 2xl:text-[2.25vmin] mt-3">
+                {" "}
                 We are here for help ! How can we help?
               </p>
             </div>
 
             <div className="formHolderBody pl-4">
-              <div className="form flex flex-col w-[96%] gap-y-9 mt-12 text-[2.25vmin]">
+              <div className="form flex flex-col w-[96%] gap-y-9 2xl:gap-y-14 mt-12 2xl:text-[2.25vmin]">
                 <input
                   type="text"
-                  className="border-[1px] p-3 border-lightGrey rounded-md"
+                  className="border-[1px] p-3 2xl:p-4 border-lightGrey rounded-md"
                   placeholder="Enter your name..."
                 />
                 <input
                   type="email"
-                  className="border-[1px] p-3 border-lightGrey rounded-md"
+                  className="border-[1px] p-3 2xl:p-4 border-lightGrey rounded-md"
                   placeholder="Enter your email..."
                 />
                 <input
                   type="text"
-                  className="border-[1px] p-3 border-lightGrey rounded-md"
+                  className="border-[1px] p-3 2xl:p-4 border-lightGrey rounded-md"
                   placeholder="Enter your organization / Institute..."
                 />
                 <textarea
                   type="texts"
                   rows={7}
                   cols={10}
-                  className="border-[1px] p-3 border-lightGrey rounded-md"
+                  className="border-[1px] p-3 2xl:p-4 border-lightGrey rounded-md"
                   placeholder="Enter your organization / Institute..."
                 />
                 <button className="bg-purple text-white text-[3vmin] p-3">
@@ -82,7 +83,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="contactDetailsHolder w-[100%] md:w-[50%] border-lightGrey border-l-[1px]  hidden lg:block">
+          <div className="contactDetailsHolder p-2 w-[100%] md:w-[50%] border-lightGrey border-l-[1px]  hidden lg:block">
             <div className="Holder flex flex-col  justify-center  gap-y-5 p-6">
               <div className="imageHolder w-[90%] ">
                 <img
@@ -91,8 +92,8 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="detailsHolder text-[2.25vmin]">
-                <div className="detailsHolder flex flex-col gap-y-4">
+              <div className="detailsHolder 2xl:text-[2.35vmin]">
+                <div className="detailsHolder flex flex-col gap-y-4 2xl:gap-y-8">
                   <div className="flex  w-[100%] gap-x-3">
                     <div className="flex  pl-3 pr-3 justify-center items-center gap-x-3">
                       <div className="imageHolder  flex justify-center items-center h-[7vmin] w-[7vmin] border-[1px] border-lightGrey rounded-[3.5vmin]">
@@ -100,7 +101,7 @@ const Contact = () => {
                           src="phone123.png"
                           height={40}
                           width={40}
-                          className="p-1 "
+                          className="p-1  "
                         />
                       </div>
 
@@ -167,8 +168,8 @@ const Contact = () => {
                       <div className="imageHolder  flex justify-center items-center h-[7vmin] w-[7vmin] border-[1px] border-lightGrey rounded-[3.5vmin]">
                         <img
                           src="linkedin.png"
-                          height={40}
-                          width={40}
+                          height={50}
+                          width={50}
                           className="p-1 "
                         />
                       </div>
@@ -178,8 +179,8 @@ const Contact = () => {
                       <div className="imageHolder border-[1px]   flex justify-center items-center h-[7vmin] w-[7vmin] border-lightGrey rounded-[3.5vmin]">
                         <img
                           src="instagram.jpg"
-                          height={40}
-                          width={40}
+                          height={50}
+                          width={50}
                           className="p-[0.56px]"
                         />
                       </div>

@@ -31,7 +31,7 @@ const UpcommingEvents = () => {
         </div>
 
         <div className="btnHolder w-[100vw] flex justify-center items-center">
-          <button className="bg-btnColor text-white p-2 mt-[6vmin] text-[4.45vmin] lg:text-[3vmin]">
+          <button className="bg-btnColor text-white p-3 mt-[6vmin] text-[4.45vmin] lg:text-[3vmin]">
             More Events
           </button>
         </div>
