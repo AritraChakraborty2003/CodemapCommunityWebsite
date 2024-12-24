@@ -3,7 +3,7 @@ const About = () => {
   return (
     <>
       <div className="aboutHolder  w-[100vw] pb-6 md:pb-9 lg:pb-1 2xl:pb-3">
-        <h1 className="mt-2 2xl:mt-12 ml-2 pt-2 lg:ml-3 2xl:ml-5 font-poppins font-bold text-[12vmin] lg:text-[8.95vmin] pb-3">
+        <h1 className="mt-2 2xl:mt-12 ml-2 pt-2 lg:ml-4 2xl:ml-5 font-poppins font-bold text-[12vmin] lg:text-[8.95vmin] pb-3">
           About-<span className="text-btnColor">us</span>
         </h1>
         <div className=" about-area flex justify-center items-center flex-wrap-reverse ml-[-2vmin]">
@@ -134,6 +134,7 @@ const About = () => {
               )) ||
             (screen.width >= 1280 && screen.width < 1400 && (
               <>
+                {" "}
                 <div className="text-area w-[50vw]   ">
                   <div className="font-poppins ">
                     <p className="ml-1 text-[2.5vmin] font-bold text-btnColor">
@@ -209,7 +210,7 @@ const About = () => {
                         </p>
                       </div>
 
-                      <div className="ml-2 holder w-[75vmin] text-[2.65vmin] text-bannerGrey">
+                      <div className="ml-2 holder w-[99%] text-[2.65vmin] text-bannerGrey">
                         The Codemap community is an ultimate coding community
                         for all tech enthusiasts who want to pursue a promising
                         career in the contemporary technical industry we have
@@ -257,57 +258,59 @@ const About = () => {
                   </>
                 )) || (
                   <>
-                    <div className="text-area  w-[55%] lg:pl-6 2xl:pl-2 h-[80vh]">
+                    <div className="text-area  w-[50vw] pb-10">
                       <div className="font-poppins">
                         <p className="text-[2.5vmin] font-bold text-btnColor">
                           //About our Community Platform
                         </p>
-                        <p className="ml-1 text-[3.56vmin] font-extrabold mt-1">
+                        <p className="text-[3.56vmin] font-extrabold mt-1">
                           An Ultimate Technical Community For
                         </p>
-                        <p className="ml-1 text-[3.56vmin] font-extrabold">
+                        <p className="text-[3.56vmin] font-extrabold">
                           Your Career Growth
                         </p>
                       </div>
 
-                      <div className="ml-1 holder w-[94%]  text-[2.65vmin] text-bannerGrey mt-5 leading-[5vmin]">
-                        The Codemap community is an ultimate coding community
-                        for all tech enthusiasts who want to pursue a promising
-                        career in the contemporary technical industry we have
-                        strong vision to help students grow and learn new skills
-                        with more networking oppurtunies by the community.We
-                        focus mainly on:
-                        <ul className="leading-[4.45vmin]">
-                          <li>1. Technical Bootcamps and Blogs</li>
-                          <li>
-                            2. Community Support in solving technical problems
-                          </li>{" "}
-                          <li>3. Certifications on the topics mastered</li>
-                          <li>
-                            4. Internship oppurtunites to top performing
-                            students
-                          </li>
-                          <li>
-                            5. We charge absolutely 0 for all the features as we
-                            have the moto to create a skilled and abled
-                            technical community for India
-                          </li>
-                          <li>
-                            6. Organizing technical events and sessions online
-                            and offline in regular time intervals
-                          </li>
-                        </ul>
+                      <div className="holder w-[50vw] text-[2.65vmin] text-bannerGrey mt-5 leading-[5vmin] ">
+                        <div className="flex flex-col justify-center items-center">
+                          The Codemap community is an ultimate coding community
+                          for all tech enthusiasts who want to pursue a
+                          promising career in the contemporary technical
+                          industry we have strong vision to help students grow
+                          and learn new skills with more networking oppurtunies
+                          by the community.We focus mainly on:
+                          <ul className="leading-[4.45vmin]">
+                            <li>1. Technical Bootcamps and Blogs</li>
+                            <li>
+                              2. Community Support in solving technical problems
+                            </li>{" "}
+                            <li>3. Certifications on the topics mastered</li>
+                            <li>
+                              4. Internship oppurtunites to top performing
+                              students
+                            </li>
+                            <li>
+                              5. We charge absolutely 0 for all the features as
+                              we have the moto to create a skilled and abled
+                              technical community for India
+                            </li>
+                            <li>
+                              6. Organizing technical events and sessions online
+                              and offline in regular time intervals
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                    <div className="photo-area w-[80vmin] h-[70vh] ml-3">
-                      <div className="area w-[88vmin] h-[54vh] mt-5 ml-3 flex flex-start items-center">
+                    <div className="photo-area w-[72vmin] h-[70vh] ml-6  pb-10">
+                      <div className="area w-[74vmin] h-[56vh] mt-5 ml-3 flex flex-start items-center">
                         <img
                           src="./t1.png"
                           className="max-h-full max-w-full object-contain"
                         ></img>
                       </div>
-                      <div className="w-[70vmin] flex ml-[4vmin] mt-[3vmin]">
-                        <div className="w-[3vmin] h-[3vmin]">
+                      <div className="w-[90vmin] flex ml-[4vmin] mt-[1vmin]">
+                        <div className="w-[5vmin] h-[5vmin]">
                           <img src="./rightarrow.png"></img>
                         </div>
                         <p className="text-lightBlue font-medium text-[2.75vmin] md:text-[2vmin]">

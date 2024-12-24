@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import axios from "axios";
+import { Link } from "react-router-dom";
 const Contact = () => {
   const UploadData = (e) => {
     e.preventDefault();
@@ -33,376 +35,160 @@ const Contact = () => {
   return (
     <>
       <div className="aboutHolder  w-[100vw] ml-[2vmin] 2xl:h-full 2xl:pb-[10vmin] mt-5 pb-[11vmin]">
-        <h1 className="mt-6 2xl:mt-10  font-poppins font-bold text-[12vmin]">
-          <span className="text-btnColor">Contact-</span>Us
-        </h1>
-        <div className="about-area flex justify-center items-center flex-wrap-reverse ml-[-2vmin] 2xl:gap-x-10">
-          {(screen.width <= 900 && (
-            <>
-              <div className="text-area w-[95vw] md:w-[80vw]  mt-[6vmin]  border-[2px] p-3 flex flex-col justify-center items-center">
-                <p className="text-[4vmin] font-bold font-poppins">
-                  Please fill the details...
-                </p>
-                <div className=" w-[85vw] md:w-[70vw] rounded-lg mt-[4vmin]  ">
-                  <form>
-                    <div className="inputHolder  bg-bgColor flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg">
-                      <img src="./user.png" height={17} width={25}></img>
+        <div className="contactAccountHolder">
+          <h1 className="mt-6 2xl:mt-10  font-poppins font-bold text-[8.95vmin]">
+            <span className="text-btnColor">Contact-</span>Us
+          </h1>
+        </div>
 
-                      <input
-                        type="text"
-                        placeholder="Enter your name..."
-                        className="  w-[70vw] md:w-[65vw] p-1  bg-bgColor"
-                      ></input>
-                    </div>
-                    <br></br>
-                    <br></br>
-                    <div className=" bg-bgColor inputHolder flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg">
-                      <img src="./email1.png" height={17} width={25}></img>
+        <div className="msgBoxHolder w-[96vw] border-lightGrey border-[2px] flex flex-wrap  rounded-[1.25vmin] mt-6">
+          <div className="formHolder w-[100%] md:w-[50%] p-4">
+            <div className="textHolder p-3">
+              <p className="text-purple text-[7vmin] font-medium ">
+                Get In Touch
+              </p>
+              <p className="tracking-wide text-lg mt-3">
+                We are here for help ! How can we help?
+              </p>
+            </div>
 
-                      <input
-                        type="email"
-                        placeholder="Enter your  email..."
-                        className="  w-[70vw]  md:w-[65vw] p-1 bg-bgColor"
-                      ></input>
-                    </div>
-                    <br></br>
-                    <br></br>
-                    <textarea
-                      name=""
-                      id=""
-                      rows="4"
-                      placeholder="Enter Your message..."
-                      className=" bg-bgColor p-3 w-[98%] border-[1px] rounded-lg md:w-[98%] lg:w-full"
-                    ></textarea>
-                    <br></br>
-                    <br></br>
-                    <button
-                      onClick={(e) => {
-                        e.preventDefault();
-                        alert("Data added Sucessfully");
-                      }}
-                      className="bg-btnColor p-2 text-white text-[4vmin] w-[20vw]"
-                    >
-                      Submit
-                    </button>
-                  </form>
-                </div>
+            <div className="formHolderBody pl-4">
+              <div className="form flex flex-col w-[96%] gap-y-9 mt-12">
+                <input
+                  type="text"
+                  className="border-[1px] p-3 border-lightGrey rounded-md"
+                  placeholder="Enter your name..."
+                />
+                <input
+                  type="email"
+                  className="border-[1px] p-3 border-lightGrey rounded-md"
+                  placeholder="Enter your email..."
+                />
+                <input
+                  type="text"
+                  className="border-[1px] p-3 border-lightGrey rounded-md"
+                  placeholder="Enter your organization / Institute..."
+                />
+                <textarea
+                  type="texts"
+                  rows={7}
+                  cols={10}
+                  className="border-[1px] p-3 border-lightGrey rounded-md"
+                  placeholder="Enter your organization / Institute..."
+                />
+                <button className="bg-purple text-white text-[3vmin] p-3">
+                  Submit
+                </button>
               </div>
-            </>
-          )) ||
-            (screen.width > 900 &&
-              screen.width <= 1280 &&
-              screen.height >= 780 && (
-                <>
-                  <div className="text-area w-[81vmin]  h-[80vh] flex justify-end items-center">
-                    <div className="imageHolder w-[71vmin] h-[60vh] p-3">
-                      <img
-                        src="./customersupport.png"
-                        alt=""
-                        className="max-w-full max-h-full object-contain"
-                      />
-                    </div>
-                  </div>
-                  <div className="form-area ml-[-5vmin] w-[75vmin] pt-2  border-[2px] flex flex-col justify-center rounded-lg items-center shadow-2xl pb-2">
-                    <p className="text-[4vmin] font-bold font-poppins">
-                      Please fill the details...
-                    </p>
-                    <div className=" w-[60vmin] h-[60vmin] rounded-[3px] mt-[4vmin]  ">
-                      <form>
-                        <div className="inputHolder  bg-bgColor flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg">
-                          <img src="./user.png" height={17} width={25}></img>
+            </div>
+          </div>
+          <div className="contactDetailsHolder w-[100%] md:w-[50%] border-lightGrey border-l-[1px]  hidden lg:block">
+            <div className="Holder flex flex-col  justify-center  gap-y-5 p-6">
+              <div className="imageHolder w-[90%] ">
+                <img
+                  src="contactImage.jpg"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
 
-                          <input
-                            type="text"
-                            placeholder="Enter your name..."
-                            className="  w-[60vmin] p-1  bg-bgColor"
-                          ></input>
-                        </div>
-                        <br></br>
-                        <br></br>
-                        <div className=" bg-bgColor inputHolder flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg">
-                          <img src="./email1.png" height={17} width={25}></img>
-
-                          <input
-                            type="email"
-                            placeholder="Enter your  email..."
-                            className="  w-[60vmin] p-1 bg-bgColor"
-                          ></input>
-                        </div>
-                        <br></br>
-                        <br></br>
-                        <textarea
-                          name=""
-                          id=""
-                          rows="5"
-                          cols="61"
-                          placeholder="Enter Your message..."
-                          className=" bg-bgColor p-3  border-[1px] rounded-lg"
-                        ></textarea>
-                        <br></br>
-                        <br></br>
-                        <button
-                          onClick={(e) => {
-                            e.preventDefault();
-                            alert("Data added Sucessfully");
-                          }}
-                          className="bg-btnColor p-2 text-white text-[2.45vmin] w-[10vw]"
-                        >
-                          Submit
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                </>
-              )) ||
-            (screen.width >= 1280 && screen.width < 1400 && (
-              <>
-                <div className="photo-area w-[100vmin] h-[75vh] flex justify-end items-center">
-                  <div className="imageHolder w-[90vmin] h-[60vh] p-3">
-                    <img
-                      src="./customersupport.png"
-                      alt=""
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
-                </div>
-
-                <div className="form-area w-[110vmin]  border-[1px] pb-4  pt-2 ml-[-10vmin] flex flex-col justify-center rounded-lg items-center shadow-2xl">
-                  <p className="text-[4vmin] font-bold font-poppins">
-                    Please fill the details...
-                  </p>
-                  <div className=" w-[90vmin] rounded-[3px] mt-[4vmin] ">
-                    <form>
-                      <div className="inputHolder  bg-bgColor flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg">
-                        <img src="./user.png" height={17} width={25}></img>
-
-                        <input
-                          type="text"
-                          placeholder="Enter your name..."
-                          id="name"
-                          className="  w-[70vmin] p-1  bg-bgColor"
-                        ></input>
-                      </div>
-                      <br></br>
-                      <br></br>
-                      <div className=" bg-bgColor inputHolder flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg">
-                        <img src="./email1.png" height={17} width={25}></img>
-
-                        <input
-                          type="email"
-                          placeholder="Enter your  email..."
-                          id="email"
-                          className="  w-[70vmin] p-1 bg-bgColor"
-                        ></input>
-                      </div>
-                      <br></br>
-                      <br></br>
-                      <textarea
-                        name=""
-                        id="message"
-                        rows="5"
-                        cols="65"
-                        placeholder="Enter Your message..."
-                        className=" bg-bgColor p-3  border-[1px] rounded-lg"
-                      ></textarea>
-                      <br></br>
-                      <br></br>
-                      <button
-                        onClick={UploadData}
-                        className="bg-btnColor p-2 text-white text-[2.45vmin] w-[10vw]"
-                      >
-                        Submit
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </>
-            )) ||
-            (screen.width >= 1400 && screen.width <= 2047 && (
-              <>
-                {(screen.height >= 901 && (
-                  <>
-                    <div className="photo-area w-[70vmin] h-[80vh] flex justify-end items-center">
-                      <div className="imageHolder w-[60vmin] h-[60vh] p-3">
+              <div className="detailsHolder">
+                <div className="detailsHolder flex flex-col gap-y-4">
+                  <div className="flex  w-[100%] gap-x-3">
+                    <div className="flex  pl-3 pr-3 justify-center items-center gap-x-3">
+                      <div className="imageHolder  flex justify-center items-center h-[7vmin] w-[7vmin] border-[1px] border-lightGrey rounded-[3.5vmin]">
                         <img
-                          src="./customersupport.png"
-                          alt=""
-                          className="max-w-full max-h-full object-contain"
+                          src="phone123.png"
+                          height={40}
+                          width={40}
+                          className="p-1 "
+                        />
+                      </div>
+
+                      <li className="text-purple tracking-wider">
+                        &nbsp;7585824862 / 9382993983
+                      </li>
+                    </div>
+                  </div>
+                  <div className="flex  w-[100%] gap-x-3">
+                    <div className="flex  pl-3 pr-3 justify-center items-center gap-x-3">
+                      <div className="imageHolder  flex justify-center items-center h-[7vmin] w-[7vmin] border-[1px] border-lightGrey rounded-[3.5vmin]">
+                        <img
+                          src="email123.png"
+                          height={40}
+                          width={40}
+                          className="p-1 "
+                        />
+                      </div>
+
+                      <li className="text-purple tracking-widest">
+                        &nbsp;codemap2024@gmail.com
+                      </li>
+                    </div>
+                  </div>
+                  <div className="flex  w-[100%] gap-x-3">
+                    <div className="flex  pl-3 pr-3 justify-center items-center gap-x-3">
+                      <div className="imageHolder  flex justify-center items-center h-[7vmin] w-[7vmin] border-[1px] border-lightGrey rounded-[3.5vmin]">
+                        <img
+                          src="gps.png"
+                          height={40}
+                          width={40}
+                          className="p-1 "
+                        />
+                      </div>
+
+                      <li className="text-purple tracking-wider">
+                        &nbsp;1st Floor IIMT-LBF Incubation Center,Greater
+                        Noida,UP
+                      </li>
+                    </div>
+                  </div>
+                  <div className="flex  w-[100%] gap-x-3">
+                    <div className="flex  pl-3 pr-3 justify-center items-center gap-x-3">
+                      <div className="imageHolder  flex justify-center items-center h-[7vmin] w-[7vmin] border-[1px] border-lightGrey rounded-[3.5vmin]">
+                        <img
+                          src="web.png"
+                          height={45}
+                          width={45}
+                          className="p-1 "
+                        />
+                      </div>
+
+                      <li className="text-purple tracking-wider">
+                        &nbsp;
+                        <Link to="https://community.codemap.online/">
+                          https://community.codemap.online/
+                        </Link>
+                      </li>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 flex  w-[100%] gap-x-6">
+                    <div className="flex  pl-3 pr-3 justify-center items-center gap-x-3">
+                      <div className="imageHolder  flex justify-center items-center h-[7vmin] w-[7vmin] border-[1px] border-lightGrey rounded-[3.5vmin]">
+                        <img
+                          src="linkedin.png"
+                          height={40}
+                          width={40}
+                          className="p-1 "
                         />
                       </div>
                     </div>
-                    <div className="shadow-2xl form-area w-[85vmin] flex flex-col items-center  rounded-lg  border-[1px] justify-center h-[70vh] ml-[-12vmin]">
-                      <p className="text-[4vmin] font-bold font-poppins">
-                        Please fill the details...
-                      </p>
-                      <div className=" w-[75vmin] h-[50vh] mt-3 ">
-                        <form>
-                          <div className="inputHolder  bg-bgColor flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg ">
-                            <img src="./user.png" height={20} width={37}></img>
 
-                            <input
-                              type="text"
-                              placeholder="Enter your name..."
-                              className="  w-[70vmin] p-3  bg-bgColor text-[2vmin]"
-                            ></input>
-                          </div>
-                          <br></br>
-                          <br></br>
-                          <div className=" bg-bgColor inputHolder flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg">
-                            <img
-                              src="./email1.png"
-                              height={20}
-                              width={37}
-                            ></img>
-
-                            <input
-                              type="email"
-                              placeholder="Enter your  email..."
-                              className="  w-[70vmin] p-3 bg-bgColor text-[2vmin]"
-                            ></input>
-                          </div>
-                          <br></br>
-                          <br></br>
-                          <textarea
-                            name=""
-                            id=""
-                            rows="5"
-                            cols="72"
-                            placeholder="Enter Your message..."
-                            className=" bg-bgColor p-3  border-[1px] rounded-lg text-[2vmin]"
-                          ></textarea>
-                          <br></br>
-                          <br></br>
-                          <button
-                            onClick={(e) => {
-                              e.preventDefault();
-                              alert("Data added Sucessfully");
-                            }}
-                            className="bg-btnColor p-2 text-white text-[2.15vmin] w-[10vw]"
-                          >
-                            Submit
-                          </button>
-                        </form>
+                    <div className="flex  pl-3 pr-3 justify-center items-center gap-x-3">
+                      <div className="imageHolder border-[1px]   flex justify-center items-center h-[7vmin] w-[7vmin] border-lightGrey rounded-[3.5vmin]">
+                        <img
+                          src="instagram.jpg"
+                          height={40}
+                          width={40}
+                          className="p-[0.56px]"
+                        />
                       </div>
                     </div>
-                  </>
-                )) || (
-                  <div className="shadow-2xl form-area w-[85vmin] flex flex-col items-center  rounded-lg  border-[1px] justify-center h-[70vh] ml-[-12vmin]">
-                    <p className="text-[4vmin] font-bold font-poppins">
-                      Please fill the details...
-                    </p>
-                    <div className=" w-[70vmin]  mt-3 ">
-                      <form>
-                        <div className="inputHolder  bg-bgColor flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg ">
-                          <img src="./user.png" height={20} width={37}></img>
-
-                          <input
-                            type="text"
-                            placeholder="Enter your name..."
-                            className="  w-[70vmin] p-3  bg-bgColor text-[2vmin]"
-                          ></input>
-                        </div>
-                        <br></br>
-                        <br></br>
-                        <div className=" bg-bgColor inputHolder flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg">
-                          <img src="./email1.png" height={20} width={37}></img>
-
-                          <input
-                            type="email"
-                            placeholder="Enter your  email..."
-                            className="  w-[70vmin] p-3 bg-bgColor text-[2vmin]"
-                          ></input>
-                        </div>
-                        <br></br>
-                        <br></br>
-                        <textarea
-                          name=""
-                          id=""
-                          rows="5"
-                          cols="61"
-                          placeholder="Enter Your message..."
-                          className=" bg-bgColor p-3  border-[1px] rounded-lg text-[2vmin]"
-                        ></textarea>
-                        <br></br>
-                        <br></br>
-                        <button
-                          onClick={(e) => {
-                            e.preventDefault();
-                            alert("Data added Sucessfully");
-                          }}
-                          className="bg-btnColor p-2 text-white text-[2.15vmin] w-[10vw]"
-                        >
-                          Submit
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                )}
-              </>
-            )) ||
-            (screen.width >= 2048 && (
-              <>
-                <div className="flex justify-end items-center text-area w-[87vmin] ">
-                  <div className="imageHolder w-[80vmin] h-[60vh] p-3">
-                    <img
-                      src="./customersupport.png"
-                      alt=""
-                      className="max-w-full max-h-full object-contain"
-                    />
                   </div>
                 </div>
-                <div className=" flex flex-col items-center  rounded-lg  border-[1px] justify-center  ml-[-15vmin] photo-area w-[87vmin]   h-[70vh]">
-                  <p className="text-[4vmin] font-bold font-poppins">
-                    Please fill the details...
-                  </p>
-                  <div className=" w-[70vmin]  ">
-                    <form>
-                      <div className="inputHolder  bg-bgColor flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg ">
-                        <img src="./user.png" height={20} width={37}></img>
-
-                        <input
-                          type="text"
-                          placeholder="Enter your name..."
-                          className="  w-[70vmin] p-3  bg-bgColor text-[2vmin]"
-                        ></input>
-                      </div>
-                      <br></br>
-                      <br></br>
-                      <div className=" bg-bgColor inputHolder flex border-[1px] gap-x-5 p-1 pl-2 rounded-lg">
-                        <img src="./email1.png" height={20} width={37}></img>
-
-                        <input
-                          type="email"
-                          placeholder="Enter your  email..."
-                          className="  w-[70vmin] p-3 bg-bgColor text-[2vmin]"
-                        ></input>
-                      </div>
-                      <br></br>
-                      <br></br>
-                      <textarea
-                        name=""
-                        id=""
-                        rows="5"
-                        cols="72"
-                        placeholder="Enter Your message..."
-                        className=" bg-bgColor p-3  border-[1px] rounded-lg text-[2vmin]"
-                      ></textarea>
-                      <br></br>
-                      <br></br>
-                      <button
-                        onClick={(e) => {
-                          e.preventDefault();
-                          alert("Data added Sucessfully");
-                        }}
-                        className="bg-btnColor p-2 text-white text-[2.15vmin] w-[10vw]"
-                      >
-                        Submit
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </>
-            ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

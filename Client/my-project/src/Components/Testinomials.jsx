@@ -29,7 +29,7 @@ const Testinomials = () => {
   ];
   return (
     <>
-      <div className="testinomialHolder w-[100vw]  space-y-6 lg:space-y-0  pb-5 lg:pb-3 bg-bgColor">
+      <div className="testinomialHolder w-[100vw]  space-y-6 lg:space-y-0  pb-5 pt-5 lg:pb-10 bg-bgColor">
         <div>
           <p className="text-[8.95vmin] font-bold ml-3">
             Testimo
