@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="holderNav bg-bgColor pb-2">
         <div className="navBarBox w-[100vw] bg-bgColor flex ">
           <div className="logoHolder lg:h-[15vmin]  flex pt-2 lg:pt-0 ml-2">
-            <div className="iconHolder flex h-[20vmin] w-[15vmin] lg:h-[15vmin] lg:w-[15vmin] justify-center items-center ">
+            <div className="iconHolder flex h-[20vmin] w-[15vmin] md:h-[15vmin] md:w-[15vmin] justify-center items-center ">
               <img
                 src="./CMLogo.png"
                 className="max-w-full max-h-full object-contain"
@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className="flex font-semibold items-center textHolder h-[12vmin] w-[51vw] md:w-[67vw] lg:h-[10vmin] lg:w-full mt-4 lg:mt-4 ml-2 2xl:mt-5">
               <p className=" text-[5vmin] md:text-[4vmin] 2xl:text-[3.75vmin] ml-1 font-poppins mt-[1vmin] font-bold">
                 Code
-                <span className="md:text-[4vmin] 2xl:text-[3.75vmin] text-btnColor">
+                <span className="md:text-[4vmin] md:text-[3vmin] 2xl:text-[3.75vmin] text-btnColor">
                   Map
                 </span>
               </p>

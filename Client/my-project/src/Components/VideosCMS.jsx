@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
 import { NavbarCMS } from "./NavbarCMS.jsx";

@@ -10,7 +10,7 @@ const SupportProvided = () => {
           </p>
         </div>
 
-        <div className="supportBoxHolder gap-x-1 lg:gap-x-14 2xl:gap-x-14 gap-y-7 lg:gap-y-5 mt-[3vmin] w-[100vw] flex flex-wrap justify-center items-center pb-6 mt-[-5vmin]">
+        <div className="supportBoxHolder gap-x-1 md:gap-x-6 lg:gap-x-14 2xl:gap-x-14 gap-y-7 lg:gap-y-5 mt-[3vmin] w-[100vw] flex flex-wrap justify-center items-center pb-6 mt-[-5vmin]">
           <div className="supportBox">
             <Card image={"./training.png"} details={"Free Bootcamps"} />
           </div>

@@ -4,7 +4,7 @@ const FirstReachComponent = () => {
       <div className="about-area flex justify-center items-center flex-wrap ml-[-2vmin]">
         {(screen.width <= 900 && (
           <>
-            <div className="text-area w-[95vw] lg:h-[50vh]  pl-3 flex justify-center mt-5 md:items-center">
+            <div className="text-area w-[95vw] lg:h-[50vh]  pl-3 flex justify-center mt-5 md:items-center pb-7">
               <div className="imageHolder w-[93vw] h-[45vh] lg:h-[45vh] flex justify-center md:items-center">
                 <img
                   src="./IndiaMap.png"
@@ -13,7 +13,7 @@ const FirstReachComponent = () => {
               </div>
             </div>
             <div className="photo-area w-[95vw] pb-2 md:text-[2.55vmin] pl-2">
-              <p className="font-poppins  text-[4vmin]">
+              <p className="font-poppins  text-[4vmin] md:text-[3.45vmin] leading-[6vmin]">
                 Our <b>Codemap Community</b> aims to provide the technical
                 platform and community <b>pan India</b> which will enable the
                 youth of India to nurture and grow their skills.Our platform
@@ -24,10 +24,10 @@ const FirstReachComponent = () => {
                 condition by making use of the <b>demographic diviend</b> in a
                 positive way through our <b>student clubs</b>
               </p>
-              <div className="box-area mt-3 flex w-[95vw]  flex  justify-center gap-x-7">
+              <div className="box-area mt-5 flex w-[95vw]  flex  justify-center gap-x-7">
                 <div className="box1">
                   <div className="w-[40vmin] pb-5 bg-bgColor flex flex-col  items-center ">
-                    <p className="font-bold mt-3 text-lg md:text-xl tracking-[0.15vmin]">
+                    <p className="font-bold mt-3 text-lg md:text-2xl tracking-[0.15vmin]">
                       Cities
                     </p>
 
@@ -38,7 +38,7 @@ const FirstReachComponent = () => {
                 </div>
                 <div className="box2">
                   <div className="w-[40vmin] pb-5 bg-bgColor flex flex-col  items-center">
-                    <p className="font-bold mt-3 text-lg md:text-xl tracking-[0.15vmin]">
+                    <p className="font-bold mt-3 text-lg md:text-2xl tracking-[0.15vmin]">
                       Students
                     </p>
 

@@ -102,8 +102,8 @@ const TestinomialBox = (props) => {
                 </p>
               </div>
             </div>
-            <div className="row2 border-t-2 h-[30vmin] w-[91vmin] ml-1 flex justify-center ">
-              <p className="text-[2.75vmin] lg:text-[3.65vmin] 2xl:text-[2.85vmin] mt-[5vmin]  text-center md:tracking-[1.35px]">
+            <div className="row2 border-t-2 h-[30vmin] w-[94vmin] 2xl:w-[90vmin] ml-1 2xl:ml-4 flex justify-center ">
+              <p className="text-[2.75vmin] md:text-[2.15vmin] lg:text-[3.65vmin] 2xl:text-[2.85vmin] mt-[5vmin]  text-center md:tracking-[1.35px]">
                 " {props.data.comment} "
               </p>
             </div>

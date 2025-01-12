@@ -42,7 +42,7 @@ const Contact = () => {
         </div>
 
         <div className="msgBoxHolder w-[96vw] border-lightGrey border-[2px] flex flex-wrap  rounded-[1.25vmin] mt-6">
-          <div className="formHolder w-[100%] md:w-[50%] p-4">
+          <div className="formHolder w-[100%] lg:w-[50%] p-4">
             <div className="textHolder p-3">
               <p className="text-purple text-[7vmin] font-medium ">
                 Get In Touch
@@ -54,7 +54,7 @@ const Contact = () => {
             </div>
 
             <div className="formHolderBody pl-4">
-              <div className="form flex flex-col w-[96%] gap-y-9 2xl:gap-y-14 mt-12 2xl:text-[2.25vmin]">
+              <div className="form flex flex-col w-[99%] gap-y-9 2xl:gap-y-14 mt-12 2xl:text-[2.15vmin]">
                 <input
                   type="text"
                   className="border-[1px] p-3 2xl:p-4 border-lightGrey rounded-md"
