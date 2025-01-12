@@ -23,7 +23,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="lg:ml-2 holder w-[96%] text-[3.65vmin]  md:text-[2.65vmin] text-bannerGrey leading-[6vmin] md:leading-[5.45vmin] lg:leading-[4.85vmin] flex flex-col justify-center items-center">
+              <div className="lg:ml-2 holder w-[94%] text-[3.65vmin]  md:text-[2.65vmin] text-bannerGrey leading-[6vmin] md:leading-[5.45vmin] lg:leading-[4.85vmin] flex flex-col justify-center items-center">
                 The Codemap community is an ultimate coding community for all
                 tech enthusiasts who want to pursue a promising career in the
                 contemporary technical industry we have strong vision to help
@@ -51,7 +51,7 @@ const About = () => {
           </div>
 
           <div className="rightHolder  w-[96vw] md:w-[90vw] lg:w-[47vw] ">
-            <div className="imageHolder W-[96%] lg:h-[62vh] ">
+            <div className="imageHolder W-[96%] lg:h-[64vh] ">
               <img
                 src="./t1.png"
                 className="max-h-full max-w-full object-contain"
